@@ -1,12 +1,24 @@
 extends RigidBody2D
 
-export var SPEED = 10
+export var SPEED = 30
+export var MASS = 300
+export var WEIGHT = 2940
 
-func _physics_process(_delta):
+onready var rightWheel = $RightWheel
+onready var leftWheel = $LeftWheel
+onready var car = get_node("../Car")
+
+func _ready() -> void:
+	print(car)
+	
+func _process(delta):
+	pass
+
+func _physics_process(_delta) -> void:
 	if Input.is_action_pressed("forwards"):
-		$RightWheel.angular_velocity = SPEED
-		$LeftWheel.angular_velocity = SPEED
+		rightWheel.angular_velocity = SPEED
+		leftWheel.angular_velocity = SPEED
 
 	elif Input.is_action_pressed("backwards"):
-		$RightWheel.angular_velocity = -SPEED
-		$LeftWheel.angular_velocity = -SPEED
+		rightWheel.angular_velocity = -SPEED
+		leftWheel.angular_velocity = -SPEED

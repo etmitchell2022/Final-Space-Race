@@ -12,16 +12,16 @@ absorbent = true
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 30.1459, 6.68943 )
 
-[sub_resource type="PhysicsMaterial" id=5]
-rough = true
-
-[sub_resource type="CircleShape2D" id=3]
-radius = 21.5771
-
-[sub_resource type="PhysicsMaterial" id=6]
+[sub_resource type="PhysicsMaterial" id=3]
 rough = true
 
 [sub_resource type="CircleShape2D" id=4]
+radius = 21.5771
+
+[sub_resource type="PhysicsMaterial" id=5]
+rough = true
+
+[sub_resource type="CircleShape2D" id=6]
 radius = 21.3318
 
 [node name="Car" type="RigidBody2D"]
@@ -41,10 +41,10 @@ texture = ExtResource( 2 )
 [node name="LeftWheel" type="RigidBody2D" parent="."]
 position = Vector2( -51.2269, 53.4269 )
 mass = 5.10204
-physics_material_override = SubResource( 5 )
+physics_material_override = SubResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWheel"]
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 
 [node name="Sprite" type="Sprite" parent="LeftWheel"]
 scale = Vector2( 0.4, 0.4 )
@@ -58,10 +58,10 @@ softness = 0.03
 [node name="RightWheel" type="RigidBody2D" parent="."]
 position = Vector2( 54.0555, 53.1126 )
 mass = 5.10204
-physics_material_override = SubResource( 6 )
+physics_material_override = SubResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWheel"]
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 
 [node name="Sprite" type="Sprite" parent="RightWheel"]
 scale = Vector2( 0.4, 0.4 )

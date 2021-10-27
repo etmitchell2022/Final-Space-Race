@@ -8,7 +8,7 @@ extents = Vector2( 388.436, 47.3328 )
 [node name="Node2D" type="Node2D"]
 
 [node name="Car" parent="." instance=ExtResource( 1 )]
-position = Vector2( 250.351, 86.7016 )
+position = Vector2( 108.377, 108.377 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
