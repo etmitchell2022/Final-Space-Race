@@ -1,9 +1,9 @@
 extends Node
 
 
-export var hill_count = 2
+export var hill_count = 1
 export var slice_count = 7
-export var hill_range = 150
+export var hill_range = 75
 
 var screensize
 var level = Array()
@@ -17,7 +17,7 @@ func _ready():
 	level.append(Vector2(0, hillStartY))
 	add_hills()
 	
-func _process(delta):
+func _process(_delta):
 	if level[-1].x < $Car.position.x + screensize.x / 2:
 		add_hills()
 	

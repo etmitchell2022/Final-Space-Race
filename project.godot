@@ -10,13 +10,12 @@ config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
-
 }
 
 [application]
 
 config/name="FinalProject"
-run/main_scene="res://src/Level.tscn"
+run/main_scene="res://src/Level/Level.tscn"
 config/icon="res://icon.png"
 
 [input]

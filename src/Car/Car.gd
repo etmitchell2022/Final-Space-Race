@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-export var SPEED = 30
+export var SPEED = 60
 export var MASS = 300
 export var WEIGHT = 2940
 
@@ -11,7 +11,7 @@ onready var car = get_node("../Car")
 func _ready() -> void:
 	print(car)
 	
-func _process(delta):
+func _process(_delta):
 	pass
 
 func _physics_process(_delta) -> void:
