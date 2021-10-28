@@ -19,6 +19,10 @@ config/name="FinalProject"
 run/main_scene="res://src/Start/Start.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Globals="*res://src/Global/Globals.gd"
+
 [input]
 
 forwards={
