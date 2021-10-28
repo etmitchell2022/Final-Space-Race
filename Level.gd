@@ -7,6 +7,7 @@ export var hill_range = 150
 
 var screensize
 var level = Array()
+var hillsDone = 0
 
 
 func _ready():
@@ -36,6 +37,9 @@ func add_hills():
 			level.append(hillPoint)
 			form.append(hillPoint)
 		hillStart.y += height
+		hillsDone += 1
+		if (hillsDone > 20):
+			queue_free()
 	var shape = CollisionPolygon2D.new()
 	var ground = Polygon2D.new()
 	$StaticBody2D.add_child(shape)
