@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-export var SPEED = 60
+export var SPEED = 60000
 export var MASS = 300
 export var WEIGHT = 2940
 
@@ -8,33 +8,21 @@ onready var rightWheel = $RightWheel
 onready var leftWheel = $LeftWheel
 onready var car = get_node("../Car")
 
-var rotate_angle = 0
-
-
-
 func _ready() -> void:
 	pass
 	
 func _process(_delta):
 	pass
 
-func _physics_process(_delta) -> void:
+func _physics_process(delta) -> void:
 	if Input.is_action_pressed("forwards"):
-		rightWheel.angular_velocity = SPEED
-		leftWheel.angular_velocity = SPEED
+		apply_torque_impulse(-6000 * delta * 60)
+		rightWheel.apply_torque_impulse(SPEED * delta * 60)
+		leftWheel.apply_torque_impulse(SPEED * delta * 60)
 
 	elif Input.is_action_pressed("backwards"):
-		rightWheel.angular_velocity = -SPEED
-		leftWheel.angular_velocity = -SPEED
-	
-	elif Input.is_action_pressed("rotate_left"):
-		rotate_angle -= 1
-		car.rotation_degrees = rotate_angle
-		print(rotate_angle)
-		
-	elif Input.is_action_pressed("rotate_right"):
-		rotate_angle += 1
-		car.rotation_degrees = rotate_angle
-		print(rotate_angle)
+		apply_torque_impulse(2000 * delta * 60)
+		rightWheel.apply_torque_impulse(-SPEED * delta * 60)
+		leftWheel.apply_torque_impulse(-SPEED * delta * 60)
 		
 

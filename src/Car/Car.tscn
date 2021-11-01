@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/Car/assets/tire.png" type="Texture" id=1]
 [ext_resource path="res://src/Car/assets/car-body.png" type="Texture" id=2]
@@ -8,9 +8,6 @@
 friction = 4.0
 rough = true
 absorbent = true
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 30.1459, 6.68943 )
 
 [sub_resource type="PhysicsMaterial" id=3]
 rough = true
@@ -30,11 +27,13 @@ physics_material_override = SubResource( 1 )
 gravity_scale = 5.0
 script = ExtResource( 3 )
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 0, -1.47622 )
+scale = Vector2( 1, 0.972826 )
+polygon = PoolVector2Array( -64.4232, 4.57133, -60.4545, -10.5098, -54.1046, -22.0191, -42.9921, -32.7347, -29.1016, -37.894, -12.4329, -37.894, 0.266983, -34.7191, 12.57, -28.3691, 22.4919, -21.6223, 34.0011, -12.8911, 46.3042, -2.17551, 58.6073, 10.1275, 64.5603, 16.8744, 40.748, 12.1119, 14.5544, 8.54005, -21.1641, 4.17445 )
+
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.376767, 0.349247 )
