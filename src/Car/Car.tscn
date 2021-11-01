@@ -16,13 +16,13 @@ extents = Vector2( 30.1459, 6.68943 )
 rough = true
 
 [sub_resource type="CircleShape2D" id=4]
-radius = 21.5771
+radius = 21.8069
 
 [sub_resource type="PhysicsMaterial" id=5]
 rough = true
 
 [sub_resource type="CircleShape2D" id=6]
-radius = 21.3318
+radius = 21.9844
 
 [node name="Car" type="RigidBody2D"]
 mass = 600.0
@@ -44,6 +44,8 @@ texture = ExtResource( 2 )
 position = Vector2( -51.2269, 53.4269 )
 mass = 5.10204
 physics_material_override = SubResource( 3 )
+contacts_reported = 1
+contact_monitor = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWheel"]
 shape = SubResource( 4 )
@@ -61,6 +63,8 @@ softness = 0.03
 position = Vector2( 54.0555, 53.1126 )
 mass = 5.10204
 physics_material_override = SubResource( 5 )
+contacts_reported = 1
+contact_monitor = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWheel"]
 shape = SubResource( 6 )
