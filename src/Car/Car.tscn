@@ -15,10 +15,10 @@ rough = true
 [sub_resource type="CircleShape2D" id=3]
 radius = 21.8069
 
-[sub_resource type="PhysicsMaterial" id=5]
+[sub_resource type="PhysicsMaterial" id=4]
 rough = true
 
-[sub_resource type="CircleShape2D" id=6]
+[sub_resource type="CircleShape2D" id=5]
 radius = 21.9844
 
 [node name="Car" type="RigidBody2D"]
@@ -32,6 +32,8 @@ polygon = PoolVector2Array( -24.3391, -37.894, -8.06734, -37.1003, 5.8232, -32.7
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+limit_left = 0
+limit_bottom = 600
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.376767, 0.349247 )
@@ -59,12 +61,12 @@ softness = 0.03
 [node name="RightWheel" type="RigidBody2D" parent="."]
 position = Vector2( 54.0555, 53.1126 )
 mass = 5.10204
-physics_material_override = SubResource( 5 )
+physics_material_override = SubResource( 4 )
 contacts_reported = 1
 contact_monitor = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWheel"]
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="RightWheel"]
 scale = Vector2( 0.4, 0.4 )
