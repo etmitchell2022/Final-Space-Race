@@ -7,6 +7,7 @@ export var hill_range = 75
 
 var screensize
 var level = Array()
+var totalHillNum = 0
 var texture = ImageTexture.new()
 var image = Image.new()
 
@@ -40,6 +41,9 @@ func add_hills():
 			level.append(hillPoint)
 			form.append(hillPoint)
 		hillStart.y += height
+		totalHillNum += 1
+		if totalHillNum >= 10:
+			get_tree().change_scene("res://src/End/End.tscn")
 	var shape = CollisionPolygon2D.new()
 	var ground = Polygon2D.new()
 	$StaticBody2D.add_child(shape)
