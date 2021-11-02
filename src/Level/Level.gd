@@ -7,10 +7,14 @@ export var hill_range = 75
 
 var screensize
 var level = Array()
+var texture = ImageTexture.new()
+var image = Image.new()
 
 
 func _ready():
 	randomize()
+	image.load("res://src/Level/assets/grass.png")
+	texture.create_from_image(image)
 	screensize = get_viewport().get_visible_rect().size
 	level = Array()
 	var hillStartY = screensize.y * 3/4 + (-hill_range + randi() % hill_range*2)
@@ -43,4 +47,5 @@ func add_hills():
 	form.append(Vector2(hillStart.x, screensize.y))
 	shape.polygon = form
 	ground.polygon = form
+	ground.texture = texture
 	add_child(ground)
