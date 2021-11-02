@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/Car/assets/tire.png" type="Texture" id=1]
 [ext_resource path="res://src/Car/assets/car-body.png" type="Texture" id=2]
@@ -9,13 +9,10 @@ friction = 4.0
 rough = true
 absorbent = true
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 30.1459, 6.68943 )
-
-[sub_resource type="PhysicsMaterial" id=3]
+[sub_resource type="PhysicsMaterial" id=2]
 rough = true
 
-[sub_resource type="CircleShape2D" id=4]
+[sub_resource type="CircleShape2D" id=3]
 radius = 21.8069
 
 [sub_resource type="PhysicsMaterial" id=5]
@@ -25,16 +22,16 @@ rough = true
 radius = 21.9844
 
 [node name="Car" type="RigidBody2D"]
-mass = 600.0
+mass = 300.0
 physics_material_override = SubResource( 1 )
 gravity_scale = 5.0
 script = ExtResource( 3 )
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -24.3391, -37.894, -8.06734, -37.1003, 5.8232, -32.7347, 20.1106, -24.4004, 33.2074, -13.2879, 43.923, -4.15987, 53.4479, 4.57133, 61.7822, 14.0963, 77.6572, 21.6369, 87.579, 26.0025, 87.9758, 43.8617, 76.8634, 44.2586, 72.8947, 31.9556, 63.3697, 25.6056, 50.2729, 24.0181, 41.5417, 26.7962, 32.8105, 35.5274, 28.4449, 42.2742, 4.63258, 43.4648, -23.9422, 43.4648, -27.911, 41.8774, -33.8641, 29.1774, -46.9609, 23.6212, -57.6764, 22.8275, -64.4232, 26.3993, -73.9482, 33.543, -77.5201, 42.6711, -77.9169, 21.6369, -77.9169, 13.6994, -72.7576, 7.74631, -65.217, 4.9682, -62.042, -8.52547, -55.2952, -21.6223, -45.7702, -31.1472, -36.2453, -36.3065 )
+
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.376767, 0.349247 )
@@ -43,12 +40,12 @@ texture = ExtResource( 2 )
 [node name="LeftWheel" type="RigidBody2D" parent="."]
 position = Vector2( -51.2269, 53.4269 )
 mass = 5.10204
-physics_material_override = SubResource( 3 )
+physics_material_override = SubResource( 2 )
 contacts_reported = 1
 contact_monitor = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWheel"]
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="LeftWheel"]
 scale = Vector2( 0.4, 0.4 )
