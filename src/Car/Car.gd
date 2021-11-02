@@ -13,7 +13,7 @@ func _ready() -> void:
 	
 func _process(_delta):
 	if car.sleeping:
-		print("sleeping")
+		var _ignored = get_tree().change_scene("res://src/End/End.tscn")
 
 func _physics_process(delta) -> void:
 	if Input.is_action_pressed("forwards"):
