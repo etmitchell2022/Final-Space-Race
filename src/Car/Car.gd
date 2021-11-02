@@ -9,7 +9,8 @@ onready var leftWheel = $LeftWheel
 onready var car = get_node("../Car")
 
 func _ready() -> void:
-	pass
+	car.mass = MASS
+	car.weight = WEIGHT
 	
 func _process(_delta):
 	if car.sleeping:
