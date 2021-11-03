@@ -25,9 +25,9 @@ layer = 50
 
 [node name="HUD" parent="Car/HUD" instance=ExtResource( 3 )]
 margin_left = -510.0
-margin_top = -208.0
+margin_top = -298.0
 margin_right = 514.0
-margin_bottom = 392.0
+margin_bottom = 304.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
