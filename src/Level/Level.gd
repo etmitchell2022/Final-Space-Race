@@ -7,6 +7,7 @@ export var hill_range = 75
 
 var screensize
 var level = Array()
+var is_paused = false
 
 
 func _ready():
