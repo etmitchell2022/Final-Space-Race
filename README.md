@@ -1,11 +1,16 @@
 # Semester Project Space Race
-Authors: Spencer Naugler, 
+Authors: Spencer Naugler, Carter Jeurissen
 
 ## Reflection
 Spencer Naugler: The big challenge of this iteraiton was trying to get the movement system working.  
 In the original game there are only movement buttons foreward and backward. 
 Depending on whether the car is on the ground or not the buttons will rotate the car,
 or move the car foreward and backward.
+
+Carter Jeurissen: For me, my biggest challenge through this iteration was working on the command line in a group environment. 
+Although I had grown accustomed to committing and pushing my work by myself,
+I ran into multiple problems as I attempted to pull and use features such as branching.
+However, I slowly have grown more confident and possess a better idea of how to properly work with others in this way.
 
 ## Self Evaluation
 - [X] D-1: The repository link is submitted to Canvas before the project deadline.
@@ -30,3 +35,12 @@ use W and S to move the car foreward and backward.
 use A and D to rotate the car counter-clockwise and clockwise.
 
 Get to the finish and get the highest score
+
+## Third-Party Assets
+
+Images are from "Background Elements", "Smoke Particles", and "Voxel Pack". Created in 2016 by kenney.nl,[CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/). Sources: https://kenney.nl/assets/background-elements, https://kenney.nl/assets/smoke-particles, https://kenney.nl/assets/voxel-pack.
+
+
+
+
+
