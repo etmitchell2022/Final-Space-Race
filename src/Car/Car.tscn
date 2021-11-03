@@ -19,7 +19,7 @@ radius = 21.8069
 rough = true
 
 [sub_resource type="CircleShape2D" id=5]
-radius = 21.9844
+radius = 21.4358
 
 [node name="Car" type="RigidBody2D"]
 mass = 300.0
