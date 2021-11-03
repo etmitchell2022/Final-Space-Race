@@ -9,6 +9,7 @@ var level = Array()
 var hills_passed = 0
 var texture = ImageTexture.new()
 var image = load("res://src/Level/assets/grass.png") as Image
+var shake: float = 0
 
 signal hill_passed(hills_passed)
 
@@ -59,8 +60,11 @@ func _on_CrashZone_body_entered(body):
 	var explosion = load("res://src/Explosion/Explosion.tscn").instance()
 	explosion.one_shot = true
 	if body == $StaticBody2D:
+		shake = 20
 		explosion.position = $Car.position
 		add_child(explosion)
 		$Car.visible = false
+		$Car/Camera2D.offset = Vector2(rand_range(-shake, shake), rand_range(-shake, shake))
+		shake *= 4
 		yield(get_tree().create_timer(1.0),"timeout")
 		get_tree().change_scene("res://src/End/End.tscn")
