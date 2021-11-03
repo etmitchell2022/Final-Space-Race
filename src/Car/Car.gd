@@ -25,4 +25,3 @@ func _physics_process(delta) -> void:
 		apply_torque_impulse(-6000 * delta * 100)
 		rightWheel.apply_torque_impulse(-SPEED * delta * 60)
 		leftWheel.apply_torque_impulse(-SPEED * delta * 60)
-		

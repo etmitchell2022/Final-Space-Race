@@ -14,11 +14,17 @@
 [ext_resource path="res://src/Level/assets/cloud3.png" type="Texture" id=12]
 [ext_resource path="res://src/PauseMenu/PauseMenu.tscn" type="PackedScene" id=13]
 
-[node name="Node2D" type="Node"]
+[node name="Level" type="Node"]
 script = ExtResource( 2 )
 
 [node name="Car" parent="." instance=ExtResource( 1 )]
 position = Vector2( 498, 250 )
+
+[node name="CrashZone" type="Area2D" parent="Car"]
+position = Vector2( -498, -250 )
+
+[node name="CrashPolygon" type="CollisionPolygon2D" parent="Car/CrashZone"]
+polygon = PoolVector2Array( 483.151, 214, 465.651, 213.5, 457.651, 217.5, 447.151, 222.5, 441.651, 230.5, 438.151, 237, 546.151, 250.5, 536.651, 240, 526.651, 230, 515.651, 225, 507.151, 219 )
 
 [node name="HUD" type="CanvasLayer" parent="Car"]
 layer = 50
@@ -94,3 +100,4 @@ pause_mode = 2
 visible = false
 
 [connection signal="hill_passed" from="." to="Car/HUD/HUD" method="_on_Node2D_hill_passed"]
+[connection signal="body_entered" from="Car/CrashZone" to="." method="_on_CrashZone_body_entered"]
