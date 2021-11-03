@@ -24,14 +24,10 @@ position = Vector2( 498, 250 )
 
 [node name="Line2D" type="Line2D" parent="."]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = 100
+[node name="HUD" type="CanvasLayer" parent="."]
+layer = 50
 
-[node name="Pause" parent="CanvasLayer" instance=ExtResource( 13 )]
-pause_mode = 2
-visible = false
-
-[node name="HUD" parent="CanvasLayer" instance=ExtResource( 3 )]
+[node name="HUD" parent="HUD" instance=ExtResource( 3 )]
 margin_left = -510.0
 margin_top = -208.0
 margin_right = 514.0
@@ -89,3 +85,10 @@ texture = ExtResource( 9 )
 [node name="cloud9" type="Sprite" parent="ParallaxBackground/Background/Clouds"]
 position = Vector2( 1370.46, -446 )
 texture = ExtResource( 11 )
+
+[node name="Pause" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="Pause" parent="Pause" instance=ExtResource( 13 )]
+pause_mode = 2
+visible = false

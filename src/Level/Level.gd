@@ -43,7 +43,7 @@ func add_hills():
 		hillStart.y += height
 		totalHillNum += 1
 		if totalHillNum >= 10:
-			get_tree().change_scene("res://src/End/End.tscn")
+			var _ignored := get_tree().change_scene("res://src/End/End.tscn")
 	var shape = CollisionPolygon2D.new()
 	var ground = Polygon2D.new()
 	$StaticBody2D.add_child(shape)
