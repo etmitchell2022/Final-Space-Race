@@ -1,5 +1,5 @@
 extends Node
 
-var score := 0 
+var score := 0
 
-var progress := 0
+var hills := 10

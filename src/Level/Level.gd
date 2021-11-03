@@ -43,7 +43,11 @@ func add_hills():
 		hillStart.y += height
 		hills_passed += 1
 		emit_signal("hill_passed", hills_passed)
+<<<<<<< HEAD
 		if hills_passed >= 40:
+=======
+		if hills_passed >= Globals.hills:
+>>>>>>> 2549c5530cad2dc1c87af588ba06e1c80b78683b
 			var _ignored = get_tree().change_scene("res://src/End/End.tscn")
 	var shape = CollisionPolygon2D.new()
 	var ground = Polygon2D.new()
