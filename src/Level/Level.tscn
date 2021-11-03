@@ -20,18 +20,18 @@ script = ExtResource( 2 )
 [node name="Car" parent="." instance=ExtResource( 1 )]
 position = Vector2( 498, 250 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="Line2D" type="Line2D" parent="."]
-
-[node name="HUD" type="CanvasLayer" parent="."]
+[node name="HUD" type="CanvasLayer" parent="Car"]
 layer = 50
 
-[node name="HUD" parent="HUD" instance=ExtResource( 3 )]
+[node name="HUD" parent="Car/HUD" instance=ExtResource( 3 )]
 margin_left = -510.0
 margin_top = -298.0
 margin_right = 514.0
 margin_bottom = 304.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="."]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -92,3 +92,4 @@ layer = 100
 [node name="Pause" parent="Pause" instance=ExtResource( 13 )]
 pause_mode = 2
 visible = false
+[connection signal="hill_passed" from="." to="Car/HUD/HUD" method="_on_Node2D_hill_passed"]
