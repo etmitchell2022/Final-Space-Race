@@ -7,11 +7,15 @@ export var hill_range = 75
 
 var screensize
 var level = Array()
-var is_paused = false
+var totalHillNum = 0
+var texture = ImageTexture.new()
+var image = Image.new()
 
 
 func _ready():
 	randomize()
+	image.load("res://src/Level/assets/grass.png")
+	texture.create_from_image(image)
 	screensize = get_viewport().get_visible_rect().size
 	level = Array()
 	var hillStartY = screensize.y * 3/4 + (-hill_range + randi() % hill_range*2)
@@ -37,6 +41,9 @@ func add_hills():
 			level.append(hillPoint)
 			form.append(hillPoint)
 		hillStart.y += height
+		totalHillNum += 1
+		if totalHillNum >= 10:
+			get_tree().change_scene("res://src/End/End.tscn")
 	var shape = CollisionPolygon2D.new()
 	var ground = Polygon2D.new()
 	$StaticBody2D.add_child(shape)
@@ -44,4 +51,5 @@ func add_hills():
 	form.append(Vector2(hillStart.x, screensize.y))
 	shape.polygon = form
 	ground.polygon = form
+	ground.texture = texture
 	add_child(ground)
