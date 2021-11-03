@@ -8,13 +8,12 @@ var screensize
 var level = Array()
 var hills_passed = 0
 var texture = ImageTexture.new()
-var image = Image.new()
+var image = load("res://src/Level/assets/grass.png") as Image
 
 signal hill_passed(hills_passed)
 
 func _ready():
 	randomize()
-	image.load("res://src/Level/assets/grass.png")
 	texture.create_from_image(image)
 	screensize = get_viewport().get_visible_rect().size
 	level = Array()
