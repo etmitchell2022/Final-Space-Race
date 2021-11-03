@@ -6,4 +6,5 @@ func _on_ReturnButton_pressed() -> void:
 
 
 func _on_RestartButton_pressed() -> void:
+	Globals.score = 0
 	var _ignored = get_tree().change_scene("res://src/Level/Level.tscn")

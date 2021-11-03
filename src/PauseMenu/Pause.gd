@@ -12,5 +12,6 @@ func _on_ResumeButton_pressed():
 	visible = false
 
 func _on_ReturnHomeButton_pressed():
+	Globals.score = 0
 	var _ignored := get_tree().change_scene("res://src/Start/Start.tscn")
 	
