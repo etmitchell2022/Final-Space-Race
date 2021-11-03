@@ -92,4 +92,5 @@ layer = 100
 [node name="Pause" parent="Pause" instance=ExtResource( 13 )]
 pause_mode = 2
 visible = false
+
 [connection signal="hill_passed" from="." to="Car/HUD/HUD" method="_on_Node2D_hill_passed"]

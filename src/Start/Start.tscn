@@ -62,4 +62,5 @@ text = "Click to Play"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
