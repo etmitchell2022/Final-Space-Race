@@ -7,10 +7,11 @@ export var hill_range = 75
 
 var screensize
 var level = Array()
-var totalHillNum = 0
+var hills_passed = 0
 var texture = ImageTexture.new()
 var image = Image.new()
 
+signal hill_passed(hills_passed)
 
 func _ready():
 	randomize()
@@ -41,9 +42,10 @@ func add_hills():
 			level.append(hillPoint)
 			form.append(hillPoint)
 		hillStart.y += height
-		totalHillNum += 1
-		if totalHillNum >= 10:
-			var _ignored := get_tree().change_scene("res://src/End/End.tscn")
+		hills_passed += 1
+		emit_signal("hill_passed", hills_passed)
+		if hills_passed >= 10:
+			var _ignored = get_tree().change_scene("res://src/End/End.tscn")
 	var shape = CollisionPolygon2D.new()
 	var ground = Polygon2D.new()
 	$StaticBody2D.add_child(shape)
