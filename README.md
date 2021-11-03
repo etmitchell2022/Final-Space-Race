@@ -28,11 +28,13 @@ However, I slowly have grown more confident and possess a better idea of how to 
 - [X] B-4: Clear progress has been made on the game with respect to the project plan.
 - [X] A-1: The source code contains no warnings. All warnings are properly addressed, not just ignored.
 - [X] A-2: The game includes the conventional player experience loop of title, gameplay, and ending.
-- [] A-3: Earn N*⌈P/2⌉ stars, where N is the iteration number and P is the number of people on the team.
+- [X] A-3: Earn N*⌈P/2⌉ stars, where N is the iteration number and P is the number of people on the team.
 
 ## Instructions
 use W and S to move the car foreward and backward.
 use A and D to rotate the car counter-clockwise and clockwise.
+escape to pause and unpause
+make it to the 10th hill without flipping your car.
 
 Get to the finish and get the highest score
 
