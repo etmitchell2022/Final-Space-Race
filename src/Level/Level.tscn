@@ -1,8 +1,11 @@
+
 [gd_scene load_steps=13 format=2]
+
 
 [ext_resource path="res://src/Car/Car.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Level/Level.gd" type="Script" id=2]
 [ext_resource path="res://src/HUD/HUD.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/PauseMenu/PauseMenu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Level/assets/cloud7.png" type="Texture" id=4]
 [ext_resource path="res://src/Level/assets/cloud6.png" type="Texture" id=5]
 [ext_resource path="res://src/Level/assets/cloud5.png" type="Texture" id=6]
@@ -24,8 +27,10 @@ position = Vector2( 498, 250 )
 [node name="Line2D" type="Line2D" parent="."]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 100
 
 [node name="HUD" parent="CanvasLayer" instance=ExtResource( 3 )]
+
 margin_left = -510.0
 margin_top = -208.0
 margin_right = 514.0
