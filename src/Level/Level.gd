@@ -1,6 +1,5 @@
 extends Node
 
-
 export var hill_count = 1
 export var slice_count = 7
 export var hill_range = 75
