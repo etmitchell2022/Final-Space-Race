@@ -38,7 +38,7 @@ However, I slowly have grown more confident and possess a better idea of how to 
 - [ ] ⭐ Use an <code>AnimationTree</code> with either blend spaces (3D) or an animation state machine (2D)
 - [ ] ⭐ Incorporate smooth transitions between title, game, and end states, rather than jumping between states via <code>change_scene</code>
 - [ ] ⭐ Support two of the following: touch input, mouse/keyboard input, and gamepad input
-- [ ] ⭐ Allow the user to control the volume of music and sound effects independently.
+- [x] ⭐ Allow the user to control the volume of music and sound effects independently.
 - [ ] ⭐ Incorporate juiciness and document it in the <code>README.md</code>
 - [ ] ⭐ Use particle effects
 - [ ] ⭐ Use different layers and masks to manage collisions and document this in the <code>README.md</code>
@@ -65,6 +65,8 @@ Get to the finish and get the highest score
 
 - [Kenney's Voxel Pack](https://kenney.nl/assets/voxel-pack) licensed under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
 
+- [Kenney's UI Pack](https://kenney.nl/assets/ui-pack) licensed under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
+
 - [Space Background](https://opengameart.org/content/space-background-6), licensed under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/).
 
 - [Roboto font](https://fonts.google.com/specimen/Roboto#license), licensed under [Apache license, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
@@ -72,3 +74,7 @@ Get to the finish and get the highest score
 - [Odibee Sans](https://fonts.google.com/specimen/Odibee+Sans?query=Odibee+Sans#license), licensed under [Open Font License, Version 2.0](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
 - [Free 2D Vehicle Assets](https://overcrafted.itch.io/free-paid-vehicle-car-sprites-), licensed under "The vehicles are free to use. You do not need to add credit. You do not need to ask permission. You can alter and change as you wish."
+
+- [Background Music](https://freesound.org/people/Far_Box_creature/sounds/472712/), licensed under [CCO 3.0](https://creativecommons.org/licenses/by/3.0/)
+
+- [Car Crash](https://freesound.org/people/magnuswaker/sounds/592388/), licensed under [CCO 3.0](https://creativecommons.org/licenses/by/3.0/)

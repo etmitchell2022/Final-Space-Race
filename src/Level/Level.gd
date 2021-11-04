@@ -4,6 +4,8 @@ export var hill_count = 1
 export var slice_count = 7
 export var hill_range = 75
 
+onready var crashSound = $CarCrash
+
 var screensize
 var level = Array()
 var hills_passed = 0
@@ -60,6 +62,7 @@ func _on_CrashZone_body_entered(body):
 	var explosion = load("res://src/Explosion/Explosion.tscn").instance()
 	explosion.one_shot = true
 	if body == $StaticBody2D:
+		crashSound.play()
 		shake = 20
 		explosion.position = $Car.position
 		add_child(explosion)
