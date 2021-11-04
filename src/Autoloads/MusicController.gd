@@ -1,6 +1,6 @@
 extends Node
 
-var game_music := load("res://src/Common/backgroundMusic.ogg")
+var game_music := load("res://src/CommonAssets/backgroundMusic.ogg")
 	
 func play_music() -> void:
 	$Music.stream = game_music

@@ -13,7 +13,7 @@
 [ext_resource path="res://src/Level/assets/cloud9.png" type="Texture" id=11]
 [ext_resource path="res://src/Level/assets/cloud3.png" type="Texture" id=12]
 [ext_resource path="res://src/PauseMenu/PauseMenu.tscn" type="PackedScene" id=13]
-[ext_resource path="res://src/Common/car_crash.wav" type="AudioStream" id=14]
+[ext_resource path="res://src/CommonAssets/car_crash.wav" type="AudioStream" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 47, 879.823 )

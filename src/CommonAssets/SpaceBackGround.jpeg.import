@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SpaceBackGround.jpeg-5e3d637ac7a3b974c02d9d72168df083.stex"
+path="res://.import/SpaceBackGround.jpeg-27bd1c538fc98ca9889d2d370a07e7e3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Common/SpaceBackGround.jpeg"
-dest_files=[ "res://.import/SpaceBackGround.jpeg-5e3d637ac7a3b974c02d9d72168df083.stex" ]
+source_file="res://src/CommonAssets/SpaceBackGround.jpeg"
+dest_files=[ "res://.import/SpaceBackGround.jpeg-27bd1c538fc98ca9889d2d370a07e7e3.stex" ]
 
 [params]
 

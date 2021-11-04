@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/car_crash.wav-564dfae3b55a333691ed595a41e4bc95.sample"
+path="res://.import/car_crash.wav-5fd731bc3a27d9b48667b60485fdd761.sample"
 
 [deps]
 
-source_file="res://src/Common/car_crash.wav"
-dest_files=[ "res://.import/car_crash.wav-564dfae3b55a333691ed595a41e4bc95.sample" ]
+source_file="res://src/CommonAssets/car_crash.wav"
+dest_files=[ "res://.import/car_crash.wav-5fd731bc3a27d9b48667b60485fdd761.sample" ]
 
 [params]
 
