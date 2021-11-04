@@ -69,4 +69,4 @@ func _on_CrashZone_body_entered(body):
 		$DeathTimer.start()
 
 func _on_DeathTimer_timeout():
-	get_tree().change_scene("res://src/End/End.tscn")
+	var _ignored := get_tree().change_scene("res://src/End/End.tscn")
