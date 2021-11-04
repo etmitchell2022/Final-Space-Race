@@ -9,13 +9,43 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "RigidBody2D",
+"class": "Car",
+"language": "GDScript",
+"path": "res://src/Car/Car.gd"
+}, {
 "base": "Control",
 "class": "End",
 "language": "GDScript",
 "path": "res://src/End/End.gd"
+}, {
+"base": "Control",
+"class": "HUD",
+"language": "GDScript",
+"path": "res://src/HUD/HUD.gd"
+}, {
+"base": "Node",
+"class": "Level",
+"language": "GDScript",
+"path": "res://src/Level/Level.gd"
+}, {
+"base": "Control",
+"class": "PauseMenu",
+"language": "GDScript",
+"path": "res://src/PauseMenu/Pause.gd"
+}, {
+"base": "Control",
+"class": "Start",
+"language": "GDScript",
+"path": "res://src/Start/Start.gd"
 } ]
 _global_script_class_icons={
-"End": ""
+"Car": "",
+"End": "",
+"HUD": "",
+"Level": "",
+"PauseMenu": "",
+"Start": ""
 }
 
 [application]

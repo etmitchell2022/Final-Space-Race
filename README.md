@@ -1,6 +1,12 @@
 # Semester Project Space Race
 
-Authors: Spencer Naugler, Carter Jeurissen
+Authors: Spencer Naugler, Carter Jeurissen, and Evan Mitchell
+
+## Instructions
+
+- Use the right and left arrows to move the car forward and backward. These controls also work with rotating the car when it is off the ground.
+- Press escape to pause and unpause the game
+- Make it over all the hills to complete the level while collecting as many points as possible.
 
 ## Reflection
 
@@ -46,16 +52,6 @@ However, I slowly have grown more confident and possess a better idea of how to 
 - [ ] ⭐ Include an AI-controlled character
 - [X] ⭐ Add a pause menu that includes, at minimum, the ability to resume or return to the main menu
 - [ ] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
-
-
-## Instructions
-
-use W and S to move the car foreward and backward.
-use A and D to rotate the car counter-clockwise and clockwise.
-escape to pause and unpause
-make it to the 10th hill without flipping your car.
-
-Get to the finish and get the highest score
 
 ## Third-Party Assets
 

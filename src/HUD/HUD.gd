@@ -1,7 +1,12 @@
+class_name HUD
 extends Control
 
-func _on_Node2D_hill_passed(hills_passed):
-	$VBoxContainer/ProgressBar.value = hills_passed
+onready var progressBar: ProgressBar = $VBoxContainer/ProgressBar
+onready var scoreLabel: Label = $VBoxContainer/PanelContainer/Score
+onready var hills_remaining: Label = $VBoxContainer/PanelContainer2/Hills_Remaining
+
+func _on_Node2D_hill_passed(hills_passed: int) -> void:
+	progressBar.value = hills_passed
 	Globals.score += 100
-	$VBoxContainer/PanelContainer/Score.text = "Score %d" % Globals.score
-	$VBoxContainer/PanelContainer2/Hills_Remaining.text = "Hills Remaining: %d" % int(Globals.hills - hills_passed)
+	scoreLabel.text = "Score %d" % Globals.score
+	hills_remaining.text = "Hills Remaining: %d" % int(Globals.hills - hills_passed)

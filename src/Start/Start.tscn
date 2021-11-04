@@ -110,6 +110,9 @@ custom_icons/grabber_highlight = ExtResource( 6 )
 custom_icons/grabber = ExtResource( 6 )
 min_value = -80.0
 max_value = 0.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="SoundEffectsLabel" type="Label" parent="."]
 margin_left = 624.083

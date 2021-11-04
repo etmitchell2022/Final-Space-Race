@@ -1,3 +1,4 @@
+class_name Start
 extends Control
 
 func _ready() -> void:
