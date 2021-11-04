@@ -10,15 +10,7 @@ Authors: Spencer Naugler, Carter Jeurissen, and Evan Mitchell
 
 ## Reflection
 
-Spencer Naugler: The big challenge of this iteraiton was trying to get the movement system working.  
-In the original game there are only movement buttons foreward and backward.
-Depending on whether the car is on the ground or not the buttons will rotate the car,
-or move the car foreward and backward.
-
-Carter Jeurissen: For me, my biggest challenge through this iteration was working on the command line in a group environment.
-Although I had grown accustomed to committing and pushing my work by myself,
-I ran into multiple problems as I attempted to pull and use features such as branching.
-However, I slowly have grown more confident and possess a better idea of how to properly work with others in this way.
+Overall, as a team we think this iteration went well. It was cool to be able to replicate a game that was super popular when we were younger. We did have a few challenges that slowed our progress like getting the correct movement down for the car, a few git issues, and then making the level be auto-generated each time the game starts. For the car movement, we had the issue where the car would rotate when it was off the ground and crash. The player was not able to correct the rotation which was annoying and made the game too difficult. We ended up finding that a RigidBody2D has a built in method ```apply_torque_impulse``` that would allow the car to move forward and rotate without any extra setup so this helped a lot to get the correct movement we wanted. We are proud of the auto-generation of the levels as this makes the game more interesting instead of playing the same thing over and over and it makes it feel like the original game. We do need to improve scoring in the next iteration as now it just shows a count of hills remaining. Overall, we think we dd well this iteration and created a nice foundation to build off for the future iterations. With the car movement and level generation figured out, we will be able to focus on adding more levels and customization.
 
 ## Self Evaluation
 
@@ -33,7 +25,7 @@ However, I slowly have grown more confident and possess a better idea of how to 
 - [X] C-6: The release demonstrates the core gameplay loop: the player can take actions that move them toward a goal.
 - [X] B-1: The <code>README.md</code> file contains a personal reflection on the iteration and self-evaluation, as defined above.
 - [X] B-2: The game runs without errors or warnings.
-- [] B-3: The source code and project structure comply with our adopted style guides.
+- [X] B-3: The source code and project structure comply with our adopted style guides.
 - [X] B-4: Clear progress has been made on the game with respect to the project plan.
 - [X] A-1: The source code contains no warnings. All warnings are properly addressed, not just ignored.
 - [X] A-2: The game includes the conventional player experience loop of title, gameplay, and ending.
