@@ -33,6 +33,7 @@ func _process(_delta: float):
 		add_hills()
 	
 func add_hills() -> void:
+	#https://www.youtube.com/watch?v=QLZa1mjW-YU was used for add_hills().
 	var hill_width = screensize.x / hill_count
 	var hill_slices = hill_width / slice_count
 	var hillStart = level[-1]
