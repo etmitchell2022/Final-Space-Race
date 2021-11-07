@@ -12,32 +12,32 @@ _global_script_classes=[ {
 "base": "RigidBody2D",
 "class": "Car",
 "language": "GDScript",
-"path": "res://src/Car/Car.gd"
+"path": "res://Car/Car.gd"
 }, {
 "base": "Control",
 "class": "End",
 "language": "GDScript",
-"path": "res://src/End/End.gd"
+"path": "res://End/End.gd"
 }, {
 "base": "Control",
 "class": "HUD",
 "language": "GDScript",
-"path": "res://src/HUD/HUD.gd"
+"path": "res://HUD/HUD.gd"
 }, {
 "base": "Node",
 "class": "Level",
 "language": "GDScript",
-"path": "res://src/Level/Level.gd"
+"path": "res://Level/Level.gd"
 }, {
 "base": "Control",
 "class": "PauseMenu",
 "language": "GDScript",
-"path": "res://src/PauseMenu/Pause.gd"
+"path": "res://PauseMenu/Pause.gd"
 }, {
 "base": "Control",
 "class": "Start",
 "language": "GDScript",
-"path": "res://src/Start/Start.gd"
+"path": "res://Start/Start.gd"
 } ]
 _global_script_class_icons={
 "Car": "",
@@ -51,13 +51,13 @@ _global_script_class_icons={
 [application]
 
 config/name="FinalProject"
-run/main_scene="res://src/Start/Start.tscn"
+run/main_scene="res://Start/Start.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Globals="*res://src/CommonAssets/Globals.gd"
-MusicController="*res://src/Autoloads/MusicController.tscn"
+Globals="*res://Common/Globals.gd"
+MusicController="*res://Autoloads/MusicController.tscn"
 
 [display]
 
