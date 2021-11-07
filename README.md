@@ -66,3 +66,5 @@ Overall, as a team we think this iteration went well. It was cool to be able to 
 - [Background Music](https://freesound.org/people/Far_Box_creature/sounds/472712/), licensed under [CCO 3.0](https://creativecommons.org/licenses/by/3.0/)
 
 - [Car Crash](https://freesound.org/people/magnuswaker/sounds/592388/), licensed under [CCO 3.0](https://creativecommons.org/licenses/by/3.0/)
+
+- [Add Hills Function](https://github.com/kidscancode/godot3_procgen_demos), licensed under [MIT License](https://opensource.org/licenses/MIT)
