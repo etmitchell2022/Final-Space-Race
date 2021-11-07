@@ -28,7 +28,7 @@ func _ready() -> void:
 	level.append(Vector2(0, hillStartY))
 	add_hills()
 	
-func _process(_delta: float):
+func _process(_delta: float) -> void:
 	if level[-1].x < car.position.x + screensize.x / 2:
 		add_hills()
 	
