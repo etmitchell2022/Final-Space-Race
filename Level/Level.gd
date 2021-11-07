@@ -16,7 +16,7 @@ var screensize
 var level := Array()
 var hills_passed := 0
 var texture := ImageTexture.new()
-var image := load("res://Level/assets/grass.png") as Image
+var image := load("res://Level/grass.png") as Image
 var shake: float = 0
 
 func _ready() -> void:
