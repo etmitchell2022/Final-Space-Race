@@ -51,7 +51,7 @@ func add_hills() -> void:
 		hills_passed += 1
 		emit_signal("hill_passed", hills_passed)
 		if hills_passed >= Globals.hills:
-			var _ignored = get_tree().change_scene("res://End/End.tscn")
+			var _ignored = get_tree().change_scene("res://UI/End/End.tscn")
 	var shape = CollisionPolygon2D.new()
 	var ground = Polygon2D.new()
 	$StaticBody2D.add_child(shape)
@@ -77,4 +77,4 @@ func _on_CrashZone_body_entered(body: StaticBody2D) -> void:
 		death_timer.start()
 
 func _on_DeathTimer_timeout() -> void:
-	var _ignored := get_tree().change_scene("res://End/End.tscn")
+	var _ignored := get_tree().change_scene("res://UI/End/End.tscn")

@@ -6,7 +6,7 @@ func _ready():
 
 func _on_ReturnButton_pressed() -> void:
 	Globals.score = 0
-	var _ignored := get_tree().change_scene("res://Start/Start.tscn")
+	var _ignored := get_tree().change_scene("res://UI/Start/Start.tscn")
 
 func _on_RestartButton_pressed() -> void:
 	Globals.score = 0

@@ -11,7 +11,7 @@ onready var car: RigidBody2D = get_node("../Car")
 	
 func _process(_delta: float) -> void:
 	if car.sleeping:
-		var _ignored = get_tree().change_scene("res://End/End.tscn")
+		var _ignored = get_tree().change_scene("res://UI/End/End.tscn")
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("forwards"):

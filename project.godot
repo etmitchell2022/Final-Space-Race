@@ -17,12 +17,12 @@ _global_script_classes=[ {
 "base": "Control",
 "class": "End",
 "language": "GDScript",
-"path": "res://End/End.gd"
+"path": "res://UI/End/End.gd"
 }, {
 "base": "Control",
 "class": "HUD",
 "language": "GDScript",
-"path": "res://HUD/HUD.gd"
+"path": "res://UI/HUD/HUD.gd"
 }, {
 "base": "Node",
 "class": "Level",
@@ -32,12 +32,12 @@ _global_script_classes=[ {
 "base": "Control",
 "class": "PauseMenu",
 "language": "GDScript",
-"path": "res://PauseMenu/Pause.gd"
+"path": "res://UI/PauseMenu/Pause.gd"
 }, {
-"base": "Control",
+"base": "Reference",
 "class": "Start",
 "language": "GDScript",
-"path": "res://Start/Start.gd"
+"path": "res://UI/Start/Start.gd"
 } ]
 _global_script_class_icons={
 "Car": "",
@@ -51,7 +51,7 @@ _global_script_class_icons={
 [application]
 
 config/name="FinalProject"
-run/main_scene="res://Start/Start.tscn"
+run/main_scene="res://UI/Start/Start.tscn"
 config/icon="res://icon.png"
 
 [autoload]

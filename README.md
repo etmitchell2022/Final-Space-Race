@@ -10,7 +10,16 @@ Authors: Spencer Naugler, Carter Jeurissen, and Evan Mitchell
 
 ## Reflection
 
-Overall, as a team we think this iteration went well. It was cool to be able to replicate a game that was super popular when we were younger. We did have a few challenges that slowed our progress like getting the correct movement down for the car, a few git issues, and then making the level be auto-generated each time the game starts. For the car movement, we had the issue where the car would rotate when it was off the ground and crash. The player was not able to correct the rotation which was annoying and made the game too difficult. We ended up finding that a RigidBody2D has a built in method ```apply_torque_impulse``` that would allow the car to move forward and rotate without any extra setup so this helped a lot to get the correct movement we wanted. We are proud of the auto-generation of the levels as this makes the game more interesting instead of playing the same thing over and over and it makes it feel like the original game. We do need to improve scoring in the next iteration as now it just shows a count of hills remaining. Overall, we think we dd well this iteration and created a nice foundation to build off for the future iterations. With the car movement and level generation figured out, we will be able to focus on adding more levels and customization.
+Overall, as a team we think this iteration went well. 
+It was cool to be able to replicate a game that was super popular when we were younger.
+We did have a few challenges that slowed our progress like getting the correct movement down for the car, a few git issues, and then making the level be auto-generated each time the game starts.
+For the car movement, we had the issue where the car would rotate when it was off the ground and crash.
+The player was not able to correct the rotation which was annoying and made the game too difficult.
+We ended up finding that a RigidBody2D has a built in method ```apply_torque_impulse``` that would allow the car to move forward and rotate without any extra setup so this helped a lot to get the correct movement we wanted.
+We are proud of the auto-generation of the levels as this makes the game more interesting instead of playing the same thing over and over and it makes it feel like the original game.
+We do need to improve scoring in the next iteration as now it just shows a count of hills remaining.
+Overall, we think we dd well this iteration and created a nice foundation to build off for the future iterations.
+With the car movement and level generation figured out, we will be able to focus on adding more levels and customization.
 
 ## Self Evaluation
 

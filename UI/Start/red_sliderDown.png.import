@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gameOver.png-7b74a42167dad75b0c485b26ac996e8a.stex"
+path="res://.import/red_sliderDown.png-ff114f8831497f7e4836ada31e61ab0d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://End/gameOver.png"
-dest_files=[ "res://.import/gameOver.png-7b74a42167dad75b0c485b26ac996e8a.stex" ]
+source_file="res://UI/Start/red_sliderDown.png"
+dest_files=[ "res://.import/red_sliderDown.png-ff114f8831497f7e4836ada31e61ab0d.stex" ]
 
 [params]
 
