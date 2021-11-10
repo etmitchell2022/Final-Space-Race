@@ -3,7 +3,6 @@
 [ext_resource path="res://Common/Roboto-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://UI/HUD/HUD.gd" type="Script" id=2]
 
-
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
 
@@ -40,7 +39,8 @@ __meta__ = {
 
 [node name="ProgressBar" type="ProgressBar" parent="VBoxContainer"]
 margin_right = 1024.0
-margin_bottom = 2.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 0, 15 )
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 1 )
 max_value = 10.0
@@ -52,9 +52,9 @@ __meta__ = {
 }
 
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
-margin_top = 6.0
+margin_top = 19.0
 margin_right = 71.0
-margin_bottom = 39.0
+margin_bottom = 52.0
 size_flags_horizontal = 2
 size_flags_vertical = 2
 __meta__ = {
@@ -73,9 +73,9 @@ __meta__ = {
 }
 
 [node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer"]
-margin_top = 43.0
+margin_top = 56.0
 margin_right = 133.0
-margin_bottom = 76.0
+margin_bottom = 89.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 __meta__ = {
