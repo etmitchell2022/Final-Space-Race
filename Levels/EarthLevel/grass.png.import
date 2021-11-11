@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/grass.png-831140858c32ccff8ef696cff18cfc7f.image"
+
+[deps]
+
+source_file="res://Levels/EarthLevel/grass.png"
+dest_files=[ "res://.import/grass.png-831140858c32ccff8ef696cff18cfc7f.image" ]
+
+[params]
+
