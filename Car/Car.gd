@@ -1,7 +1,7 @@
 class_name Car
 extends RigidBody2D
 
-export var SPEED := 40000
+export var SPEED := 20000
 export var MASS := 150
 export var WEIGHT := 1470
 
