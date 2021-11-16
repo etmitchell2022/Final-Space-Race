@@ -22,7 +22,7 @@ rough = true
 radius = 21.4358
 
 [node name="Car" type="RigidBody2D"]
-mass = 300.0
+mass = 150.0
 physics_material_override = SubResource( 1 )
 gravity_scale = 5.0
 script = ExtResource( 3 )
@@ -33,14 +33,13 @@ polygon = PoolVector2Array( -24.3391, -37.894, -8.06734, -37.1003, 5.8232, -32.7
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 limit_left = 0
-limit_bottom = 600
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.376767, 0.349247 )
 texture = ExtResource( 2 )
 
 [node name="LeftWheel" type="RigidBody2D" parent="."]
-position = Vector2( -51.2269, 53.4269 )
+position = Vector2( -51.7573, 53.0733 )
 mass = 5.10204
 physics_material_override = SubResource( 2 )
 contacts_reported = 1
@@ -59,7 +58,7 @@ node_b = NodePath("..")
 softness = 0.03
 
 [node name="RightWheel" type="RigidBody2D" parent="."]
-position = Vector2( 54.0555, 53.1126 )
+position = Vector2( 54.4091, 53.1126 )
 mass = 5.10204
 physics_material_override = SubResource( 4 )
 contacts_reported = 1
