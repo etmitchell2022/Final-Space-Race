@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tileBrown_02.png-d3382bb9848a1aa099c14384285bf63b.stex"
+path="res://.import/Edge.png-bd0c9fc95332ee443371452ecbc8641e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Levels/MarsLevel/tileBrown_02.png"
-dest_files=[ "res://.import/tileBrown_02.png-d3382bb9848a1aa099c14384285bf63b.stex" ]
+source_file="res://Levels/MarsLevel/Edge.png"
+dest_files=[ "res://.import/Edge.png-bd0c9fc95332ee443371452ecbc8641e.stex" ]
 
 [params]
 

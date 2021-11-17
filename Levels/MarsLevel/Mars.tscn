@@ -1,3 +1,160 @@
-[gd_scene format=2]
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Car/Car.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=2]
+[ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=3]
+[ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=4]
+[ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=5]
+[ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=6]
+[ext_resource path="res://Levels/MarsLevel/Ground.png" type="Texture" id=7]
+
+[sub_resource type="Resource" id=21]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=22]
+script = ExtResource( 2 )
+position = Vector2( -195.657, 203.485 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 21 )
+
+[sub_resource type="Resource" id=23]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=24]
+script = ExtResource( 2 )
+position = Vector2( 1790, 173 )
+point_in = Vector2( -86, -78 )
+point_out = Vector2( 86, 78 )
+properties = SubResource( 23 )
+
+[sub_resource type="Resource" id=25]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=26]
+script = ExtResource( 2 )
+position = Vector2( 1786, 1047 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 25 )
+
+[sub_resource type="Resource" id=27]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=28]
+script = ExtResource( 2 )
+position = Vector2( -195.657, 203.485 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 27 )
+
+[sub_resource type="Resource" id=29]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=30]
+script = ExtResource( 2 )
+position = Vector2( -183.255, 1134.41 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 29 )
+
+[sub_resource type="Resource" id=33]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=34]
+script = ExtResource( 2 )
+position = Vector2( 1072.54, 203.385 )
+point_in = Vector2( -176, 198 )
+point_out = Vector2( 176, -198 )
+properties = SubResource( 33 )
+
+[sub_resource type="Resource" id=35]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=36]
+script = ExtResource( 2 )
+position = Vector2( 2764.08, 892.429 )
+point_in = Vector2( -420, -112 )
+point_out = Vector2( 420, 112 )
+properties = SubResource( 35 )
+
+[sub_resource type="Resource" id=42]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=43]
+script = ExtResource( 2 )
+position = Vector2( 3542.82, 1061.85 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 42 )
+
+[sub_resource type="Resource" id=41]
+script = ExtResource( 5 )
+_points = {
+9: SubResource( 22 ),
+10: SubResource( 24 ),
+11: SubResource( 26 ),
+12: SubResource( 28 ),
+13: SubResource( 30 ),
+15: SubResource( 34 ),
+19: SubResource( 36 ),
+24: SubResource( 43 )
+}
+_point_order = [ 9, 15, 10, 19, 24, 11, 13, 12 ]
+_constraints = {
+[ 9, 12 ]: 15
+}
+_next_key = 25
+
+[sub_resource type="Resource" id=20]
+script = ExtResource( 3 )
+_edge_meta_materials = [  ]
+fill_textures = [ ExtResource( 7 ) ]
+fill_texture_normals = [  ]
+fill_texture_z_index = -10
+fill_mesh_offset = 0.0
+render_offset = 0.0
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Car" parent="." instance=ExtResource( 1 )]
+
+[node name="Ground" type="StaticBody2D" parent="."]
+
+[node name="SS2D_Shape_Closed" type="Node2D" parent="Ground"]
+script = ExtResource( 4 )
+_points = SubResource( 41 )
+material_overrides = {
+}
+shape_material = SubResource( 20 )
+tessellation_stages = 5
+tessellation_tolerence = 4.0
+flip_edges = false
+render_edges = true
+collision_size = 32.0
+collision_offset = 0.0
+collision_polygon_node_path = NodePath("")
