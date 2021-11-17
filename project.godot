@@ -14,12 +14,12 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Car/Car.gd"
 }, {
-"base": "Reference",
+"base": "Control",
 "class": "End",
 "language": "GDScript",
 "path": "res://UI/End/End.gd"
 }, {
-"base": "Reference",
+"base": "Control",
 "class": "HUD",
 "language": "GDScript",
 "path": "res://UI/HUD/HUD.gd"
@@ -29,7 +29,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Level/Level.gd"
 }, {
-"base": "Reference",
+"base": "Control",
 "class": "PauseMenu",
 "language": "GDScript",
 "path": "res://UI/PauseMenu/Pause.gd"
