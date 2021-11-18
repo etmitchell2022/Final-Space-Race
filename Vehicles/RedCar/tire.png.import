@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tire.png-8db7a832cc4821886179c65099d98b89.stex"
+path="res://.import/tire.png-ee32af5f513f62c6a664b013e03e11c2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Car/tire.png"
-dest_files=[ "res://.import/tire.png-8db7a832cc4821886179c65099d98b89.stex" ]
+source_file="res://Vehicles/RedCar/tire.png"
+dest_files=[ "res://.import/tire.png-ee32af5f513f62c6a664b013e03e11c2.stex" ]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=2]
 
-[ext_resource path="res://Car/Car.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Vehicles/RedCar/Car.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/EarthLevel/Level.gd" type="Script" id=2]
 [ext_resource path="res://UI/HUD/HUD.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Levels/EarthLevel/cloud7.png" type="Texture" id=4]
