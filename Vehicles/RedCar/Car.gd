@@ -1,4 +1,4 @@
-class_name Car
+
 extends RigidBody2D
 
 export var SPEED := 20000
