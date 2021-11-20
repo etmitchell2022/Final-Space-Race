@@ -64,6 +64,8 @@ With the car movement and level generation figured out, we will be able to focus
 
 - [Kenney's UI Pack](https://kenney.nl/assets/ui-pack) licensed under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
 
+- [Kenney's Game Icons](https://kenney.nl/assets/game-icons) licensed under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
+
 - [Space Background](https://opengameart.org/content/space-background-6), licensed under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/).
 
 - [Roboto font](https://fonts.google.com/specimen/Roboto#license), licensed under [Apache license, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
@@ -77,3 +79,5 @@ With the car movement and level generation figured out, we will be able to focus
 - [Car Crash](https://freesound.org/people/magnuswaker/sounds/592388/), licensed under [CCO 3.0](https://creativecommons.org/licenses/by/3.0/)
 
 - [Add Hills Function](https://github.com/kidscancode/godot3_procgen_demos), licensed under [MIT License](https://opensource.org/licenses/MIT)
+
+- [SmartShape2D level creation tool](https://github.com/SirRamEsq/SmartShape2D), licensed under [MIT License](https://opensource.org/licenses/MIT)
