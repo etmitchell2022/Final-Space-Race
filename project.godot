@@ -9,10 +9,10 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "RigidBody2D",
+"base": "Reference",
 "class": "Car",
 "language": "GDScript",
-"path": "res://Car/Car.gd"
+"path": "res://Vehicles/RedCar/Car.gd"
 }, {
 "base": "Control",
 "class": "End",
@@ -222,7 +222,7 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/rmsmartshape/plugin.cfg" )
+enabled=PoolStringArray(  )
 
 [global]
 
