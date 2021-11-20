@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://UI/Start/Start.gd" type="Script" id=1]
 [ext_resource path="res://UI/Start/red_sliderDown.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://UI/Start/blue_sliderDown.png" type="Texture" id=4]
 [ext_resource path="res://UI/Start/logo.png" type="Texture" id=5]
 [ext_resource path="res://Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://UI/Start/gear.png" type="Texture" id=7]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Float"
@@ -73,15 +74,36 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MusicVolume" type="HSlider" parent="."]
+[node name="SettingsButton" type="Button" parent="."]
+margin_left = 962.329
+margin_top = 541.938
+margin_right = 1024.33
+margin_bottom = 597.938
+toggle_mode = true
+icon = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SettingsMenu" type="Popup" parent="."]
+visible = true
+margin_left = 656.493
+margin_top = 321.227
+margin_right = 1022.49
+margin_bottom = 538.227
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MusicVolume" type="HSlider" parent="SettingsMenu"]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -267.814
-margin_top = -97.4092
-margin_right = -27.8137
-margin_bottom = -4.40924
+margin_left = -309.501
+margin_top = -122.024
+margin_right = -69.5012
+margin_bottom = -29.0246
 custom_icons/grabber_highlight = ExtResource( 4 )
 custom_icons/grabber = ExtResource( 4 )
 min_value = -80.0
@@ -90,22 +112,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="VolumeLabel" type="Label" parent="."]
-margin_left = 694.783
-margin_top = 533.94
-margin_right = 799.783
-margin_bottom = 560.94
+[node name="VolumeLabel" type="Label" parent="SettingsMenu"]
+margin_left = -4.90448
+margin_top = 126.325
+margin_right = 100.096
+margin_bottom = 153.325
 custom_fonts/font = SubResource( 3 )
 text = "Music"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SoundEffects" type="HSlider" parent="."]
-margin_left = 756.0
-margin_top = 457.0
-margin_right = 995.0
-margin_bottom = 509.0
+[node name="SoundEffects" type="HSlider" parent="SettingsMenu"]
+margin_left = 56.3125
+margin_top = 49.3848
+margin_right = 295.312
+margin_bottom = 101.385
 custom_icons/grabber_highlight = ExtResource( 2 )
 custom_icons/grabber = ExtResource( 2 )
 min_value = -80.0
@@ -114,11 +136,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SoundEffectsLabel" type="Label" parent="."]
-margin_left = 624.083
-margin_top = 468.859
-margin_right = 738.083
-margin_bottom = 495.859
+[node name="SoundEffectsLabel" type="Label" parent="SettingsMenu"]
+margin_left = -75.6045
+margin_top = 61.2438
+margin_right = 38.3955
+margin_bottom = 88.2438
 custom_fonts/font = SubResource( 4 )
 text = "Sound Effects"
 __meta__ = {
@@ -126,5 +148,6 @@ __meta__ = {
 }
 
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
-[connection signal="value_changed" from="MusicVolume" to="." method="_on_MusicVolume_value_changed"]
-[connection signal="value_changed" from="SoundEffects" to="." method="_on_SoundEffects_value_changed"]
+[connection signal="toggled" from="SettingsButton" to="." method="_on_SettingsButton_toggled"]
+[connection signal="value_changed" from="SettingsMenu/MusicVolume" to="." method="_on_MusicVolume_value_changed"]
+[connection signal="value_changed" from="SettingsMenu/SoundEffects" to="." method="_on_SoundEffects_value_changed"]
