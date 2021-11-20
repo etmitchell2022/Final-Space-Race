@@ -1,4 +1,3 @@
-class_name Car
 extends RigidBody2D
 
 export var SPEED := 20000
@@ -8,6 +7,11 @@ export var WEIGHT := 1470
 onready var rightWheel: RigidBody2D = $RightWheel
 onready var leftWheel: RigidBody2D = $LeftWheel
 onready var car: RigidBody2D = get_node("../Car")
+
+func _ready():
+	car.set_mass(MASS)
+	car.set_weight(WEIGHT)
+	
 	
 func _process(_delta: float) -> void:
 	if car.sleeping:
