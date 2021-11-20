@@ -1,52 +1,62 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Vehicles/YellowCar/wheel-front.png" type="Texture" id=1]
 [ext_resource path="res://Vehicles/YellowCar/mini-topless.png" type="Texture" id=2]
 [ext_resource path="res://Vehicles/YellowCar/YellowCar.gd" type="Script" id=3]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 60.7869
+[sub_resource type="PhysicsMaterial" id=3]
+friction = 4.0
+rough = true
+absorbent = true
 
-[sub_resource type="CircleShape2D" id=2]
-radius = 62.5664
+[sub_resource type="CircleShape2D" id=4]
+radius = 24.4565
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 24.6523
 
 [node name="Car" type="RigidBody2D"]
+mass = 150.0
+physics_material_override = SubResource( 3 )
+gravity_scale = 5.0
 script = ExtResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( -238.767, -51.9464, 33.7364, -42.0286, 46.4879, -63.2811, 53.0997, -68.4761, 28.0691, -98.2295, 33.7364, -119.482, 49.7938, -122.788, 127.247, -39.6672, 208.479, -26.9158, 248.15, -9.91379, 266.096, 25.9792, 279.32, 59.0386, 275.542, 97.293, 259.485, 96.8207, 254.762, 48.1762, 241.538, 19.8396, 219.813, -0.940536, 185.809, -8.96924, 151.806, -0.468262, 128.192, 23.6178, 112.607, 58.094, 105.522, 89.7366, -97.5565, 89.2643, -111.725, 33.5357, -141.478, -0.940536, -184.455, -16.9979, -226.016, -8.49696, -251.991, 18.4228, -268.521, 54.3158, -276.077, 54.7881, -276.549, 34.0079, -267.576, 18.8951, -263.798, -29.7494, -253.408, -47.6959 )
+polygon = PoolVector2Array( -83.717, -17.9733, 11.0153, -14.3497, 16.537, -21.4244, 18.2626, -23.8401, 10.4976, -33.5032, 11.0153, -39.37, 14.2938, -42.6486, 17.5724, -42.8211, 44.4908, -13.3143, 60.8835, -12.1065, 77.6213, -8.31026, 86.5941, -2.27086, 93.3237, 8.25496, 96.4297, 18.7808, 97.2925, 27.9261, 96.6022, 33.6204, 91.0805, 34.1381, 90.3903, 22.577, 86.249, 10.6707, 76.4134, 0.490005, 62.4365, -1.7532, 52.6009, 1.00768, 44.6634, 9.80795, 41.2123, 18.7808, 37.7612, 27.0634, 36.8985, 30.8596, -33.8488, 31.8949, -40.0608, 9.63539, -49.5513, -0.545311, -62.4928, -5.54939, -75.4344, -4.51406, -84.5798, 1.69789, -91.482, 11.1884, -94.0703, 19.1259, -96.3135, 19.1259, -97.0037, 13.6041, -93.8977, 7.73729, -93.035, -4.51406, -89.7564, -14.0045 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 
 [node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.35, 0.35 )
 texture = ExtResource( 2 )
 
 [node name="LeftWheel" type="RigidBody2D" parent="."]
-position = Vector2( -193.309, 83.6465 )
+position = Vector2( -67.3781, 38.595 )
 
 [node name="PinJoint2D" type="PinJoint2D" parent="LeftWheel"]
 node_a = NodePath("../..")
 node_b = NodePath("..")
+softness = 0.03
 
 [node name="Sprite" type="Sprite" parent="LeftWheel"]
+scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWheel"]
-position = Vector2( 0.385849, 2.7009 )
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 
 [node name="RightWheel" type="RigidBody2D" parent="."]
-position = Vector2( 182.565, 91.7634 )
+position = Vector2( 63.2504, 41.1565 )
 
 [node name="PinJoint2D" type="PinJoint2D" parent="RightWheel"]
-position = Vector2( 0.206238, -0.0398331 )
 node_a = NodePath("../..")
 node_b = NodePath("..")
+softness = 0.03
 
 [node name="Sprite" type="Sprite" parent="RightWheel"]
+scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWheel"]
-position = Vector2( 0.359146, 0.206268 )
-shape = SubResource( 2 )
+shape = SubResource( 5 )

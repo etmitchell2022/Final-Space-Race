@@ -12,6 +12,7 @@ func _ready():
 	car.set_mass(MASS)
 	car.set_weight(WEIGHT)
 	
+	
 func _process(_delta: float) -> void:
 	if car.sleeping:
 		var _ignored = get_tree().change_scene("res://UI/End/End.tscn")
