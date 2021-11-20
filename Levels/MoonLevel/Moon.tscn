@@ -6,7 +6,7 @@
 [ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=4]
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=5]
 [ext_resource path="res://Levels/MoonLevel/moon.png" type="Texture" id=6]
-[ext_resource path="res://Vehicles/YellowCar/YellowCar.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Vehicles/Truck/Truck.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Common/SpaceBackGround.jpeg" type="Texture" id=8]
 [ext_resource path="res://Levels/MoonLevel/Moon.gd" type="Script" id=9]
 
@@ -713,7 +713,7 @@ position = Vector2( 3991.27, 179.787 )
 script = ExtResource( 9 )
 
 [node name="Car" parent="." instance=ExtResource( 7 )]
-position = Vector2( -3572.02, 35.7197 )
+position = Vector2( -3672.35, 84.0996 )
 
 [node name="FirstTerrain" type="StaticBody2D" parent="."]
 position = Vector2( -3809.14, -210.525 )
