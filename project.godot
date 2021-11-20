@@ -9,11 +9,6 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
-"class": "Car",
-"language": "GDScript",
-"path": "res://Vehicles/RedCar/Car.gd"
-}, {
 "base": "Control",
 "class": "End",
 "language": "GDScript",
@@ -170,7 +165,6 @@ _global_script_classes=[ {
 "path": "res://UI/Start/Start.gd"
 } ]
 _global_script_class_icons={
-"Car": "",
 "End": "",
 "HUD": "",
 "Level": "",
