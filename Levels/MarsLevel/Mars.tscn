@@ -1,4 +1,4 @@
-[gd_scene load_steps=169 format=2]
+[gd_scene load_steps=171 format=2]
 
 [ext_resource path="res://Car/Car.tscn" type="PackedScene" id=1]
 [ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Levels/MarsLevel/stone.png" type="Texture" id=12]
 [ext_resource path="res://Levels/MarsLevel/stone_browniron_alt.png" type="Texture" id=13]
 [ext_resource path="res://Levels/MarsLevel/stone_coal_alt.png" type="Texture" id=14]
+[ext_resource path="res://Levels/MarsLevel/Mars.gd" type="Script" id=15]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 6 )
@@ -1110,8 +1111,12 @@ render_offset = 0.0
 [sub_resource type="RectangleShape2D" id=156]
 extents = Vector2( 190.929, 569.042 )
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=157]
+extents = Vector2( 414.559, 2052.21 )
+
+[node name="Mars" type="Node2D"]
 position = Vector2( -254.558, -36.7695 )
+script = ExtResource( 15 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 12.503 ]
 }
@@ -1200,3 +1205,12 @@ texture = ExtResource( 13 )
 [node name="Dirt2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 716, 533 )
 texture = ExtResource( 13 )
+
+[node name="Finish" type="Area2D" parent="."]
+position = Vector2( 37016, 6024 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
+position = Vector2( -256, 40 )
+shape = SubResource( 157 )
+
+[connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]
