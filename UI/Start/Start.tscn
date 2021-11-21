@@ -173,15 +173,14 @@ __meta__ = {
 visible = false
 
 [node name="VehicleMenu" type="PopupMenu" parent="."]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -81.8655
-margin_top = 26.214
-margin_right = 82.1345
-margin_bottom = 231.214
+margin_left = -82.0
+margin_top = 35.0
+margin_right = 82.0
+margin_bottom = 102.5
 items = [ "Red Car", ExtResource( 9 ), 0, false, false, 0, 0, null, "", false, "Yellow Car", ExtResource( 10 ), 0, false, false, 1, 0, null, "", false, "Truck", ExtResource( 11 ), 0, false, false, 2, 0, null, "", false ]
 __meta__ = {
 "_edit_use_anchors_": false
@@ -192,3 +191,4 @@ __meta__ = {
 [connection signal="toggled" from="SettingsButton" to="." method="_on_SettingsButton_toggled"]
 [connection signal="value_changed" from="SettingsMenu/MusicVolume" to="." method="_on_MusicVolume_value_changed"]
 [connection signal="value_changed" from="SettingsMenu/SoundEffects" to="." method="_on_SoundEffects_value_changed"]
+[connection signal="id_pressed" from="VehicleMenu" to="." method="_on_VehicleMenu_id_pressed"]

@@ -27,3 +27,7 @@ func _on_SettingsButton_toggled(button_pressed):
 
 func _on_VehicleMenuOpen_pressed():
 	vehicleMenu.show()
+
+
+func _on_VehicleMenu_id_pressed(id):
+	print(id)
