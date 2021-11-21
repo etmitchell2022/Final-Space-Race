@@ -52,6 +52,7 @@ func add_hills() -> void:
 		hills_passed += 1
 		emit_signal("hill_passed", hills_passed)
 		if hills_passed >= Globals.hills:
+			Globals.levelOneComplete = 1
 			transition.transition_to("res://UI/End/End.tscn")
 	var shape = CollisionPolygon2D.new()
 	var ground = Polygon2D.new()
