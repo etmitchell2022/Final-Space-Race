@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://UI/LevelMenu/LevelMenu.gd" type="Script" id=1]
+[ext_resource path="res://Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 2 )
+
+[node name="LevelMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = -0.00195312
+anchor_right = -0.00195312
+margin_left = -124.293
+margin_top = -74.0
+margin_right = 1348.71
+margin_bottom = 790.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelOneButton" type="Button" parent="."]
+anchor_left = 0.00069052
+anchor_right = 0.00069052
+margin_left = 137.539
+margin_top = 261.636
+margin_right = 292.539
+margin_bottom = 303.636
+custom_fonts/font = SubResource( 1 )
+text = "Level One: Earth"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelTwoButton" type="Button" parent="."]
+anchor_left = 0.00069052
+anchor_right = 0.00069052
+margin_left = 421.089
+margin_top = 263.05
+margin_right = 576.089
+margin_bottom = 305.05
+custom_fonts/font = SubResource( 1 )
+text = "Level Two: Moon"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelThreeButton" type="Button" parent="."]
+anchor_left = 0.00069052
+anchor_right = 0.00069052
+margin_left = 715.245
+margin_top = 260.222
+margin_right = 870.245
+margin_bottom = 302.222
+custom_fonts/font = SubResource( 1 )
+text = "Level Three: Mars"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="LevelOneButton" to="." method="_on_LevelOneButton_pressed"]
+[connection signal="pressed" from="LevelTwoButton" to="." method="_on_LevelTwoButton_pressed"]
+[connection signal="pressed" from="LevelThreeButton" to="." method="_on_LevelThreeButton_pressed"]
