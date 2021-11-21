@@ -9,7 +9,6 @@
 [ext_resource path="res://UI/Start/gear.png" type="Texture" id=7]
 [ext_resource path="res://UI/Transition/Transition.tscn" type="PackedScene" id=8]
 
-
 [sub_resource type="Animation" id=1]
 resource_name = "Float"
 length = 6.0
@@ -150,6 +149,7 @@ __meta__ = {
 }
 
 [node name="TransitonColor" parent="." instance=ExtResource( 8 )]
+
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="toggled" from="SettingsButton" to="." method="_on_SettingsButton_toggled"]
 [connection signal="value_changed" from="SettingsMenu/MusicVolume" to="." method="_on_MusicVolume_value_changed"]

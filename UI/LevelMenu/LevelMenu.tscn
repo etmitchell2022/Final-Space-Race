@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://UI/LevelMenu/LevelMenu.gd" type="Script" id=1]
 [ext_resource path="res://Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://UI/Transition/Transition.tscn" type="PackedScene" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -15,7 +16,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="."]
 anchor_left = -0.00195312
 anchor_right = -0.00195312
 margin_left = -124.293
@@ -65,6 +66,8 @@ text = "Level Three: Mars"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TransitonColor" parent="." instance=ExtResource( 3 )]
 
 [connection signal="pressed" from="LevelOneButton" to="." method="_on_LevelOneButton_pressed"]
 [connection signal="pressed" from="LevelTwoButton" to="." method="_on_LevelTwoButton_pressed"]
