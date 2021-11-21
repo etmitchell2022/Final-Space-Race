@@ -3,6 +3,7 @@ extends Control
 
 onready var settingsMenu = $SettingsMenu
 onready var transition = $TransitonColor
+onready var vehicleMenu: PopupMenu = $VehicleMenu
 
 
 func _ready() -> void:
@@ -23,3 +24,6 @@ func _on_SettingsButton_toggled(button_pressed):
 		settingsMenu.show()
 	else:
 		settingsMenu.hide()
+
+func _on_VehicleMenuOpen_pressed():
+	vehicleMenu.show()
