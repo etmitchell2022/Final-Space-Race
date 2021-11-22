@@ -7,10 +7,10 @@ var levelOneComplete := 0
 var levelTwoComplete := 0
 
 
-func getScore():
+func getScore() -> int:
 	return max_speed
 	
-func load_vehicle(id = 0):
+func load_vehicle(id := 0) -> void:
 	if id == 0:
 		vehicle = load("res://Vehicles/RedCar/Redcar.tscn").instance()
 	elif id == 1:
@@ -20,6 +20,6 @@ func load_vehicle(id = 0):
 	else:
 		print("Vehicle index does not exist")
 		
-func get_vehicle():
+func get_vehicle() -> Node2D:
 	return vehicle
 
