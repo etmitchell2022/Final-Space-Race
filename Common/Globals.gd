@@ -10,11 +10,11 @@ var levelTwoComplete := 0
 func getScore() -> int:
 	return max_speed
 	
-func load_vehicle(id := 0) -> void:
+func load_vehicle(id) -> void:
 	if id == 0:
-		vehicle = load("res://Vehicles/RedCar/Redcar.tscn").instance()
+		vehicle = load("res://Vehicles/RedCar/RedCar.tscn").instance()
 	elif id == 1:
-		vehicle = load("res://Vehicles/YellowCar/Yellowcar.tscn").instance()
+		vehicle = load("res://Vehicles/YellowCar/YellowCar.tscn").instance()
 	elif id == 2:
 		vehicle = load("res://Vehicles/Truck/Truck.tscn").instance()
 	else:
