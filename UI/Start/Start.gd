@@ -10,7 +10,7 @@ func _ready() -> void:
 	MusicController.play_music()
 
 func _on_StartButton_pressed() -> void:
-	transition.transition_to("res://Levels/MoonLevel/Moon.tscn")
+	transition.transition_to("res://UI/LevelMenu/LevelMenu.tscn")
 
 func _on_MusicVolume_value_changed(value) -> void:
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), value)

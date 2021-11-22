@@ -21,4 +21,5 @@ func _on_KillZone_body_entered(_body: Area2D) -> void:
 
 
 func _on_EndZone_body_entered(_body: Area2D) -> void:
+	Globals.levelTwoComplete = 1
 	transition.transition_to("res://UI/End/End.tscn")
