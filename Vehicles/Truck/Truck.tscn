@@ -4,20 +4,20 @@
 [ext_resource path="res://Vehicles/Truck/car-wheel.png" type="Texture" id=2]
 [ext_resource path="res://Vehicles/Truck/car-body.png" type="Texture" id=3]
 
-[sub_resource type="PhysicsMaterial" id=3]
+[sub_resource type="PhysicsMaterial" id=1]
 friction = 4.0
 rough = true
 absorbent = true
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="CircleShape2D" id=2]
 radius = 21.5491
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=3]
 radius = 21.2719
 
 [node name="Car" type="RigidBody2D"]
 mass = 150.0
-physics_material_override = SubResource( 3 )
+physics_material_override = SubResource( 1 )
 gravity_scale = 5.0
 script = ExtResource( 1 )
 
@@ -44,7 +44,7 @@ scale = Vector2( 0.35, 0.35 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWheel"]
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="RightWheel" type="RigidBody2D" parent="."]
 position = Vector2( 66.9358, 42.737 )
@@ -59,4 +59,4 @@ scale = Vector2( 0.35, 0.35 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWheel"]
-shape = SubResource( 2 )
+shape = SubResource( 3 )

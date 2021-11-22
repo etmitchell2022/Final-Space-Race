@@ -3,6 +3,7 @@ extends Control
 
 onready var settingsMenu = $SettingsMenu
 onready var transition = $TransitonColor
+onready var vehicleMenu: PopupMenu = $VehicleMenu
 
 
 func _ready() -> void:
@@ -18,8 +19,14 @@ func _on_SoundEffects_value_changed(value) -> void:
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("SoundEffects"), value)
 
 
-func _on_SettingsButton_toggled(button_pressed):
+func _on_SettingsButton_toggled(button_pressed: bool) -> void:
 	if button_pressed:
 		settingsMenu.show()
 	else:
 		settingsMenu.hide()
+
+func _on_VehicleMenuOpen_pressed() -> void:
+	vehicleMenu.show()
+
+func _on_VehicleMenu_id_pressed(id) -> void:
+	Globals.load_vehicle(id)
