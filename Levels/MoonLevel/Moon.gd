@@ -7,6 +7,8 @@ onready var transition := $CanvasLayer/TransitionColor
 var vehicle
 
 func _ready():
+	# This code gets the vehicle based on the ID of the selected vehicle on the start screen
+	# If no vehicle is selected, by default the red car will be chosen
 	vehicle = Globals.get_vehicle()
 	if vehicle:
 		vehicle.position = SPAWN_POINT
