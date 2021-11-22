@@ -8,8 +8,9 @@ var vehicle
 
 func _ready():
 	vehicle = Globals.get_vehicle()
-	print(vehicle)
-	vehicle.position = SPAWN_POINT
+	if vehicle:
+		vehicle.position = SPAWN_POINT
+	else: vehicle = load("res://Vehicles/RedCar/Redcar.tscn").instance()
 	call_deferred("add_child", vehicle)
 	
 func _on_RespawnZone_body_entered(_body: Area2D) -> void:
