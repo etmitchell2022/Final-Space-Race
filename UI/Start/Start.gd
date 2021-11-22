@@ -29,4 +29,11 @@ func _on_VehicleMenuOpen_pressed() -> void:
 	vehicleMenu.show()
 
 func _on_VehicleMenu_id_pressed(id) -> void:
+	var vehicle_id_array = [0, 1, 2]
+	vehicleMenu.set_item_checked(id, true)
+	for item in vehicle_id_array:
+		if id != item:
+			vehicleMenu.set_item_checked(item, false)
+	
 	Globals.load_vehicle(id)
+
