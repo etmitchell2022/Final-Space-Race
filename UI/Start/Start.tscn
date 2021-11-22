@@ -33,15 +33,15 @@ tracks/0/keys = {
 size = 32
 font_data = ExtResource( 6 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=3]
 size = 32
 font_data = ExtResource( 6 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 24
 font_data = ExtResource( 6 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=5]
 size = 24
 font_data = ExtResource( 6 )
 
@@ -91,7 +91,7 @@ margin_left = -69.0
 margin_top = 30.0
 margin_right = 69.0
 margin_bottom = 72.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "Vehicles"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -139,7 +139,7 @@ margin_left = -4.90448
 margin_top = 126.325
 margin_right = 100.096
 margin_bottom = 153.325
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Music"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -163,7 +163,7 @@ margin_left = -75.6045
 margin_top = 61.2438
 margin_right = 38.3955
 margin_bottom = 88.2438
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "Sound Effects"
 __meta__ = {
 "_edit_use_anchors_": false

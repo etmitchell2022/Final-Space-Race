@@ -10,7 +10,7 @@ func _ready() -> void:
 	MusicController.play_music()
 
 func _on_StartButton_pressed() -> void:
-	transition.transition_to("res://Levels/EarthLevel/Level.tscn")
+	transition.transition_to("res://Levels/MoonLevel/Moon.tscn")
 
 func _on_MusicVolume_value_changed(value) -> void:
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), value)
@@ -19,15 +19,14 @@ func _on_SoundEffects_value_changed(value) -> void:
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("SoundEffects"), value)
 
 
-func _on_SettingsButton_toggled(button_pressed):
+func _on_SettingsButton_toggled(button_pressed: bool) -> void:
 	if button_pressed:
 		settingsMenu.show()
 	else:
 		settingsMenu.hide()
 
-func _on_VehicleMenuOpen_pressed():
+func _on_VehicleMenuOpen_pressed() -> void:
 	vehicleMenu.show()
 
-
-func _on_VehicleMenu_id_pressed(id):
-	print(id)
+func _on_VehicleMenu_id_pressed(id) -> void:
+	Globals.load_vehicle(id)
