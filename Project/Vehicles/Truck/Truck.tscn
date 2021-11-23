@@ -72,6 +72,7 @@ shape = SubResource( 3 )
 
 [node name="CrashSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
+bus = "SoundEffects"
 
 [node name="DeathTimer" type="Timer" parent="."]
 wait_time = 2.0
