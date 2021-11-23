@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Vehicles/Truck/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Vehicles/Truck/car-wheel.png" type="Texture" id=2]
 [ext_resource path="res://Vehicles/Truck/car-body.png" type="Texture" id=3]
+[ext_resource path="res://Common/car_crash.wav" type="AudioStream" id=4]
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 4.0
@@ -20,6 +21,13 @@ mass = 150.0
 physics_material_override = SubResource( 1 )
 gravity_scale = 5.0
 script = ExtResource( 1 )
+
+[node name="CrashZone" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CrashZone"]
+position = Vector2( 0, -0.301231 )
+scale = Vector2( 1, 1.06148 )
+polygon = PoolVector2Array( -32, -34.75, -22.75, -28.75, 18, -29.25, 29.5, -24.25, 48.25, -12, 28.25, -6.75, -63.5, -4.25, -60.75, -15.25, -54, -23, -48.25, -24.25, -37.5, -26.5 )
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.3, 0.35 )
@@ -60,3 +68,12 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWheel"]
 shape = SubResource( 3 )
+
+[node name="CrashSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="body_entered" from="CrashZone" to="." method="_on_CrashZone_body_entered"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_DeathTimer_timeout"]
