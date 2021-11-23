@@ -15,4 +15,5 @@ func _on_ReturnHomeButton_pressed() -> void:
 	get_tree().paused = false
 	Globals.max_speed = 0
 	var _ignored := get_tree().change_scene("res://Project/UI/Start/Start.tscn")
+
 	

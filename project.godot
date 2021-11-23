@@ -9,12 +9,12 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "RigidBody2D",
+"base": "Reference",
 "class": "Car",
 "language": "GDScript",
 "path": "res://Project/Vehicles/Car.gd"
 }, {
-"base": "Control",
+"base": "Reference",
 "class": "End",
 "language": "GDScript",
 "path": "res://Project/UI/End/End.gd"
@@ -24,7 +24,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Project/UI/HUD/HUD.gd"
 }, {
-"base": "Control",
+"base": "Reference",
 "class": "PauseMenu",
 "language": "GDScript",
 "path": "res://Project/UI/PauseMenu/Pause.gd"
@@ -159,7 +159,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/rmsmartshape/vertex_properties.gd"
 }, {
-"base": "Control",
+"base": "Reference",
 "class": "Start",
 "language": "GDScript",
 "path": "res://Project/UI/Start/Start.gd"
