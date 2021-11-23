@@ -1,6 +1,6 @@
 extends Node
 
-signal new_max_speed(max_speed)
+signal new_max_speed(_max_speed)
 
 const EARTH = "res://Project/Levels/EarthLevel/Earth.tscn"
 const MOON = "res://Project/Levels/MoonLevel/Moon.tscn"

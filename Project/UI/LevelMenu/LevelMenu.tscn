@@ -68,6 +68,7 @@ margin_top = -21.0
 margin_right = 77.5
 margin_bottom = 21.0
 custom_fonts/font = SubResource( 1 )
+disabled = true
 text = "Level Two: Moon"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -83,6 +84,7 @@ margin_top = -21.0
 margin_right = -100.0
 margin_bottom = 21.0
 custom_fonts/font = SubResource( 1 )
+disabled = true
 text = "Level Three: Mars"
 __meta__ = {
 "_edit_use_anchors_": false

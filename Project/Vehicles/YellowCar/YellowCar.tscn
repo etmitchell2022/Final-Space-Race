@@ -32,6 +32,7 @@ polygon = PoolVector2Array( -83.717, -17.9733, 11.0153, -14.3497, 16.537, -21.42
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+limit_left = 0
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.35, 0.35 )

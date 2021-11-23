@@ -25,6 +25,7 @@ func _process(_delta):
 
 func _on_FinishZone_body_entered(body):
 	if body == $Car:
+		Globals.levelOneComplete = 1
 		Globals.disconnect("new_max_speed", hud, "update_speed")
 		Globals.determine_current_level(get_tree().current_scene.filename)
 		transition.transition_to("res://Project/UI/End/End.tscn")
