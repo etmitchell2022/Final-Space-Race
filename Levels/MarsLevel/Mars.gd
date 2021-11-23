@@ -5,6 +5,9 @@ onready var transition := $CanvasLayer/TransitionColor
 
 var vehicle
 
+func _init():
+	Globals.load_vehicle(Globals.car_id)
+
 func _ready():
 	vehicle = Globals.get_vehicle()
 	if vehicle:
@@ -16,4 +19,5 @@ func _ready():
 
 func _on_Finish_body_entered(body):
 	if body == vehicle:
+		Globals.determine_current_level(get_tree().current_scene.filename)
 		transition.transition_to("res://UI/End/End.tscn")

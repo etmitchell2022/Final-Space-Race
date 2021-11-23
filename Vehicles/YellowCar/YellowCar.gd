@@ -12,4 +12,5 @@ func _on_CrashZone_body_entered(body):
 
 
 func _on_DeathTimer_timeout():
+	Globals.determine_current_level(get_tree().current_scene.filename)
 	var _ignored := get_tree().change_scene("res://UI/End/End.tscn")
