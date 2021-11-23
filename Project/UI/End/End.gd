@@ -1,7 +1,7 @@
 class_name End
 extends Control
 
-func _ready():
+func _ready() -> void:
 	$VBoxContainer/Label.text = "Score: %d" % Globals._max_speed
 
 func _on_ReturnButton_pressed() -> void:

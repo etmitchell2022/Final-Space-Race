@@ -6,10 +6,10 @@ onready var transition := $CanvasLayer/TransitonColor
 var vehicle
 
 onready var hud := $CanvasLayer/HUD
-func _init():
+func _init() -> void:
 	Globals.load_vehicle(Globals.car_id)
 
-func _ready():
+func _ready() -> void:
 	vehicle = Globals.get_vehicle()
 	var _error = Globals.connect("new_max_speed", hud, "update_speed")
 	if vehicle:
@@ -19,11 +19,11 @@ func _ready():
 		vehicle.position = SPAWN_POINT
 	call_deferred("add_child", vehicle)
 
-func _process(_delta):
+func _process(_delta) -> void:
 	var car_velocity = (vehicle.linear_velocity.x + vehicle.linear_velocity.y) /2
 	Globals.set_max_speed(car_velocity)
 
-func _on_FinishZone_body_entered(body):
+func _on_FinishZone_body_entered(body) -> void:
 	if body == $Car:
 		Globals.levelOneComplete = 1
 		Globals.disconnect("new_max_speed", hud, "update_speed")

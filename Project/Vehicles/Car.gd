@@ -12,7 +12,7 @@ onready var car: RigidBody2D = get_node("../Car")
 onready var crash_zone = $CrashZone
 onready var crash_sound = $CrashSound
 
-func _ready():
+func _ready() -> void:
 	car.set_mass(MASS)
 	car.set_weight(WEIGHT)
 	
@@ -32,7 +32,7 @@ func _physics_process(delta: float) -> void:
 		right_wheel.apply_torque_impulse(-SPEED * delta * 60)
 		left_wheel.apply_torque_impulse(-SPEED * delta * 60)
 		
-func _explosion():
+func _explosion() -> void:
 	car_sprite.visible = false
 	left_wheel.visible = false
 	right_wheel.visible = false

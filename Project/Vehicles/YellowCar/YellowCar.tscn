@@ -17,10 +17,12 @@ radius = 24.4565
 radius = 24.6523
 
 [node name="Car" type="RigidBody2D"]
-mass = 150.0
+mass = 75.0
 physics_material_override = SubResource( 1 )
 gravity_scale = 5.0
 script = ExtResource( 3 )
+MASS = 75
+WEIGHT = 735
 
 [node name="CrashZone" type="Area2D" parent="."]
 
