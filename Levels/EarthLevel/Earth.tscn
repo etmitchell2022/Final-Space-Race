@@ -6,7 +6,7 @@
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=4]
 [ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=5]
 [ext_resource path="res://Levels/EarthLevel/grass.png" type="Texture" id=6]
-[ext_resource path="res://Vehicles/RedCar/RedCar.tscn" type="PackedScene" id=7]
+[ext_resource path="res://UI/PauseMenu/PauseMenu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Levels/EarthLevel/cloud2.png" type="Texture" id=8]
 [ext_resource path="res://Levels/EarthLevel/cloud4.png" type="Texture" id=9]
 [ext_resource path="res://Levels/EarthLevel/cloud8 2.png" type="Texture" id=10]
@@ -550,8 +550,6 @@ extents = Vector2( 353, 3853.91 )
 [node name="Earth" type="Node2D"]
 script = ExtResource( 16 )
 
-[node name="Car" parent="." instance=ExtResource( 7 )]
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="SS2D_Shape_Closed" type="Node2D" parent="StaticBody2D"]
@@ -631,5 +629,14 @@ shape = SubResource( 76 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TransitonColor" parent="CanvasLayer" instance=ExtResource( 15 )]
+
+[node name="SpawnPoint" type="Position2D" parent="."]
+position = Vector2( 176.438, 199.337 )
+
+[node name="Pause" type="CanvasLayer" parent="."]
+
+[node name="Pause" parent="Pause" instance=ExtResource( 7 )]
+pause_mode = 2
+visible = false
 
 [connection signal="body_entered" from="FinishZone" to="." method="_on_FinishZone_body_entered"]

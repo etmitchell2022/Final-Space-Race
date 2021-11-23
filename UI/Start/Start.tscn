@@ -63,7 +63,7 @@ autoplay = "Float"
 anims/Float = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="Logo"]
-position = Vector2( 521.242, 187.72 )
+position = Vector2( 521.242, 166.508 )
 texture = ExtResource( 5 )
 
 [node name="StartButton" type="Button" parent="."]
@@ -185,6 +185,7 @@ items = [ "Red Car", ExtResource( 9 ), 1, true, false, 0, 0, null, "", false, "Y
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="VehicleMenuOpen" to="." method="_on_VehicleMenuOpen_pressed"]
 [connection signal="toggled" from="SettingsButton" to="." method="_on_SettingsButton_toggled"]

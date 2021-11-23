@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=2]
+[gd_scene load_steps=110 format=2]
 
 [ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=1]
 [ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=4]
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=5]
 [ext_resource path="res://Levels/MoonLevel/moon.png" type="Texture" id=6]
+[ext_resource path="res://UI/PauseMenu/PauseMenu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Common/SpaceBackGround.jpeg" type="Texture" id=8]
 [ext_resource path="res://Levels/MoonLevel/Moon.gd" type="Script" id=9]
 [ext_resource path="res://UI/Transition/Transition.tscn" type="PackedScene" id=10]
@@ -843,6 +844,12 @@ position = Vector2( 26081.3, -304.991 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EndZone"]
 shape = SubResource( 98 )
+
+[node name="Pause" type="CanvasLayer" parent="."]
+pause_mode = 2
+
+[node name="Pause" parent="Pause" instance=ExtResource( 7 )]
+visible = false
 
 [connection signal="body_entered" from="RespawnZone" to="." method="_on_RespawnZone_body_entered"]
 [connection signal="body_entered" from="KillZone2" to="." method="_on_KillZone_body_entered"]

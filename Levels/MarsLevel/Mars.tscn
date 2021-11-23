@@ -1,4 +1,4 @@
-[gd_scene load_steps=171 format=2]
+[gd_scene load_steps=172 format=2]
 
 [ext_resource path="res://UI/HUD/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Levels/MarsLevel/stone_coal_alt.png" type="Texture" id=14]
 [ext_resource path="res://Levels/MarsLevel/Mars.gd" type="Script" id=15]
 [ext_resource path="res://UI/Transition/Transition.tscn" type="PackedScene" id=16]
+[ext_resource path="res://UI/PauseMenu/PauseMenu.tscn" type="PackedScene" id=17]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 6 )
@@ -1109,7 +1110,7 @@ fill_texture_z_index = -10
 fill_mesh_offset = 0.0
 render_offset = 0.0
 
-[sub_resource type="RectangleShape2D" id=155]
+[sub_resource type="RectangleShape2D" id=154]
 extents = Vector2( 414.559, 2052.21 )
 
 [node name="Mars" type="Node2D"]
@@ -1203,7 +1204,7 @@ position = Vector2( 37016, 6024 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
 position = Vector2( -256, 40 )
-shape = SubResource( 155 )
+shape = SubResource( 154 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -1215,5 +1216,11 @@ margin_right = -254.558
 margin_bottom = -36.7695
 
 [node name="HUD" parent="CanvasLayer" instance=ExtResource( 1 )]
+
+[node name="Pause" type="CanvasLayer" parent="."]
+pause_mode = 2
+
+[node name="Pause" parent="Pause" instance=ExtResource( 17 )]
+visible = false
 
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]

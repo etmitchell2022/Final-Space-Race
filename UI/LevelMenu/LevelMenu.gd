@@ -11,7 +11,7 @@ func _ready():
 
 
 func _on_LevelOneButton_pressed():
-	transition.transition_to("res://Levels/EarthLevel/Level.tscn")
+	transition.transition_to("res://Levels/EarthLevel/Earth.tscn")
 
 
 func _on_LevelTwoButton_pressed():
