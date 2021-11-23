@@ -7,6 +7,9 @@ onready var hud := $CanvasLayer/HUD
 
 var vehicle
 
+func _init():
+	Globals.load_vehicle(Globals.car_id)
+
 func _ready():
 	vehicle = Globals.get_vehicle()
 	var _error = Globals.connect("new_max_speed", hud, "update_speed")
@@ -26,9 +29,12 @@ func _on_RespawnZone_body_entered(_body: Area2D) -> void:
 
 
 func _on_KillZone_body_entered(_body: Area2D) -> void:
+	print(get_tree().current_scene.filename)
+	Globals.determine_current_level(get_tree().current_scene.filename)
 	transition.transition_to("res://UI/End/End.tscn")
 
 
 func _on_EndZone_body_entered(_body: Area2D) -> void:
 	Globals.levelTwoComplete = 1
+	Globals.determine_current_level(get_tree().current_scene.filename)
 	transition.transition_to("res://UI/End/End.tscn")

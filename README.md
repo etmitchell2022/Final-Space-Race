@@ -6,52 +6,49 @@ Authors: Spencer Naugler, Carter Jeurissen, and Evan Mitchell
 
 - Use the right and left arrows to move the car forward and backward. These controls also work with rotating the car when it is off the ground.
 - Press escape to pause and unpause the game
-- Make it over all the hills to complete the level while collecting as many points as possible.
+- Make it through each level going as fast as you can. More points are scored when moving the vehicle faster
 
 ## Reflection
 
-Overall, as a team we think this iteration went well. 
-It was cool to be able to replicate a game that was super popular when we were younger.
-We did have a few challenges that slowed our progress like getting the correct movement down for the car, a few git issues, and then making the level be auto-generated each time the game starts.
-For the car movement, we had the issue where the car would rotate when it was off the ground and crash.
-The player was not able to correct the rotation which was annoying and made the game too difficult.
-We ended up finding that a RigidBody2D has a built in method ```apply_torque_impulse``` that would allow the car to move forward and rotate without any extra setup so this helped a lot to get the correct movement we wanted.
-We are proud of the auto-generation of the levels as this makes the game more interesting instead of playing the same thing over and over and it makes it feel like the original game.
-We do need to improve scoring in the next iteration as now it just shows a count of hills remaining.
-Overall, we think we dd well this iteration and created a nice foundation to build off for the future iterations.
-With the car movement and level generation figured out, we will be able to focus on adding more levels and customization.
+Overall, we feel this iteration went well. We found in this iteration that there were not obvious paths to success with a few of the features we wanted to implement so that made some things a little more challenging than initially expected. 
+For example, we wanted a vehicle menu that lets the player pick what vehicle they wanted to use in the levels. This ended up needing to be stored as a global variable since multiple scenes needed access to what was being selected by the 
+user to determine what vehicle scene to load. With the new levels created, we found that one smaller feature was a lot more difficult to make happen than we that. There is a button on the end scene when the user completes a level that lets the user restart the level if they fail or succeed 
+and this button needed to be dynamic to figure out what level they were on and properly link them back to it. We were surprised that Godot didn't have anyway to explicitly track this so we have to make our own tracking system. The solution felt a little like a hack and we are hoping we can find a 
+more efficient way of doing it for next iteration. One thing we are proud of is how the new levels look. We found a tool called SmartShape2D and this allowed us to easily create 2D curved terrain which helped us a ton for making cool and unique levels. We did end up removing the auto-generation of the first
+level as it didn't fit the same structure as the new levels. We still haven't quite figured out a great way of scoring the game. In this iteration we went with the fastest speed as being the player's score. This makes the game a little more challenging since the game can be easily completed if the player does
+not take risks and just moves slowly through the levels. Overall, we think we did well this iteration and we plan to continue adding customization and more to the HUD next iteration.
 
 ## Self Evaluation
 
-- [X] D-1: The repository link is submitted to Canvas before the project deadline.
-- [X] D-2: The repository contains a <code>README.md</code> file in its top-level directory.
-- [X] D-3: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of M or less.
-- [X] C-1: Your repository is well-formed, with an appropriate <code>.gitignore</code> file and no unnecessary files tracked.
-- [X] C-2: Your release is tagged using <a href="https://semver.org/">semantic versioning</a> where the major version is zero, the minor version is the iteration number, and the patch version is incremented as usual for each change made to the minor version, and the release name matches the release tag.
-- [X] C-3: You have a clear legal right to use all incorporated assets, and the licenses for all third-party assets are tracked in the <code>README.md</code> file.
-- [X] C-4: The <code>README.md</code> contains instructions for how to play the game or such instructions are incorporated into the game itself.
-- [X] C-5: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of T or less.
-- [X] C-6: The release demonstrates the core gameplay loop: the player can take actions that move them toward a goal.
-- [X] B-1: The <code>README.md</code> file contains a personal reflection on the iteration and self-evaluation, as defined above.
-- [X] B-2: The game runs without errors or warnings.
-- [X] B-3: The source code and project structure comply with our adopted style guides.
-- [X] B-4: Clear progress has been made on the game with respect to the project plan.
-- [X] A-1: The source code contains no warnings. All warnings are properly addressed, not just ignored.
-- [X] A-2: The game includes the conventional player experience loop of title, gameplay, and ending.
-- [X] A-3: Earn <em>N</em>*&lceil;<em>P</em>/2&rceil; stars, where <em>N</em> is the iteration number and <em>P</em> is the number of people on the team.
-- [X] ⭐ Include a dynamic (non-static) camera
-- [X] ⭐ Incorporate parallax background scrolling
+- [x] D-1: The repository link is submitted to Canvas before the project deadline.
+- [x] D-2: The repository contains a <code>README.md</code> file in its top-level directory.
+- [x] D-3: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of M or less.
+- [x] C-1: Your repository is well-formed, with an appropriate <code>.gitignore</code> file and no unnecessary files tracked.
+- [x] C-2: Your release is tagged using <a href="https://semver.org/">semantic versioning</a> where the major version is zero, the minor version is the iteration number, and the patch version is incremented as usual for each change made to the minor version, and the release name matches the release tag.
+- [x] C-3: You have a clear legal right to use all incorporated assets, and the licenses for all third-party assets are tracked in the <code>README.md</code> file.
+- [x] C-4: The <code>README.md</code> contains instructions for how to play the game or such instructions are incorporated into the game itself.
+- [x] C-5: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of T or less.
+- [x] C-6: The release demonstrates the core gameplay loop: the player can take actions that move them toward a goal.
+- [x] B-1: The <code>README.md</code> file contains a personal reflection on the iteration and self-evaluation, as defined above.
+- [x] B-2: The game runs without errors or warnings.
+- [x] B-3: The source code and project structure comply with our adopted style guides.
+- [x] B-4: Clear progress has been made on the game with respect to the project plan.
+- [x] A-1: The source code contains no warnings. All warnings are properly addressed, not just ignored.
+- [x] A-2: The game includes the conventional player experience loop of title, gameplay, and ending.
+- [x] A-3: Earn <em>N</em>\*&lceil;<em>P</em>/2&rceil; stars, where <em>N</em> is the iteration number and <em>P</em> is the number of people on the team.
+- [x] ⭐ Include a dynamic (non-static) camera
+- [x] ⭐ Incorporate parallax background scrolling
 - [ ] ⭐ Use paper doll animations
 - [ ] ⭐ Use an <code>AnimationTree</code> with either blend spaces (3D) or an animation state machine (2D)
-- [X] ⭐ Incorporate smooth transitions between title, game, and end states, rather than jumping between states via <code>change_scene</code>
+- [x] ⭐ Incorporate smooth transitions between title, game, and end states, rather than jumping between states via <code>change_scene</code>
 - [ ] ⭐ Support two of the following: touch input, mouse/keyboard input, and gamepad input
 - [x] ⭐ Allow the user to control the volume of music and sound effects independently.
 - [ ] ⭐ Incorporate juiciness and document it in the <code>README.md</code>
 - [X] ⭐ Use particle effects
 - [ ] ⭐ Use different layers and masks to manage collisions and document this in the <code>README.md</code>
-- [X] ⭐ Incorporate pop into your HUD or title screen using <code>Tween</code> or <code>AnimationPlayer</code>
+- [x] ⭐ Incorporate pop into your HUD or title screen using <code>Tween</code> or <code>AnimationPlayer</code>
 - [ ] ⭐ Include an AI-controlled character
-- [X] ⭐ Add a pause menu that includes, at minimum, the ability to resume or return to the main menu
+- [x] ⭐ Add a pause menu that includes, at minimum, the ability to resume or return to the main menu
 - [ ] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
 
 ## Third-Party Assets

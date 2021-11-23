@@ -6,6 +6,9 @@ onready var hud := $CanvasLayer/HUD
 
 var vehicle
 
+func _init():
+	Globals.load_vehicle(Globals.car_id)
+
 func _ready():
 	vehicle = Globals.get_vehicle()
 	var _error = Globals.connect("new_max_speed", hud, "update_speed")
@@ -23,4 +26,5 @@ func _process(_delta):
 func _on_Finish_body_entered(body):
 	if body == vehicle:
 		Globals.disconnect("new_max_speed", hud, "update_speed")
+		Globals.determine_current_level(get_tree().current_scene.filename)
 		transition.transition_to("res://UI/End/End.tscn")
