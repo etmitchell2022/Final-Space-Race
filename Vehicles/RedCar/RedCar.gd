@@ -1,14 +1,19 @@
 extends "res://Vehicles/Car.gd"
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+
+var crashes = 0
 
 
 func _on_CrashZone_body_entered(body):
-	var explosion = load("res://Autoloads/Explosion.tscn").instance()
-	explosion.one_shot = true
-	print(explosion)
-	explosion.position = car.position
-	call_deferred("add_child", explosion)
-	car.visible = false
+	if crashes > 0:
+		if body != RigidBody2D:
+			$Sprite.visible = false
+			$LeftWheel.visible = false
+			$RightWheel.visible = false
+			var explosion : CPUParticles2D = load("res://Autoloads/Explosion.tscn").instance()
+			explosion.one_shot = true
+			print(explosion)
+			explosion.position = $CrashZone.position
+			explosion.visible = true
+			call_deferred("add_child", explosion)
+	crashes += 1
