@@ -6,6 +6,7 @@
 speed_scale = 1.03
 explosiveness = 0.5
 randomness = 0.84
+local_coords = false
 texture = ExtResource( 1 )
 spread = 180.0
 gravity = Vector2( 0, -125 )

@@ -1,7 +1,6 @@
 extends Node2D
 
 onready var SPAWN_POINT = $SpawnPoint.position
-
 onready var transition := $CanvasLayer/TransitionColor
 
 var vehicle

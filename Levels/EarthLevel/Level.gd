@@ -65,18 +65,17 @@ func add_hills() -> void:
 	add_child(ground)
 
 
-func _on_CrashZone_body_entered(body: StaticBody2D) -> void:
-	var explosion = load("res://Explosion/Explosion.tscn").instance()
-	explosion.one_shot = true
-	if body == $StaticBody2D:
-		crash_sound.play()
-		shake = 20
-		explosion.position = car.position
-		add_child(explosion)
-		car.visible = false
-		car_camera.offset = Vector2(rand_range(-shake, shake), rand_range(-shake, shake))
-		shake *= 4
-		death_timer.start()
+#func _on_CrashZone_body_entered(body: StaticBody2D) -> void:
+	#explosion.one_shot = true
+	#if body == $StaticBody2D:
+		#crash_sound.play()
+		#shake = 20
+		#explosion.position = car.position
+		#add_child(explosion)
+		#car.visible = false
+		#car_camera.offset = Vector2(rand_range(-shake, shake), rand_range(-shake, shake))
+		#shake *= 4
+		#death_timer.start()
 
 func _on_DeathTimer_timeout() -> void:
 	transition.transition_to("res://UI/End/End.tscn")

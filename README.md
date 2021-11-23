@@ -39,11 +39,11 @@ With the car movement and level generation figured out, we will be able to focus
 - [X] A-1: The source code contains no warnings. All warnings are properly addressed, not just ignored.
 - [X] A-2: The game includes the conventional player experience loop of title, gameplay, and ending.
 - [X] A-3: Earn <em>N</em>*&lceil;<em>P</em>/2&rceil; stars, where <em>N</em> is the iteration number and <em>P</em> is the number of people on the team.
-- [ ] ⭐ Include a dynamic (non-static) camera
+- [X] ⭐ Include a dynamic (non-static) camera
 - [X] ⭐ Incorporate parallax background scrolling
 - [ ] ⭐ Use paper doll animations
 - [ ] ⭐ Use an <code>AnimationTree</code> with either blend spaces (3D) or an animation state machine (2D)
-- [ ] ⭐ Incorporate smooth transitions between title, game, and end states, rather than jumping between states via <code>change_scene</code>
+- [X] ⭐ Incorporate smooth transitions between title, game, and end states, rather than jumping between states via <code>change_scene</code>
 - [ ] ⭐ Support two of the following: touch input, mouse/keyboard input, and gamepad input
 - [x] ⭐ Allow the user to control the volume of music and sound effects independently.
 - [ ] ⭐ Incorporate juiciness and document it in the <code>README.md</code>
