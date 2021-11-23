@@ -9,22 +9,22 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
+"base": "RigidBody2D",
 "class": "Car",
 "language": "GDScript",
 "path": "res://Project/Vehicles/Car.gd"
 }, {
-"base": "Reference",
+"base": "Control",
 "class": "End",
 "language": "GDScript",
 "path": "res://Project/UI/End/End.gd"
 }, {
-"base": "Reference",
+"base": "Control",
 "class": "HUD",
 "language": "GDScript",
 "path": "res://Project/UI/HUD/HUD.gd"
 }, {
-"base": "Reference",
+"base": "Control",
 "class": "PauseMenu",
 "language": "GDScript",
 "path": "res://Project/UI/PauseMenu/Pause.gd"
@@ -159,7 +159,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/rmsmartshape/vertex_properties.gd"
 }, {
-"base": "Reference",
+"base": "Control",
 "class": "Start",
 "language": "GDScript",
 "path": "res://Project/UI/Start/Start.gd"
@@ -172,8 +172,8 @@ _global_script_class_icons={
 "RMS2D_Material": "",
 "RMS2D_VertexProperties": "",
 "RMS2D_VertexPropertiesArray": "",
-"RMSmartShape2D": "",
-"RMSmartShapeAnchor2D": "",
+"RMSmartShape2D": "res://addons/rmsmartshape/assets/LEGACY_shape.png",
+"RMSmartShapeAnchor2D": "res://addons/rmsmartshape/assets/LEGACY_shape_anchor.png",
 "SS2D_Common_Functions": "",
 "SS2D_Edge": "",
 "SS2D_Material_Edge": "",
@@ -186,12 +186,12 @@ _global_script_class_icons={
 "SS2D_Point": "",
 "SS2D_Point_Array": "",
 "SS2D_Quad": "",
-"SS2D_Shape_Anchor": "",
+"SS2D_Shape_Anchor": "res://addons/rmsmartshape/assets/Anchor.svg",
 "SS2D_Shape_Base": "",
-"SS2D_Shape_Closed": "",
+"SS2D_Shape_Closed": "res://addons/rmsmartshape/assets/closed_shape.png",
 "SS2D_Shape_Combine_Union": "",
-"SS2D_Shape_Meta": "",
-"SS2D_Shape_Open": "",
+"SS2D_Shape_Meta": "res://addons/rmsmartshape/assets/meta_shape.png",
+"SS2D_Shape_Open": "res://addons/rmsmartshape/assets/open_shape.png",
 "SS2D_Shape_Render": "",
 "SS2D_Strings": "",
 "SS2D_VertexProperties": "",
