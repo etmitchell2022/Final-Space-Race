@@ -47,7 +47,7 @@ With the car movement and level generation figured out, we will be able to focus
 - [ ] ⭐ Support two of the following: touch input, mouse/keyboard input, and gamepad input
 - [x] ⭐ Allow the user to control the volume of music and sound effects independently.
 - [ ] ⭐ Incorporate juiciness and document it in the <code>README.md</code>
-- [ ] ⭐ Use particle effects
+- [X] ⭐ Use particle effects
 - [ ] ⭐ Use different layers and masks to manage collisions and document this in the <code>README.md</code>
 - [X] ⭐ Incorporate pop into your HUD or title screen using <code>Tween</code> or <code>AnimationPlayer</code>
 - [ ] ⭐ Include an AI-controlled character

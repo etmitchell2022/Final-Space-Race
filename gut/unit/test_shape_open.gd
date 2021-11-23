@@ -276,8 +276,6 @@ func test_build_quad_from_point_width(width = use_parameters(width_params)):
 	var shape = SS2D_Shape_Open.new()
 	add_child_autofree(shape)
 
-	var edge_mat = SS2D_Material_Edge.new()
-
 	var pt_prev = Vector2(100, 100)
 	var pt = Vector2(200, 100)
 	var pt_next = Vector2(300, 100)

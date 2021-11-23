@@ -17,11 +17,10 @@ func _on_CrashZone_body_entered(body):
 			explosion.modulate = Color(251, 229, 8)
 			print(explosion)
 			call_deferred("add_child", explosion)
-			car.MODE_STATIC
 			$CrashSound.play()
 			deathTimer.start()
 	crashes += 1
 
 
 func _on_DeathTimer_timeout():
-	get_tree().change_scene("res://UI/End/End.tscn")
+	var _ignored = get_tree().change_scene("res://UI/End/End.tscn")

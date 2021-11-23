@@ -30,7 +30,7 @@ func test_delete_point_async():
 		coroutines.push_back(delete_closed_test(shapes[i], i))
 	for c in coroutines:
 		c.connect("completed", self, "yield_complete")
-	for i in range(0, shape_count, 1):
+	for _i in range(0, shape_count, 1):
 		yield(self, "yield_complete")
 
 	assert_eq(yields_complete, shape_count)
