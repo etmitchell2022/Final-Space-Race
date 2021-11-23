@@ -705,7 +705,7 @@ fill_mesh_offset = 0.0
 render_offset = 0.0
 
 [sub_resource type="RectangleShape2D" id=97]
-extents = Vector2( 572.705, 153.347 )
+extents = Vector2( 279.737, 153.347 )
 
 [sub_resource type="RectangleShape2D" id=98]
 extents = Vector2( 162.799, 1151.73 )
@@ -829,14 +829,18 @@ shape = SubResource( 97 )
 position = Vector2( 18524, 774.578 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone2"]
-position = Vector2( -16.9751, -99.381 )
+position = Vector2( -306.889, -72.5109 )
+shape = SubResource( 97 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KillZone2"]
+position = Vector2( 277.181, -71.0967 )
 shape = SubResource( 97 )
 
 [node name="KillZone" type="Area2D" parent="."]
 position = Vector2( 1756.56, 753.19 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
-position = Vector2( -20.9751, -100.381 )
+position = Vector2( -20.9751, -98.9668 )
 shape = SubResource( 97 )
 
 [node name="EndZone" type="Area2D" parent="."]
