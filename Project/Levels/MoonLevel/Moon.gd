@@ -28,7 +28,7 @@ func _on_RespawnZone_body_entered(_body: Area2D) -> void:
 	transition.transition_to("res://Project/Levels/MoonLevel/Moon.tscn")
 
 
-func _on_KillZone_body_entered(body: Area2D) -> void:
+func _on_KillZone_body_entered(_body: Area2D) -> void:
 	Globals.determine_current_level(get_tree().current_scene.filename)
 	transition.transition_to("res://Project/UI/End/End.tscn")
 
