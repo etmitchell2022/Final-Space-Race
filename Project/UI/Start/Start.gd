@@ -34,6 +34,5 @@ func _on_VehicleMenu_id_pressed(id) -> void:
 	for item in vehicle_id_array:
 		if id != item:
 			vehicleMenu.set_item_checked(item, false)
-	
 	Globals.load_vehicle(id)
 
