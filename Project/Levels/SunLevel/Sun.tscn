@@ -1,14 +1,16 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=1]
 [ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=2]
 [ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=3]
 [ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=4]
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=5]
-[ext_resource path="res://Project/Vehicles/RedCar/RedCar.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Project/UI/PauseMenu/PauseMenu.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Project/Levels/SunLevel/lava.png" type="Texture" id=7]
 [ext_resource path="res://Project/Levels/SunLevel/Sun.gd" type="Script" id=8]
 [ext_resource path="res://Project/Common/SpaceBackGround.jpeg" type="Texture" id=9]
+[ext_resource path="res://Project/UI/HUD/HUD.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Project/UI/Transition/Transition.tscn" type="PackedScene" id=11]
 
 [sub_resource type="Resource" id=61]
 script = ExtResource( 5 )
@@ -322,8 +324,6 @@ visible = false
 modulate = Color( 1, 1, 1, 0.3 )
 polygon = PoolVector2Array( -138.797, 73.0392, 225.647, 259.826, 389.363, 323.352, 563.771, 376.022, 739.487, 408.756, 824.906, 414.805, 907.138, 412.438, 990.238, 399.886, 1078.55, 377.163, 1267.83, 307.736, 1676.32, 118.464, 2085.17, -51.3411, 2181.89, -78.5318, 2274.93, -96.3977, 2363.55, -103.275, 2405.97, -102.083, 2447, -97.5578, 2630.72, -55.9869, 2852.33, 12.6805, 3906.12, 385.372, 4158.5, 459.819, 4385.31, 509.466, 4442.85, 514.819, 4509.85, 513.902, 4669.72, 494.751, 5075.6, 397.52, 6093.31, 49.7089, 7843.21, -599.846, 7901.98, -612.186, 7966.66, -619.069, 8112.56, -617.67, 8278.51, -598.232, 8462.15, -563.384, 10280, -41.437, 10743.6, 61.1337, 11172.5, 110.935, 11387.3, 130.577, 11625.7, 170.862, 12167.3, 299.898, 13468.6, 657.868, 14982.9, 970.106, 15790.6, 1041.99, 16616.5, 1021.9, 17322.2, 915.03, 17599.1, 839.123, 17841.3, 749.477, 18269.7, 532.883, 19237.9, -23.0343, 19969.5, -347.081, 20993.9, -691.695, 22407.1, -1049.26, 23856.8, -1305.54, 24970.4, -1377.4, 25421.5, -1356.38, 25813, -1303.94, 26153, -1224.94, 26449.6, -1124.27, 26711.1, -1006.81, 26945.4, -877.461, 27775.1, -338.875, 27996.2, -223.359, 28239.1, -125.272, 28517.5, -46.3394, 28837.8, 16.7542, 29592.1, 106.37, 33693.1, 377.606, 36063.1, 766.748, 36633.7, 880.675, 37156.7, 945.429, 37635.3, 966.181, 38072.8, 948.109, 38472.5, 896.389, 38837.5, 816.198, 39171.2, 712.713, 39476.9, 591.103, 40016.9, 314.248, 40903.5, -229.124, 41103.7, -332.62, 41302, -412.824, 41527, -475.053, 41801.9, -528.324, 42481.5, -609.092, 44219.7, -675.438, 48090, -490.778, 48309.7, -459.418, 48532.6, -411.029, 48987.6, -267.101, 49455.7, -66.9496, 49937.2, 181.432, 54333.7, 2948.77, 55602, 3565.12, 56264.3, 3818.13, 56945.9, 4023.73, 57638.5, 4163.99, 58331.3, 4232.24, 59020.9, 4237.41, 59704.3, 4188.43, 61039.3, 3963.78, 62310.7, 3629.78, 64560.1, 2919.62, 65486.9, 2686.42, 65889.6, 2631.58, 66074.4, 2623.51, 66247.5, 2629.8, 66994.2, 2738.43, 72620.5, 4035.59, 75481.5, 4384.04, 84452.4, 4123.24, 84225.5, 8271.13, -168.123, 3986.85 )
 
-[node name="Car" parent="." instance=ExtResource( 6 )]
-
 [node name="FinishZone" type="Area2D" parent="."]
 
 [node name="FinishArea" type="CollisionShape2D" parent="FinishZone"]
@@ -331,7 +331,7 @@ position = Vector2( 82134.5, -2566.63 )
 shape = SubResource( 60 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-scroll_base_scale = Vector2( 0.2, 0.2 )
+scroll_base_scale = Vector2( 0.1, 0.1 )
 scroll_ignore_camera_zoom = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -339,5 +339,19 @@ motion_mirroring = Vector2( 1280, 1280 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 texture = ExtResource( 9 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource( 10 )]
+
+[node name="TransitonColor" parent="CanvasLayer" instance=ExtResource( 11 )]
+
+[node name="SpawnPoint" type="Position2D" parent="."]
+position = Vector2( 133, 83 )
+
+[node name="Pause" type="CanvasLayer" parent="."]
+
+[node name="Pause" parent="Pause" instance=ExtResource( 6 )]
+visible = false
 
 [connection signal="body_entered" from="FinishZone" to="." method="_on_FinishZone_body_entered"]
