@@ -1,7 +1,13 @@
 class_name HUD
 extends Control
 
-onready var scoreLabel: Label = $VBoxContainer/PanelContainer/max_speed
+onready var bar: ProgressBar = $VBoxContainer/PanelContainer/ProgressBar
 
-func update_speed(score: int) -> void:
-	scoreLabel.text = 'Top Speed: %d' % score
+var level_distance
+
+func init_progress_bar(distance_from_goal: int) -> void:
+	bar.max_value = distance_from_goal
+	level_distance = distance_from_goal
+	
+func update_progress_bar(distance_from_goal: int) -> void:
+	bar.value = level_distance - distance_from_goal
