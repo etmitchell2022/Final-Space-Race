@@ -1,8 +1,120 @@
-[gd_scene format=2]
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Project/Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Project/Common/SpaceBackGround.jpeg" type="Texture" id=2]
+[ext_resource path="res://Project/UI/Congrats/Congrats.gd" type="Script" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Float"
+length = 6.0
+loop = true
+
+[sub_resource type="DynamicFont" id=2]
+size = 78
+outline_color = Color( 0, 0.788235, 1, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 30
+font_data = ExtResource( 1 )
 
 [node name="Congrats" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 511.553, 292.156 )
+scale = Vector2( 0.228959, 0.134359 )
+texture = ExtResource( 2 )
+
+[node name="Logo" type="AnimationPlayer" parent="."]
+autoplay = "Float"
+anims/Float = SubResource( 1 )
+
+[node name="Message" type="Label" parent="Logo"]
+margin_left = 277.186
+margin_top = 72.832
+margin_right = 740.186
+margin_bottom = 249.832
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.25098, 0.709804, 0.870588, 1 )
+text = "Congrats! 
+You Beat the Level!"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -77.0
+margin_top = -30.0
+margin_right = 78.0
+margin_bottom = 156.0
+size_flags_horizontal = 5
+custom_constants/separation = 10
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextButton" type="Button" parent="VBoxContainer"]
+margin_right = 155.0
+margin_bottom = 42.0
+custom_fonts/font = SubResource( 3 )
+text = "Next Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RestartButton" type="Button" parent="VBoxContainer"]
+margin_top = 52.0
+margin_right = 155.0
+margin_bottom = 94.0
+custom_fonts/font = SubResource( 3 )
+text = "Restart Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnButton" type="Button" parent="VBoxContainer"]
+pause_mode = 2
+margin_top = 104.0
+margin_right = 155.0
+margin_bottom = 146.0
+custom_fonts/font = SubResource( 4 )
+text = "Return Home"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_left = 43.0
+margin_top = 156.0
+margin_right = 111.0
+margin_bottom = 190.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 5 )
+text = "Score: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="VBoxContainer/NextButton" to="." method="_on_NextButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/RestartButton" to="." method="_on_RestartButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/ReturnButton" to="." method="_on_ReturnButton_pressed"]
