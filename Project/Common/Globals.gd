@@ -1,5 +1,8 @@
 extends Node
 
+signal new_max_speed(_max_speed)
+
+const SUN = "res://Project/Levels/SunLevel/Sun.tscn"
 const EARTH = "res://Project/Levels/EarthLevel/Earth.tscn"
 const MOON = "res://Project/Levels/MoonLevel/Moon.tscn"
 const MARS = "res://Project/Levels/MarsLevel/Mars.tscn"
@@ -37,6 +40,8 @@ func determine_current_level(scene) -> void:
 		previous_scene = MOON
 	elif scene == MARS:
 		previous_scene = MARS
+	elif scene == SUN:
+		previous_scene = SUN
 		
 func return_previous_scene() -> String:
 	return previous_scene
