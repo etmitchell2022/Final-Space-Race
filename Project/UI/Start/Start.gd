@@ -59,8 +59,6 @@ func _on_VehicleMenu_id_pressed(id) -> void:
 		Globals.coin_score = coin_score - truck_price
 		vehicleMenu.set_item_checked(id, true)
 		is_truck_unlocked = true
-	else:
-		print("Not enough coins")
 		
 	for item in vehicle_id_array:
 		if id != item:
