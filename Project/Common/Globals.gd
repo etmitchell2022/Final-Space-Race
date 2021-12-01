@@ -9,6 +9,7 @@ const MARS = "res://Project/Levels/MarsLevel/Mars.tscn"
 
 var hills := 30
 var vehicle: Node2D
+var levelZeroComplete := 0
 var levelOneComplete := 0
 var levelTwoComplete := 0
 var previous_scene
