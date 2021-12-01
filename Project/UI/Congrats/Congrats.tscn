@@ -35,7 +35,7 @@ __meta__ = {
 }
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 511.553, 292.156 )
+position = Vector2( 512.26, 292.156 )
 scale = Vector2( 0.228959, 0.134359 )
 texture = ExtResource( 2 )
 
@@ -44,13 +44,15 @@ autoplay = "Float"
 anims/Float = SubResource( 1 )
 
 [node name="Message" type="Label" parent="Logo"]
+anchor_top = -0.00117851
+anchor_bottom = -0.00117851
 margin_left = 277.186
 margin_top = 72.832
 margin_right = 740.186
 margin_bottom = 249.832
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.25098, 0.709804, 0.870588, 1 )
-text = "Congrats! 
+text = "Congratulations! 
 You Beat the Level!"
 align = 1
 __meta__ = {
@@ -114,6 +116,26 @@ text = "Score: "
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Confetti" type="CPUParticles2D" parent="."]
+position = Vector2( 522.077, -26.6292 )
+amount = 400
+lifetime = 5.0
+speed_scale = 0.75
+emission_shape = 2
+emission_rect_extents = Vector2( 500, 1 )
+direction = Vector2( 45, 45 )
+spread = 139.84
+gravity = Vector2( 0, 65 )
+initial_velocity = 45.0
+initial_velocity_random = 0.5
+angular_velocity = 45.0
+angular_velocity_random = 0.5
+linear_accel = 0.05
+scale_amount = 1.5
+color = Color( 1, 0, 0, 1 )
+hue_variation = 1.0
+hue_variation_random = 1.0
 
 [connection signal="pressed" from="VBoxContainer/NextButton" to="." method="_on_NextButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/RestartButton" to="." method="_on_RestartButton_pressed"]
