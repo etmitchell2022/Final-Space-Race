@@ -3,6 +3,7 @@ extends Node2D
 onready var SPAWN_POINT = $SpawnPoint.position
 onready var transition := $CanvasLayer/TransitonColor
 onready var hud := $CanvasLayer/HUD
+onready var finish = $FinishZone/FinishArea
 
 var vehicle
 
@@ -11,7 +12,7 @@ func _init() -> void:
 
 func _ready() -> void:
 	vehicle = Globals.get_vehicle()
-	var _error = Globals.connect("new_max_speed", hud, "update_speed")
+	hud.init_progress_bar(SPAWN_POINT.distance_to(finish.position))
 	if vehicle:
 		vehicle.position = SPAWN_POINT
 	else: 
@@ -20,8 +21,7 @@ func _ready() -> void:
 	call_deferred("add_child", vehicle)
 
 func _process(_delta) -> void:
-	var car_velocity = (vehicle.linear_velocity.x + vehicle.linear_velocity.y) /2
-	Globals.set_max_speed(car_velocity)
+	hud.update_progress_bar(vehicle.position.distance_to(finish.position))
 
 func _on_FinishZone_body_entered(body):
 	if body == vehicle:

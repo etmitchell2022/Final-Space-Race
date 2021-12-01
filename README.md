@@ -63,6 +63,8 @@ not take risks and just moves slowly through the levels. Overall, we think we di
 
 - [Kenney's Game Icons](https://kenney.nl/assets/game-icons) licensed under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
 
+- [Kenney's Puzzle Pack 2](https://kenney.nl/assets/puzzle-pack-2) licensed under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
+
 - [Space Background](https://opengameart.org/content/space-background-6), licensed under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/).
 
 - [Roboto font](https://fonts.google.com/specimen/Roboto#license), licensed under [Apache license, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
