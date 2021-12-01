@@ -26,4 +26,4 @@ func _process(_delta):
 func _on_Finish_body_entered(body) -> void:
 	if body == vehicle:
 		Globals.determine_current_level(get_tree().current_scene.filename)
-		transition.transition_to("res://Project/UI/End/End.tscn")
+		transition.transition_to("res://Project/UI/Congrats/Congrats.tscn")
