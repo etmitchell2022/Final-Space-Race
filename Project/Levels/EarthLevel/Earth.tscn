@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=2]
+[gd_scene load_steps=95 format=2]
 
 [ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=1]
 [ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://Project/UI/Transition/Transition.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Project/Levels/EarthLevel/Earth.gd" type="Script" id=16]
 [ext_resource path="res://Project/UI/HUD/HUD.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Project/Common/Coin.tscn" type="PackedScene" id=18]
 
 [sub_resource type="Resource" id=77]
 script = ExtResource( 4 )
@@ -640,5 +641,22 @@ position = Vector2( 176.438, 199.337 )
 [node name="Pause" parent="Pause" instance=ExtResource( 7 )]
 pause_mode = 2
 visible = false
+
+[node name="Coins" type="Node" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource( 18 )]
+position = Vector2( 2242.66, 209.582 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 18 )]
+position = Vector2( 5879.95, 197.978 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 18 )]
+position = Vector2( 16904.5, 2454.93 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 18 )]
+position = Vector2( 14571.2, 1911.9 )
+
+[node name="Coin5" parent="Coins" instance=ExtResource( 18 )]
+position = Vector2( 9024.97, 121.615 )
 
 [connection signal="body_entered" from="FinishZone" to="." method="_on_FinishZone_body_entered"]

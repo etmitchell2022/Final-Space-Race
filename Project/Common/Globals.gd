@@ -10,6 +10,7 @@ var levelOneComplete := 0
 var levelTwoComplete := 0
 var previous_scene
 var car_id
+var coin_score:= 0
 	
 func load_vehicle(id = 0) -> void:
 	car_id = id
