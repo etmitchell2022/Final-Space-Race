@@ -18,7 +18,6 @@ func _ready() -> void:
 	MusicController.play_music()
 		
 func _process(_delta) -> void:
-	print(Globals.coin_score)
 	coinLabel.text = str(Globals.coin_score)
 	
 	if Globals.coin_score >= 60 or is_yellow_car_unlocked:
