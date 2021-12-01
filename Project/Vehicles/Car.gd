@@ -39,6 +39,10 @@ func _explosion() -> void:
 	var explosion : CPUParticles2D = load("res://Project/Autoloads/Explosion.tscn").instance()
 	explosion.one_shot = true
 	explosion.position = crash_zone.position
+	if Globals.car_id == 1:
+		explosion.modulate = Color(255, 220, 0)
+	if Globals.car_id == 2:
+		explosion.modulate = Color(15, 98, 5)
 	call_deferred("add_child", explosion)
 	crash_sound.play()
 		
