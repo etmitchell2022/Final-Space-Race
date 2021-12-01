@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Project/UI/End/gameOver.png" type="Texture" id=1]
 [ext_resource path="res://Project/Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=2]
@@ -28,10 +28,6 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 32
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 30
 font_data = ExtResource( 2 )
 
 [node name="End" type="Control"]
@@ -92,18 +88,6 @@ margin_right = 155.0
 margin_bottom = 94.0
 custom_fonts/font = SubResource( 3 )
 text = "Return Home"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="VBoxContainer"]
-margin_left = 43.0
-margin_top = 104.0
-margin_right = 111.0
-margin_bottom = 138.0
-size_flags_horizontal = 4
-custom_fonts/font = SubResource( 4 )
-text = "Score: "
 __meta__ = {
 "_edit_use_anchors_": false
 }
