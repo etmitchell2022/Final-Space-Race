@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Project/UI/Start/Start.gd" type="Script" id=1]
 [ext_resource path="res://Project/UI/Start/red_sliderDown.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Project/UI/Start/redCar.png" type="Texture" id=9]
 [ext_resource path="res://Project/UI/Start/yellowCar.png" type="Texture" id=10]
 [ext_resource path="res://Project/UI/Start/truck.png" type="Texture" id=11]
+[ext_resource path="res://Project/Common/coin_01.png" type="Texture" id=12]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Float"
@@ -43,6 +44,10 @@ font_data = ExtResource( 6 )
 
 [sub_resource type="DynamicFont" id=5]
 size = 24
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 48
 font_data = ExtResource( 6 )
 
 [node name="Start" type="Control"]
@@ -185,6 +190,18 @@ items = [ "Red Car", ExtResource( 9 ), 1, true, false, 0, 0, null, "", false, "Y
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Coins" type="Sprite" parent="."]
+position = Vector2( 919.689, 23.6739 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 12 )
+
+[node name="CoinLabel" type="Label" parent="."]
+margin_left = 948.202
+margin_top = -0.897545
+margin_right = 988.202
+margin_bottom = 53.1025
+custom_fonts/font = SubResource( 6 )
 
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="VehicleMenuOpen" to="." method="_on_VehicleMenuOpen_pressed"]

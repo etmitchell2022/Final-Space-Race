@@ -578,10 +578,10 @@ polygon = PoolVector2Array( -411.681, 177.342, -257.308, 243.407, -88.5718, 297.
 motion_mirroring = Vector2( 2560, 2560 )
 
 [node name="ColorRect" type="ColorRect" parent="ParallaxBackground/ParallaxLayer"]
-margin_left = -945.0
-margin_top = -946.0
-margin_right = 2492.0
-margin_bottom = 1668.0
+margin_left = -1292.0
+margin_top = -997.0
+margin_right = 2145.0
+margin_bottom = 1617.0
 color = Color( 0.0352941, 0.878431, 0.988235, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -625,6 +625,7 @@ texture = SubResource( 75 )
 position = Vector2( 19084, 1784 )
 
 [node name="FinishCollision" type="CollisionShape2D" parent="FinishZone"]
+position = Vector2( 20.1699, -87.5078 )
 shape = SubResource( 76 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
