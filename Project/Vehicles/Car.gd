@@ -15,6 +15,15 @@ onready var crash_sound = $CrashSound
 func _ready() -> void:
 	car.set_mass(MASS)
 	car.set_weight(WEIGHT)
+	set_process(true)
+
+func _shake(camera: Camera2D):
+	var shake = 3
+	var offset = Vector2(rand_range(-shake, shake), rand_range(-shake, shake))
+	print("shake: " + str(shake))
+	print(str(offset))
+	camera.offset = offset
+	shake *= 2
 	
 	
 func _process(_delta: float) -> void:
