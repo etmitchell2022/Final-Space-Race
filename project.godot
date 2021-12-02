@@ -12,22 +12,22 @@ _global_script_classes=[ {
 "base": "RigidBody2D",
 "class": "Car",
 "language": "GDScript",
-"path": "res://Project/Vehicles/Car.gd"
+"path": "res://SpaceRace/Vehicles/Car.gd"
 }, {
 "base": "Control",
 "class": "End",
 "language": "GDScript",
-"path": "res://Project/UI/End/End.gd"
+"path": "res://SpaceRace/UI/End/End.gd"
 }, {
-"base": "Control",
+"base": "Reference",
 "class": "HUD",
 "language": "GDScript",
-"path": "res://Project/UI/HUD/HUD.gd"
+"path": "res://SpaceRace/UI/HUD/HUD.gd"
 }, {
 "base": "Control",
 "class": "PauseMenu",
 "language": "GDScript",
-"path": "res://Project/UI/PauseMenu/Pause.gd"
+"path": "res://SpaceRace/UI/PauseMenu/Pause.gd"
 }, {
 "base": "Resource",
 "class": "RMS2D_Material",
@@ -162,7 +162,7 @@ _global_script_classes=[ {
 "base": "Control",
 "class": "Start",
 "language": "GDScript",
-"path": "res://Project/UI/Start/Start.gd"
+"path": "res://SpaceRace/UI/Start/Start.gd"
 } ]
 _global_script_class_icons={
 "Car": "",
@@ -201,13 +201,13 @@ _global_script_class_icons={
 [application]
 
 config/name="FinalProject"
-run/main_scene="res://Project/UI/Start/Start.tscn"
+run/main_scene="res://SpaceRace/UI/Start/Start.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Globals="*res://Project/Common/Globals.gd"
-MusicController="*res://Project/Autoloads/MusicController.tscn"
+Globals="*res://SpaceRace/Common/Globals.gd"
+MusicController="*res://SpaceRace/Autoloads/MusicController.tscn"
 
 [display]
 
