@@ -1,6 +1,7 @@
 on:
-  release:
-    types: [created, edited]
+  push:
+    branches:
+      - main
 jobs:
   release_windows:
     runs-on: ubuntu-latest
