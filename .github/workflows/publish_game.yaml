@@ -19,4 +19,4 @@ jobs:
           CHANNEL: HTML
           ITCH_GAME: space-race
           ITCH_USER: etmitchell2022
-          PACKAGE: build/web
+          PACKAGE: HTML5.zip
