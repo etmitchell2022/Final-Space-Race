@@ -1,0 +1,95 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://SpaceRace/Vehicles/RedCar/tire.png" type="Texture" id=1]
+[ext_resource path="res://SpaceRace/Vehicles/RedCar/car-body.png" type="Texture" id=2]
+[ext_resource path="res://SpaceRace/Vehicles/RedCar/RedCar.gd" type="Script" id=3]
+[ext_resource path="res://SpaceRace/Common/car_crash.wav" type="AudioStream" id=4]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 4.0
+rough = true
+absorbent = true
+
+[sub_resource type="PhysicsMaterial" id=2]
+rough = true
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 21.8069
+
+[sub_resource type="PhysicsMaterial" id=4]
+rough = true
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 21.4358
+
+[node name="Car" type="RigidBody2D"]
+position = Vector2( 174.55, 3.96704 )
+mass = 150.0
+physics_material_override = SubResource( 1 )
+gravity_scale = 5.0
+script = ExtResource( 3 )
+
+[node name="CrashZone" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CrashZone"]
+polygon = PoolVector2Array( -60.3536, -11.3626, -58.5113, -20.5739, -48.8906, -28.9665, -34.7666, -36.7449, -18.5956, -38.3825, -6.92795, -36.7449, 5.55852, -32.651, 14.1557, -26.7148, 23.5718, -19.7551, 32.3737, -13.2049, 38.924, -7.67807, 42.8132, -4.19824, 18.4544, -8.70155, -11.2266, -15.4565 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -64.1135, 4.89079, -60.5401, -10.7923, -52.9964, -24.0931, -42.8719, -33.225, -27.1889, -38.3865, -11.9028, -38.188, 2.19203, -34.019, 13.7062, -27.4679, 25.8159, -19.3286, 34.9478, -11.1893, 45.2708, -3.05, 53.013, 4.29523, 58.1745, 10.8464, 65.1227, 15.2138, 76.4383, 21.5664, 81.2028, 23.9487, 82.3939, 36.4554, 77.2324, 36.6539, 72.6665, 28.7131, 64.9242, 24.1472, 56.5864, 22.162, 48.6456, 22.162, 43.0871, 24.1472, 36.7344, 29.5072, 32.9626, 34.0732, 30.5803, 38.6391, 26.8085, 42.6095, 10.5299, 43.4036, -13.6895, 45.1903, -25.0051, 43.9991, -27.5859, 32.882, -35.1296, 24.1472, -46.4453, 19.7798, -56.7683, 19.7798, -65.5031, 22.9561, -71.6572, 28.9116, -75.4291, 35.6613, -80.7891, 35.2643, -79.7965, 12.236, -74.4365, 8.46414 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.376767, 0.349247 )
+texture = ExtResource( 2 )
+
+[node name="LeftWheel" type="RigidBody2D" parent="."]
+position = Vector2( -51.7573, 53.0733 )
+mass = 5.10204
+physics_material_override = SubResource( 2 )
+contacts_reported = 1
+contact_monitor = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWheel"]
+shape = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="LeftWheel"]
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 1 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="LeftWheel"]
+node_a = NodePath("../..")
+node_b = NodePath("..")
+softness = 0.03
+
+[node name="RightWheel" type="RigidBody2D" parent="."]
+position = Vector2( 54.4091, 53.1126 )
+mass = 5.10204
+physics_material_override = SubResource( 4 )
+contacts_reported = 1
+contact_monitor = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWheel"]
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="RightWheel"]
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 1 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="RightWheel"]
+node_a = NodePath("../..")
+node_b = NodePath("..")
+softness = 0.03
+
+[node name="CrashSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+bus = "SoundEffects"
+
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="body_entered" from="." to="." method="_on_Car_body_entered"]
+[connection signal="body_entered" from="CrashZone" to="." method="_on_CrashZone_body_entered"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_DeathTimer_timeout"]
