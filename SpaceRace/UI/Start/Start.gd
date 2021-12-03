@@ -1,4 +1,4 @@
-class_name Start
+
 extends Control
 
 onready var settingsMenu = $SettingsMenu
