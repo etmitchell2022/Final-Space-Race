@@ -1,9 +1,8 @@
-on:
+on: 
   push:
     branches:
       - master
-    paths:
-      - 'SpaceRace/**'
+
 jobs:
   export_game:
     runs-on: ubuntu-latest
