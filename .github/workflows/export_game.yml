@@ -1,4 +1,4 @@
-on: 
+on:
   push:
     branches:
       - main
@@ -20,3 +20,4 @@ jobs:
           relative_project_path: ./
         env:
           GITHUB_TOKEN: ${{ secrets.EXPORT_GITHUB_TOKEN }}
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
