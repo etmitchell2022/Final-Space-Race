@@ -11,7 +11,7 @@ Authors: Spencer Naugler, Carter Jeurissen, and Evan Mitchell
 
 - Use the right and left arrows to move the car forward and backward. These controls also work with rotating the car when it is off the ground.
 - Press escape to pause and unpause the game
-- Make it through each level going as fast as you can. More points are scored when moving the vehicle faster
+- Make it through each level without flipping over.
 
 ## Reflection
 
@@ -45,16 +45,16 @@ not take risks and just moves slowly through the levels. Overall, we think we di
 - [x] ⭐ Incorporate parallax background scrolling
 - [ ] ⭐ Use paper doll animations
 - [ ] ⭐ Use an <code>AnimationTree</code> with either blend spaces (3D) or an animation state machine (2D)
-- [x] ⭐ Incorporate smooth transitions between title, game, and end states, rather than jumping between states via <code>change_scene</code>
+- [X] ⭐ Incorporate smooth transitions between title, game, and end states, rather than jumping between states via <code>change_scene</code>
 - [ ] ⭐ Support two of the following: touch input, mouse/keyboard input, and gamepad input
-- [x] ⭐ Allow the user to control the volume of music and sound effects independently.
-- [ ] ⭐ Incorporate juiciness and document it in the <code>README.md</code>
+- [X] ⭐ Allow the user to control the volume of music and sound effects independently.
+- [X] ⭐ Incorporate juiciness and document it in the <code>README.md</code>
 - [X] ⭐ Use particle effects
 - [ ] ⭐ Use different layers and masks to manage collisions and document this in the <code>README.md</code>
-- [x] ⭐ Incorporate pop into your HUD or title screen using <code>Tween</code> or <code>AnimationPlayer</code>
+- [X] ⭐ Incorporate pop into your HUD or title screen using <code>Tween</code> or <code>AnimationPlayer</code>
 - [ ] ⭐ Include an AI-controlled character
-- [x] ⭐ Add a pause menu that includes, at minimum, the ability to resume or return to the main menu
-- [ ] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
+- [X] ⭐ Add a pause menu that includes, at minimum, the ability to resume or return to the main menu
+- [X] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
 
 ## Third-Party Assets
 
