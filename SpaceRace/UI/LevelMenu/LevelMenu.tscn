@@ -44,15 +44,31 @@ scale = Vector2( 0.235921, 0.141004 )
 texture = ExtResource( 5 )
 
 [node name="TransitonColor" parent="." instance=ExtResource( 3 )]
+margin_top = -0.707092
+margin_bottom = -0.707092
+
+[node name="LevelZeroButton" type="Button" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 54.7451
+margin_top = -18.1716
+margin_right = 191.745
+margin_bottom = 23.8284
+custom_fonts/font = SubResource( 1 )
+text = "Level Zero: Sun"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="LevelOneButton" type="Button" parent="."]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 100.0
-margin_top = -21.0
-margin_right = 155.0
-margin_bottom = 21.0
+margin_left = 300.818
+margin_top = -21.7072
+margin_right = 437.818
+margin_bottom = 20.2928
 custom_fonts/font = SubResource( 1 )
+disabled = true
 text = "Level One: Earth"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -63,10 +79,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -77.5
-margin_top = -21.0
-margin_right = 77.5
-margin_bottom = 21.0
+margin_left = 39.1727
+margin_top = -19.5858
+margin_right = 194.173
+margin_bottom = 22.4142
 custom_fonts/font = SubResource( 1 )
 disabled = true
 text = "Level Two: Moon"
@@ -79,10 +95,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = -254.426
-margin_top = -21.0
-margin_right = -100.0
-margin_bottom = 21.0
+margin_left = -204.222
+margin_top = -18.8787
+margin_right = -49.7955
+margin_bottom = 23.1213
 custom_fonts/font = SubResource( 1 )
 disabled = true
 text = "Level Three: Mars"
@@ -91,15 +107,18 @@ __meta__ = {
 }
 
 [node name="EarthLevel" type="Sprite" parent="."]
-position = Vector2( 176.577, 448.598 )
+position = Vector2( 361.132, 438.699 )
+scale = Vector2( 0.9, 0.9 )
 texture = ExtResource( 4 )
 
 [node name="MoonLevel" type="Sprite" parent="."]
-position = Vector2( 522.864, 447.447 )
+position = Vector2( 619.031, 438.962 )
+scale = Vector2( 0.9, 0.9 )
 texture = ExtResource( 6 )
 
 [node name="MarsLevel" type="Sprite" parent="."]
-position = Vector2( 852.486, 449.465 )
+position = Vector2( 885.72, 437.444 )
+scale = Vector2( 0.9, 0.9 )
 texture = ExtResource( 7 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -107,9 +126,10 @@ autoplay = "float"
 anims/float = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="AnimationPlayer"]
-position = Vector2( 506.398, 147.808 )
+position = Vector2( 505.691, 75.6831 )
 texture = ExtResource( 8 )
 
+[connection signal="pressed" from="LevelZeroButton" to="." method="_on_LevelZeroButton_pressed"]
 [connection signal="pressed" from="LevelOneButton" to="." method="_on_LevelOneButton_pressed"]
 [connection signal="pressed" from="LevelTwoButton" to="." method="_on_LevelTwoButton_pressed"]
 [connection signal="pressed" from="LevelThreeButton" to="." method="_on_LevelThreeButton_pressed"]

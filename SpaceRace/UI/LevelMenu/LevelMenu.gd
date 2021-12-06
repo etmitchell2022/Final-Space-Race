@@ -3,6 +3,8 @@ extends Control
 onready var transition = $TransitonColor
 
 func _ready() -> void:
+	if Globals.levelZeroComplete == 1:
+		$LevelOneButton.disabled = false
 	if Globals.levelOneComplete == 1:
 		$LevelTwoButton.disabled = false
 	if Globals.levelTwoComplete == 1:
@@ -19,3 +21,7 @@ func _on_LevelTwoButton_pressed() -> void:
 
 func _on_LevelThreeButton_pressed() -> void:
 	transition.transition_to("res://SpaceRace/Levels/MarsLevel/Mars.tscn")
+
+
+func _on_LevelZeroButton_pressed():
+	transition.transition_to("res://SpaceRace/Levels/SunLevel/Sun.tscn")
