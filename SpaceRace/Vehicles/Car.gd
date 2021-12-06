@@ -45,7 +45,7 @@ func _explosion() -> void:
 	car_sprite.visible = false
 	left_wheel.visible = false
 	right_wheel.visible = false
-	var explosion : CPUParticles2D = load("res://SpaceRace/Autoloads/Explosion.tscn").instance()
+	var explosion : CPUParticles2D = load("res://SpaceRace/Common/Explosion.tscn").instance()
 	explosion.one_shot = true
 	explosion.position = crash_zone.position
 	if Globals.car_id == 1:
