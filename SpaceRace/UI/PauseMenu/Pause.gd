@@ -17,7 +17,6 @@ func _on_ResumeButton_pressed() -> void:
 
 func _on_ReturnHomeButton_pressed() -> void:
 	get_tree().paused = false
-	Globals._max_speed = 0
 	var _ignored := get_tree().change_scene("res://SpaceRace/UI/Start/Start.tscn")
 
 	

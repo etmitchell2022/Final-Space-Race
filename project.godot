@@ -9,22 +9,22 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
+"base": "RigidBody2D",
 "class": "Car",
 "language": "GDScript",
 "path": "res://SpaceRace/Vehicles/Car.gd"
 }, {
-"base": "Reference",
+"base": "Control",
 "class": "End",
 "language": "GDScript",
 "path": "res://SpaceRace/UI/End/End.gd"
 }, {
-"base": "Reference",
+"base": "Control",
 "class": "HUD",
 "language": "GDScript",
 "path": "res://SpaceRace/UI/HUD/HUD.gd"
 }, {
-"base": "Reference",
+"base": "Control",
 "class": "PauseMenu",
 "language": "GDScript",
 "path": "res://SpaceRace/UI/PauseMenu/Pause.gd"
@@ -210,7 +210,7 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/rmsmartshape/plugin.cfg" )
+enabled=PoolStringArray(  )
 
 [global]
 
