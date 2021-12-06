@@ -2,6 +2,11 @@
 
 Authors: Spencer Naugler, Carter Jeurissen, and Evan Mitchell
 
+## Juice
+- On our screen that shows up when you beat a level, there is confeti falling from the top of the screen. 
+- When you flip the car over and it explodes there is a sreenshake to add impact.
+- Title Screen is animated to add life while starting the game
+
 ## Instructions
 
 - Use the right and left arrows to move the car forward and backward. These controls also work with rotating the car when it is off the ground.
