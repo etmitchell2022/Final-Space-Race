@@ -20,7 +20,7 @@ func _spawnVehicle() -> void:
 	if vehicle:
 		vehicle.position = SPAWN_POINT
 	else: 
-		vehicle = load("res://SpaceRace/Vehicles/RedCar/RedCar.tscn").instance()
+		vehicle = load("res:///Vehicles/RedCar/RedCar.tscn").instance()
 		vehicle.position = SPAWN_POINT
 	call_deferred("add_child", vehicle)
 	
@@ -28,15 +28,15 @@ func _process(_delta) -> void:
 	hud.update_progress_bar(vehicle.position.distance_to(finish.position))
 	
 func _on_RespawnZone_body_entered(_body: Area2D) -> void:
-	transition.transition_to("res://SpaceRace/Levels/MoonLevel/Moon.tscn")
+	transition.transition_to("res:///Levels/MoonLevel/Moon.tscn")
 
 
 func _on_KillZone_body_entered(_body: Area2D) -> void:
 	Globals.determine_current_level(get_tree().current_scene.filename)
-	transition.transition_to("res://SpaceRace/UI/End/End.tscn")
+	transition.transition_to("res:///UI/End/End.tscn")
 
 
 func _on_EndZone_body_entered(_body: Area2D) -> void:
 	Globals.levelTwoComplete = 1
 	Globals.determine_current_level(get_tree().current_scene.filename)
-	transition.transition_to("res://SpaceRace/UI/Congrats/Congrats.tscn")
+	transition.transition_to("res:///UI/Congrats/Congrats.tscn")

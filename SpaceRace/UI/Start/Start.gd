@@ -32,7 +32,7 @@ func _unlockVehicles() -> void:
 		vehicleMenu.set_item_disabled(2, true)
 
 func _on_StartButton_pressed() -> void:
-	transition.transition_to("res://SpaceRace/UI/LevelMenu/LevelMenu.tscn")
+	transition.transition_to("res:///UI/LevelMenu/LevelMenu.tscn")
 
 func _on_MusicVolume_value_changed(value) -> void:
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), value)

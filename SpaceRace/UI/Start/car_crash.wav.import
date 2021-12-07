@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/car_crash.wav-512ffe7b49bb650bff5d154ef6790ff8.sample"
+path="res://.import/car_crash.wav-4b3080b313e34751fa81ad1e92c2bd75.sample"
 
 [deps]
 
-source_file="res://SpaceRace/UI/Start/car_crash.wav"
-dest_files=[ "res://.import/car_crash.wav-512ffe7b49bb650bff5d154ef6790ff8.sample" ]
+source_file="res://UI/Start/car_crash.wav"
+dest_files=[ "res://.import/car_crash.wav-4b3080b313e34751fa81ad1e92c2bd75.sample" ]
 
 [params]
 

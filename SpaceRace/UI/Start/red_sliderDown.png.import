@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/red_sliderDown.png-475a1151ae208b6cd0b08a7c240afe8f.stex"
+path="res://.import/red_sliderDown.png-ff114f8831497f7e4836ada31e61ab0d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/UI/Start/red_sliderDown.png"
-dest_files=[ "res://.import/red_sliderDown.png-475a1151ae208b6cd0b08a7c240afe8f.stex" ]
+source_file="res://UI/Start/red_sliderDown.png"
+dest_files=[ "res://.import/red_sliderDown.png-ff114f8831497f7e4836ada31e61ab0d.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

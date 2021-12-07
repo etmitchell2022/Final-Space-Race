@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grass 2.png-351333bd47420a534ab907aad1b5a130.stex"
+path="res://.import/grass 2.png-daf29df233693fac9fdcce50e02785c4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Levels/EarthLevel/grass 2.png"
-dest_files=[ "res://.import/grass 2.png-351333bd47420a534ab907aad1b5a130.stex" ]
+source_file="res://Levels/EarthLevel/grass 2.png"
+dest_files=[ "res://.import/grass 2.png-daf29df233693fac9fdcce50e02785c4.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

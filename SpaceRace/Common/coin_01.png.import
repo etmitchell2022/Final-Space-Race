@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coin_01.png-6b33f0a7edfa32e2c62dcbeba6ef6941.stex"
+path="res://.import/coin_01.png-0ce81391490d0ded73019dac5014950b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Common/coin_01.png"
-dest_files=[ "res://.import/coin_01.png-6b33f0a7edfa32e2c62dcbeba6ef6941.stex" ]
+source_file="res://Common/coin_01.png"
+dest_files=[ "res://.import/coin_01.png-0ce81391490d0ded73019dac5014950b.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

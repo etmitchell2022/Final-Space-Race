@@ -1,9 +1,8 @@
 extends Node
-
-const SUN = "res://SpaceRace/Levels/SunLevel/Sun.tscn"
-const EARTH = "res://SpaceRace/Levels/EarthLevel/Earth.tscn"
-const MOON = "res://SpaceRace/Levels/MoonLevel/Moon.tscn"
-const MARS = "res://SpaceRace/Levels/MarsLevel/Mars.tscn"
+const SUN = "res://Levels/SunLevel/Sun.tscn"
+const EARTH = "res://Levels/EarthLevel/Earth.tscn"
+const MOON = "res://Levels/MoonLevel/Moon.tscn"
+const MARS = "res://Levels/MarsLevel/Mars.tscn"
 
 var hills := 30
 var vehicle: Node2D
@@ -18,11 +17,11 @@ var coin_score:= 0
 func load_vehicle(id = 0) -> void:
 	car_id = id
 	if id == 0:
-		vehicle = load("res://SpaceRace/Vehicles/RedCar/RedCar.tscn").instance()
+		vehicle = load("res://Vehicles/RedCar/RedCar.tscn").instance()
 	elif id == 1:
-		vehicle = load("res://SpaceRace/Vehicles/YellowCar/YellowCar.tscn").instance()
+		vehicle = load("res://Vehicles/YellowCar/YellowCar.tscn").instance()
 	elif id == 2:
-		vehicle = load("res://SpaceRace/Vehicles/Truck/Truck.tscn").instance()
+		vehicle = load("res://Vehicles/Truck/Truck.tscn").instance()
 	else:
 		return
 		

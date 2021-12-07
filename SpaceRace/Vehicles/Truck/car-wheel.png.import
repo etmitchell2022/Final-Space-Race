@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/car-wheel.png-b92c9a5ed0ed33706cd293518a6c036c.stex"
+path="res://.import/car-wheel.png-27acb72a143f4f0c07d3d18e39cbb14c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Vehicles/Truck/car-wheel.png"
-dest_files=[ "res://.import/car-wheel.png-b92c9a5ed0ed33706cd293518a6c036c.stex" ]
+source_file="res://Vehicles/Truck/car-wheel.png"
+dest_files=[ "res://.import/car-wheel.png-27acb72a143f4f0c07d3d18e39cbb14c.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

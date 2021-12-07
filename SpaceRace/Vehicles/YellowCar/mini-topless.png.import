@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mini-topless.png-50cbe46e9772d12a49b51debcf027e84.stex"
+path="res://.import/mini-topless.png-cdfed1dc4c21c99b8ac4c6c2dd46e588.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Vehicles/YellowCar/mini-topless.png"
-dest_files=[ "res://.import/mini-topless.png-50cbe46e9772d12a49b51debcf027e84.stex" ]
+source_file="res://Vehicles/YellowCar/mini-topless.png"
+dest_files=[ "res://.import/mini-topless.png-cdfed1dc4c21c99b8ac4c6c2dd46e588.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

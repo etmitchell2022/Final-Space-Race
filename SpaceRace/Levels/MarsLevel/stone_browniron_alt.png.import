@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stone_browniron_alt.png-7eb489d3d6c267c9c2f2f739a84f7dae.stex"
+path="res://.import/stone_browniron_alt.png-5e3c3d279f0de024ae25df300dfd8ce9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Levels/MarsLevel/stone_browniron_alt.png"
-dest_files=[ "res://.import/stone_browniron_alt.png-7eb489d3d6c267c9c2f2f739a84f7dae.stex" ]
+source_file="res://Levels/MarsLevel/stone_browniron_alt.png"
+dest_files=[ "res://.import/stone_browniron_alt.png-5e3c3d279f0de024ae25df300dfd8ce9.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

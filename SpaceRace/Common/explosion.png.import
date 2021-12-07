@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/explosion.png-7dfc38d254713fb2c6c5ef5347f7f49a.stex"
+path="res://.import/explosion.png-115823d7544435f3b1c212d94984d01f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Common/explosion.png"
-dest_files=[ "res://.import/explosion.png-7dfc38d254713fb2c6c5ef5347f7f49a.stex" ]
+source_file="res://Common/explosion.png"
+dest_files=[ "res://.import/explosion.png-115823d7544435f3b1c212d94984d01f.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
