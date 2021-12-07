@@ -1,4 +1,3 @@
-
 extends Control
 
 onready var settingsMenu = $SettingsMenu

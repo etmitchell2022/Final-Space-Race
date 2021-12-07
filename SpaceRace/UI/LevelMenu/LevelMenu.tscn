@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://SpaceRace/UI/LevelMenu/LevelMenu.gd" type="Script" id=1]
 [ext_resource path="res://SpaceRace/Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://SpaceRace/UI/LevelMenu/moon.png" type="Texture" id=6]
 [ext_resource path="res://SpaceRace/UI/LevelMenu/mars.png" type="Texture" id=7]
 [ext_resource path="res://SpaceRace/UI/LevelMenu/Text.png" type="Texture" id=8]
+[ext_resource path="res://SpaceRace/UI/LevelMenu/sun.png" type="Texture" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -44,16 +45,18 @@ scale = Vector2( 0.235921, 0.141004 )
 texture = ExtResource( 5 )
 
 [node name="TransitonColor" parent="." instance=ExtResource( 3 )]
+anchor_left = 0.000647306
+anchor_right = 1.00065
 margin_top = -0.707092
 margin_bottom = -0.707092
 
 [node name="LevelZeroButton" type="Button" parent="."]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 54.7451
-margin_top = -18.1716
-margin_right = 191.745
-margin_bottom = 23.8284
+margin_left = 64.6399
+margin_top = -21.0
+margin_right = 195.64
+margin_bottom = 21.0
 custom_fonts/font = SubResource( 1 )
 text = "Level Zero: Sun"
 __meta__ = {
@@ -63,10 +66,10 @@ __meta__ = {
 [node name="LevelOneButton" type="Button" parent="."]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 300.818
-margin_top = -21.7072
-margin_right = 437.818
-margin_bottom = 20.2928
+margin_left = 320.04
+margin_top = -21.6628
+margin_right = 457.04
+margin_bottom = 18.9671
 custom_fonts/font = SubResource( 1 )
 disabled = true
 text = "Level One: Earth"
@@ -79,10 +82,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 39.1727
-margin_top = -19.5858
-margin_right = 194.173
-margin_bottom = 22.4142
+margin_left = 57.7323
+margin_top = -22.0
+margin_right = 212.733
+margin_bottom = 21.0885
 custom_fonts/font = SubResource( 1 )
 disabled = true
 text = "Level Two: Moon"
@@ -95,10 +98,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = -204.222
-margin_top = -18.8787
-margin_right = -49.7955
-margin_bottom = 23.1213
+margin_left = -210.188
+margin_top = -22.0
+margin_right = -55.7611
+margin_bottom = 25.7727
 custom_fonts/font = SubResource( 1 )
 disabled = true
 text = "Level Three: Mars"
@@ -107,18 +110,23 @@ __meta__ = {
 }
 
 [node name="EarthLevel" type="Sprite" parent="."]
-position = Vector2( 361.132, 438.699 )
-scale = Vector2( 0.9, 0.9 )
+position = Vector2( 389.634, 445.327 )
+scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 4 )
 
+[node name="SunLevel" type="Sprite" parent="."]
+position = Vector2( 134.355, 444.062 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 9 )
+
 [node name="MoonLevel" type="Sprite" parent="."]
-position = Vector2( 619.031, 438.962 )
-scale = Vector2( 0.9, 0.9 )
+position = Vector2( 648.859, 444.265 )
+scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 6 )
 
 [node name="MarsLevel" type="Sprite" parent="."]
-position = Vector2( 885.72, 437.444 )
-scale = Vector2( 0.9, 0.9 )
+position = Vector2( 895, 445.398 )
+scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 7 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
