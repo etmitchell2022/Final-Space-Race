@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cloud2.png-b5ea6f34f23230a1a9f0d4c2b1162164.stex"
+path="res://.import/cloud2.png-260456be9d30c3837f603d5dda1cd792.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Levels/EarthLevel/cloud2.png"
-dest_files=[ "res://.import/cloud2.png-b5ea6f34f23230a1a9f0d4c2b1162164.stex" ]
+source_file="res://Levels/EarthLevel/cloud2.png"
+dest_files=[ "res://.import/cloud2.png-260456be9d30c3837f603d5dda1cd792.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

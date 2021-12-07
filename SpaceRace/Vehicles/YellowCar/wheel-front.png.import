@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wheel-front.png-f68d6c7f090e2646343e730cb1fe4442.stex"
+path="res://.import/wheel-front.png-21c1752fd1d58cc9a1995321e10d5a2c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Vehicles/YellowCar/wheel-front.png"
-dest_files=[ "res://.import/wheel-front.png-f68d6c7f090e2646343e730cb1fe4442.stex" ]
+source_file="res://Vehicles/YellowCar/wheel-front.png"
+dest_files=[ "res://.import/wheel-front.png-21c1752fd1d58cc9a1995321e10d5a2c.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

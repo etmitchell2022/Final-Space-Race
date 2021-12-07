@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lava.png-2bd137abef7d178977cf02a6e0e54d51.stex"
+path="res://.import/lava.png-e248f46151a5e15667ee18862fe07004.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Levels/SunLevel/lava.png"
-dest_files=[ "res://.import/lava.png-2bd137abef7d178977cf02a6e0e54d51.stex" ]
+source_file="res://Levels/SunLevel/lava.png"
+dest_files=[ "res://.import/lava.png-e248f46151a5e15667ee18862fe07004.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

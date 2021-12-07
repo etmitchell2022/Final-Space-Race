@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Edge.png-00291865c0e37e686ec819a31cf74c5d.stex"
+path="res://.import/Edge.png-bd0c9fc95332ee443371452ecbc8641e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Levels/MarsLevel/Edge.png"
-dest_files=[ "res://.import/Edge.png-00291865c0e37e686ec819a31cf74c5d.stex" ]
+source_file="res://Levels/MarsLevel/Edge.png"
+dest_files=[ "res://.import/Edge.png-bd0c9fc95332ee443371452ecbc8641e.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

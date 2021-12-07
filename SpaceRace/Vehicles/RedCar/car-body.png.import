@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/car-body.png-043ff4167a600b262cfaa3ef4da78eae.stex"
+path="res://.import/car-body.png-ffb6ab8fcc7394b472d97b44876259dc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Vehicles/RedCar/car-body.png"
-dest_files=[ "res://.import/car-body.png-043ff4167a600b262cfaa3ef4da78eae.stex" ]
+source_file="res://Vehicles/RedCar/car-body.png"
+dest_files=[ "res://.import/car-body.png-ffb6ab8fcc7394b472d97b44876259dc.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

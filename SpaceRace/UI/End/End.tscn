@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://SpaceRace/UI/End/gameOver.png" type="Texture" id=1]
-[ext_resource path="res://SpaceRace/Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://SpaceRace/Common/SpaceBackGround.jpeg" type="Texture" id=3]
-[ext_resource path="res://SpaceRace/UI/End/End.gd" type="Script" id=4]
+[ext_resource path="res:///UI/End/gameOver.png" type="Texture" id=1]
+[ext_resource path="res:///Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res:///Common/SpaceBackGround.jpeg" type="Texture" id=3]
+[ext_resource path="res:///UI/End/End.gd" type="Script" id=4]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Float"

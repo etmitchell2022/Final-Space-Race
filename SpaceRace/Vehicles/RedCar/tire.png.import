@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tire.png-7bd47bda894932752685d6dcb9ae3673.stex"
+path="res://.import/tire.png-ee32af5f513f62c6a664b013e03e11c2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Vehicles/RedCar/tire.png"
-dest_files=[ "res://.import/tire.png-7bd47bda894932752685d6dcb9ae3673.stex" ]
+source_file="res://Vehicles/RedCar/tire.png"
+dest_files=[ "res://.import/tire.png-ee32af5f513f62c6a664b013e03e11c2.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

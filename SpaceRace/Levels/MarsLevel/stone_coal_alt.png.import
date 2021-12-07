@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stone_coal_alt.png-a3bf1bec70d37a697b78a0c9233477b1.stex"
+path="res://.import/stone_coal_alt.png-2e68f42d3eff4c4296771bc1fbb32fb5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/Levels/MarsLevel/stone_coal_alt.png"
-dest_files=[ "res://.import/stone_coal_alt.png-a3bf1bec70d37a697b78a0c9233477b1.stex" ]
+source_file="res://Levels/MarsLevel/stone_coal_alt.png"
+dest_files=[ "res://.import/stone_coal_alt.png-2e68f42d3eff4c4296771bc1fbb32fb5.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

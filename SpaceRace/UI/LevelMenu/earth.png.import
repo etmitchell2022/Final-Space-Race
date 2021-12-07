@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/earth.png-58ed33a16d2f55ec4f05e329775862ad.stex"
+path="res://.import/earth.png-7e267b5f5a431f7bb608761a6428032d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/UI/LevelMenu/earth.png"
-dest_files=[ "res://.import/earth.png-58ed33a16d2f55ec4f05e329775862ad.stex" ]
+source_file="res://UI/LevelMenu/earth.png"
+dest_files=[ "res://.import/earth.png-7e267b5f5a431f7bb608761a6428032d.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

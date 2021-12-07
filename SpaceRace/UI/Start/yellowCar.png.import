@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/yellowCar.png-7390508fa5173aa32e672df5be7fb984.stex"
+path="res://.import/yellowCar.png-e282b711a3f84c855246bee70cf6aba6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceRace/UI/Start/yellowCar.png"
-dest_files=[ "res://.import/yellowCar.png-7390508fa5173aa32e672df5be7fb984.stex" ]
+source_file="res://UI/Start/yellowCar.png"
+dest_files=[ "res://.import/yellowCar.png-e282b711a3f84c855246bee70cf6aba6.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
