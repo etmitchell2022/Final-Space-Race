@@ -3,6 +3,7 @@ const SUN = "res://Levels/SunLevel/Sun.tscn"
 const EARTH = "res://Levels/EarthLevel/Earth.tscn"
 const MOON = "res://Levels/MoonLevel/Moon.tscn"
 const MARS = "res://Levels/MarsLevel/Mars.tscn"
+const BLACKHOLE = "res://Levels/BlackHoleLevel/BlackHole.tscn"
 
 var hills := 30
 var vehicle: Node2D
@@ -45,6 +46,8 @@ func determine_current_level(scene) -> void:
 	elif scene == SUN:
 		previous_scene = SUN
 		next_scene = EARTH
+	elif scene == BLACKHOLE:
+		previous_scene = BLACKHOLE
 		
 func return_previous_scene() -> String:
 	return previous_scene
