@@ -2,8 +2,11 @@
 
 Authors: Spencer Naugler, Carter Jeurissen, and Evan Mitchell
 
+[Play the game on itch.io](https://etmitchell2022.itch.io/space-race)
+
 ## Juice
-- On our screen that shows up when you beat a level, there is confeti falling from the top of the screen. 
+
+- On our screen that shows up when you beat a level, there is confeti falling from the top of the screen.
 - When you flip the car over and it explodes there is a sreenshake to add impact.
 - Title Screen is animated to add life while starting the game
 
@@ -15,10 +18,10 @@ Authors: Spencer Naugler, Carter Jeurissen, and Evan Mitchell
 
 ## Reflection
 
-Overall, we feel this iteration went well. We found in this iteration that there were not obvious paths to success with a few of the features we wanted to implement so that made some things a little more challenging than initially expected. 
-For example, we wanted a vehicle menu that lets the player pick what vehicle they wanted to use in the levels. This ended up needing to be stored as a global variable since multiple scenes needed access to what was being selected by the 
-user to determine what vehicle scene to load. With the new levels created, we found that one smaller feature was a lot more difficult to make happen than we that. There is a button on the end scene when the user completes a level that lets the user restart the level if they fail or succeed 
-and this button needed to be dynamic to figure out what level they were on and properly link them back to it. We were surprised that Godot didn't have anyway to explicitly track this so we have to make our own tracking system. The solution felt a little like a hack and we are hoping we can find a 
+Overall, we feel this iteration went well. We found in this iteration that there were not obvious paths to success with a few of the features we wanted to implement so that made some things a little more challenging than initially expected.
+For example, we wanted a vehicle menu that lets the player pick what vehicle they wanted to use in the levels. This ended up needing to be stored as a global variable since multiple scenes needed access to what was being selected by the
+user to determine what vehicle scene to load. With the new levels created, we found that one smaller feature was a lot more difficult to make happen than we that. There is a button on the end scene when the user completes a level that lets the user restart the level if they fail or succeed
+and this button needed to be dynamic to figure out what level they were on and properly link them back to it. We were surprised that Godot didn't have anyway to explicitly track this so we have to make our own tracking system. The solution felt a little like a hack and we are hoping we can find a
 more efficient way of doing it for next iteration. One thing we are proud of is how the new levels look. We found a tool called SmartShape2D and this allowed us to easily create 2D curved terrain which helped us a ton for making cool and unique levels. We did end up removing the auto-generation of the first
 level as it didn't fit the same structure as the new levels. We still haven't quite figured out a great way of scoring the game. In this iteration we went with the fastest speed as being the player's score. This makes the game a little more challenging since the game can be easily completed if the player does
 not take risks and just moves slowly through the levels. Overall, we think we did well this iteration and we plan to continue adding customization and more to the HUD next iteration.
@@ -45,16 +48,16 @@ not take risks and just moves slowly through the levels. Overall, we think we di
 - [x] ⭐ Incorporate parallax background scrolling
 - [ ] ⭐ Use paper doll animations
 - [ ] ⭐ Use an <code>AnimationTree</code> with either blend spaces (3D) or an animation state machine (2D)
-- [X] ⭐ Incorporate smooth transitions between title, game, and end states, rather than jumping between states via <code>change_scene</code>
+- [x] ⭐ Incorporate smooth transitions between title, game, and end states, rather than jumping between states via <code>change_scene</code>
 - [ ] ⭐ Support two of the following: touch input, mouse/keyboard input, and gamepad input
-- [X] ⭐ Allow the user to control the volume of music and sound effects independently.
-- [X] ⭐ Incorporate juiciness and document it in the <code>README.md</code>
-- [X] ⭐ Use particle effects
+- [x] ⭐ Allow the user to control the volume of music and sound effects independently.
+- [x] ⭐ Incorporate juiciness and document it in the <code>README.md</code>
+- [x] ⭐ Use particle effects
 - [ ] ⭐ Use different layers and masks to manage collisions and document this in the <code>README.md</code>
-- [X] ⭐ Incorporate pop into your HUD or title screen using <code>Tween</code> or <code>AnimationPlayer</code>
+- [x] ⭐ Incorporate pop into your HUD or title screen using <code>Tween</code> or <code>AnimationPlayer</code>
 - [ ] ⭐ Include an AI-controlled character
-- [X] ⭐ Add a pause menu that includes, at minimum, the ability to resume or return to the main menu
-- [X] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
+- [x] ⭐ Add a pause menu that includes, at minimum, the ability to resume or return to the main menu
+- [x] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
 
 ## Third-Party Assets
 
