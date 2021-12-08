@@ -12,7 +12,9 @@ var levelTwoComplete := 0
 var previous_scene
 var next_scene
 var car_id
-var coin_score:= 0
+var coin_score:= 160
+var is_yellow_car_unlocked = false
+var is_truck_unlocked = false
 	
 func load_vehicle(id = 0) -> void:
 	car_id = id
