@@ -1,3 +1,5 @@
+
+[gd_scene load_steps=13 format=2]
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://UI/LevelMenu/LevelMenu.gd" type="Script" id=1]
@@ -30,6 +32,10 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 506.398, 134.84 ), Vector2( 506.398, 180 ), Vector2( 506.398, 134.84 ) ]
 }
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 2 )
 
 [node name="LevelMenu" type="Control"]
 anchor_right = 1.0
@@ -137,7 +143,20 @@ anims/float = SubResource( 2 )
 position = Vector2( 505.691, 75.6831 )
 texture = ExtResource( 8 )
 
+[node name="SecretLevelButton" type="Button" parent="."]
+visible = false
+margin_left = -11.0
+margin_top = 538.0
+margin_right = 1036.0
+margin_bottom = 571.0
+custom_fonts/font = SubResource( 3 )
+text = "Secret Level: Black Hole"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="LevelZeroButton" to="." method="_on_LevelZeroButton_pressed"]
 [connection signal="pressed" from="LevelOneButton" to="." method="_on_LevelOneButton_pressed"]
 [connection signal="pressed" from="LevelTwoButton" to="." method="_on_LevelTwoButton_pressed"]
 [connection signal="pressed" from="LevelThreeButton" to="." method="_on_LevelThreeButton_pressed"]
+[connection signal="pressed" from="SecretLevelButton" to="." method="_on_SecretLevelButton_pressed"]

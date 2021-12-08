@@ -28,5 +28,7 @@ func _process(_delta):
 
 func _on_Finish_body_entered(body) -> void:
 	if body == vehicle:
+		if Globals.continuous == 1:
+			Globals.secretUnlock = 1;
 		Globals.determine_current_level(get_tree().current_scene.filename)
 		transition.transition_to("res://UI/Congrats/Congrats.tscn")
