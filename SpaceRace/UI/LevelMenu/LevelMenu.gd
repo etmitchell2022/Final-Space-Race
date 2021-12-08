@@ -9,7 +9,8 @@ func _ready() -> void:
 		$LevelTwoButton.disabled = false
 	if Globals.levelTwoComplete == 1:
 		$LevelThreeButton.disabled = false
-
+	if Globals.secretUnlock == 1:
+		$SecretLevelButton.visible = true
 
 func _on_LevelOneButton_pressed() -> void:
 	transition.transition_to("res:///Levels/EarthLevel/Earth.tscn")
@@ -24,4 +25,5 @@ func _on_LevelThreeButton_pressed() -> void:
 
 
 func _on_LevelZeroButton_pressed():
+	Globals.continuous = 1
 	transition.transition_to("res:///Levels/SunLevel/Sun.tscn")

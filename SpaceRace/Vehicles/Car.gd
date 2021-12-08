@@ -42,6 +42,7 @@ func _physics_process(delta: float) -> void:
 		left_wheel.apply_torque_impulse(-SPEED * delta * 60)
 		
 func _explosion() -> void:
+	Globals.continuous = 0
 	car_sprite.visible = false
 	left_wheel.visible = false
 	right_wheel.visible = false

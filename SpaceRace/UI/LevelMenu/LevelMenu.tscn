@@ -1,13 +1,14 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
-[ext_resource path="res:///UI/LevelMenu/LevelMenu.gd" type="Script" id=1]
-[ext_resource path="res:///Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res:///UI/Transition/Transition.tscn" type="PackedScene" id=3]
-[ext_resource path="res:///UI/LevelMenu/earth.png" type="Texture" id=4]
-[ext_resource path="res:///Common/SpaceBackGround.jpeg" type="Texture" id=5]
-[ext_resource path="res:///UI/LevelMenu/moon.png" type="Texture" id=6]
-[ext_resource path="res:///UI/LevelMenu/mars.png" type="Texture" id=7]
-[ext_resource path="res:///UI/LevelMenu/Text.png" type="Texture" id=8]
+[ext_resource path="res://UI/LevelMenu/LevelMenu.gd" type="Script" id=1]
+[ext_resource path="res://Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://UI/Transition/Transition.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/LevelMenu/earth.png" type="Texture" id=4]
+[ext_resource path="res://Common/SpaceBackGround.jpeg" type="Texture" id=5]
+[ext_resource path="res://UI/LevelMenu/moon.png" type="Texture" id=6]
+[ext_resource path="res://UI/LevelMenu/mars.png" type="Texture" id=7]
+[ext_resource path="res://UI/LevelMenu/Text.png" type="Texture" id=8]
+[ext_resource path="res://UI/LevelMenu/sun.png" type="Texture" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -29,6 +30,10 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 506.398, 134.84 ), Vector2( 506.398, 180 ), Vector2( 506.398, 134.84 ) ]
 }
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 2 )
 
 [node name="LevelMenu" type="Control"]
 anchor_right = 1.0
@@ -135,6 +140,18 @@ anims/float = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="AnimationPlayer"]
 position = Vector2( 505.691, 75.6831 )
 texture = ExtResource( 8 )
+
+[node name="SecretLevelButton" type="Button" parent="."]
+visible = false
+margin_left = -11.0
+margin_top = 538.0
+margin_right = 1036.0
+margin_bottom = 571.0
+custom_fonts/font = SubResource( 3 )
+text = "Secret Level: Black Hole"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="LevelZeroButton" to="." method="_on_LevelZeroButton_pressed"]
 [connection signal="pressed" from="LevelOneButton" to="." method="_on_LevelOneButton_pressed"]
