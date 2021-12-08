@@ -3,7 +3,7 @@ extends Control
 
 
 func _on_ReturnButton_pressed() -> void:
-	var _ignored := get_tree().change_scene("res:///UI/Start/Start.tscn")
+	var _ignored := get_tree().change_scene("res://UI/Start/Start.tscn")
 
 
 func _on_RestartButton_pressed() -> void:

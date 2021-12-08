@@ -1,4 +1,6 @@
+
 [gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://UI/LevelMenu/LevelMenu.gd" type="Script" id=1]
 [ext_resource path="res://Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=2]

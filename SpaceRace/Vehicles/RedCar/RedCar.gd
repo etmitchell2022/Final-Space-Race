@@ -1,4 +1,4 @@
-extends "res:///Vehicles/Car.gd"
+extends "res://Vehicles/Car.gd"
 
 onready var deathTimer = $DeathTimer
 onready var camera = $Camera2D
@@ -25,4 +25,4 @@ func shake() -> void:
 
 func _on_DeathTimer_timeout() -> void:
 	Globals.determine_current_level(get_tree().current_scene.filename)
-	var _ignored := get_tree().change_scene("res:///UI/End/End.tscn")
+	var _ignored := get_tree().change_scene("res://UI/End/End.tscn")

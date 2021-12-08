@@ -351,6 +351,7 @@ texture = ExtResource( 9 )
 position = Vector2( 133, 83 )
 
 [node name="Pause" type="CanvasLayer" parent="."]
+pause_mode = 2
 
 [node name="Pause" parent="Pause" instance=ExtResource( 6 )]
 visible = false

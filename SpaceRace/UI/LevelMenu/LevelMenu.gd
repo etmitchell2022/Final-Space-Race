@@ -13,15 +13,15 @@ func _ready() -> void:
 		$SecretLevelButton.visible = true
 
 func _on_LevelOneButton_pressed() -> void:
-	transition.transition_to("res:///Levels/EarthLevel/Earth.tscn")
+	transition.transition_to("res://Levels/EarthLevel/Earth.tscn")
 
 
 func _on_LevelTwoButton_pressed() -> void:
-	transition.transition_to("res:///Levels/MoonLevel/Moon.tscn")
+	transition.transition_to("res://Levels/MoonLevel/Moon.tscn")
 
 
 func _on_LevelThreeButton_pressed() -> void:
-	transition.transition_to("res:///Levels/MarsLevel/Mars.tscn")
+	transition.transition_to("res://Levels/MarsLevel/Mars.tscn")
 
 
 func _on_LevelZeroButton_pressed():
@@ -31,3 +31,4 @@ func _on_LevelZeroButton_pressed():
 
 func _on_SecretLevelButton_pressed():
 	transition.transition_to("res://Levels/BlackHoleLevel/BlackHole.tscn")
+	transition.transition_to("res://Levels/SunLevel/Sun.tscn")

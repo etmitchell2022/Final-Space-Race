@@ -6,7 +6,7 @@ var next_scene = Globals.return_next_scene()
 
 
 func _ready():
-	if previous_scene == "res:///Levels/MarsLevel/Mars.tscn":
+	if previous_scene == "res://Levels/MarsLevel/Mars.tscn":
 		$VBoxContainer/NextButton.disabled = true
 	if previous_scene == "res://Levels/BlackHoleLevel/BlackHole.tscn":
 		$VBoxContainer/NextButton.disabled = true
@@ -17,7 +17,7 @@ func _ready():
 
 func _on_ReturnButton_pressed() -> void:
 	Globals.continuous = 0
-	var _ignored := get_tree().change_scene("res:///UI/Start/Start.tscn")
+	var _ignored := get_tree().change_scene("res://UI/Start/Start.tscn")
 
 
 func _on_RestartButton_pressed() -> void:

@@ -16,6 +16,9 @@ var car_id
 var coin_score:= 0
 var continuous := 0
 var secretUnlock := 0
+var is_yellow_car_unlocked = false
+var is_truck_unlocked = false
+
 	
 func load_vehicle(id = 0) -> void:
 	car_id = id
