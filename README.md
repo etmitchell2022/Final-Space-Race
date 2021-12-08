@@ -15,6 +15,7 @@ Authors: Spencer Naugler, Carter Jeurissen, and Evan Mitchell
 - Use the right and left arrows to move the car forward and backward. These controls also work with rotating the car when it is off the ground.
 - Press escape to pause and unpause the game
 - Make it through each level without flipping over.
+- Collect coins to use for purchasing new vehicles.
 
 ## Reflection
 
