@@ -9,7 +9,7 @@ jobs:
       - name: download web
         uses: dsaltares/fetch-gh-release-asset@master
         with:
-          file: spaceRace.zip
+          file: SpaceRace.zip
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
       - name: release web
@@ -19,4 +19,4 @@ jobs:
           CHANNEL: HTML
           ITCH_GAME: space-race
           ITCH_USER: etmitchell2022
-          PACKAGE: spaceRace.zip
+          PACKAGE: SpaceRace.zip
