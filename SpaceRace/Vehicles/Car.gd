@@ -28,7 +28,7 @@ func _shake(camera: Camera2D):
 	
 func _process(_delta: float) -> void:
 	if car.sleeping:
-		var _ignored = get_tree().change_scene("res:///UI/End/End.tscn")
+		var _ignored = get_tree().change_scene("res://UI/End/End.tscn")
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("forwards"):
@@ -45,7 +45,7 @@ func _explosion() -> void:
 	car_sprite.visible = false
 	left_wheel.visible = false
 	right_wheel.visible = false
-	var explosion : CPUParticles2D = load("res:///Common/Explosion.tscn").instance()
+	var explosion : CPUParticles2D = load("res://Common/Explosion.tscn").instance()
 	explosion.one_shot = true
 	explosion.position = crash_zone.position
 	if Globals.car_id == 1:

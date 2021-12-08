@@ -19,7 +19,7 @@ func _spawnVehicle() -> void:
 	if vehicle:
 		vehicle.position = SPAWN_POINT
 	else: 
-		vehicle = load("res:///Vehicles/RedCar/RedCar.tscn").instance()
+		vehicle = load("res://Vehicles/RedCar/RedCar.tscn").instance()
 		vehicle.position = SPAWN_POINT
 	call_deferred("add_child", vehicle)
 	
@@ -29,4 +29,4 @@ func _process(_delta):
 func _on_Finish_body_entered(body) -> void:
 	if body == vehicle:
 		Globals.determine_current_level(get_tree().current_scene.filename)
-		transition.transition_to("res:///UI/Congrats/Congrats.tscn")
+		transition.transition_to("res://UI/Congrats/Congrats.tscn")

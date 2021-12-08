@@ -19,7 +19,7 @@ func _spawnVehicle() -> void:
 	if vehicle:
 		vehicle.position = SPAWN_POINT
 	else: 
-		vehicle = load("res:///Vehicles/RedCar/RedCar.tscn").instance()
+		vehicle = load("res://Vehicles/RedCar/RedCar.tscn").instance()
 		vehicle.position = SPAWN_POINT
 	call_deferred("add_child", vehicle)
 
@@ -32,4 +32,4 @@ func _on_FinishZone_body_entered(body):
 		Globals.levelZeroComplete = 1
 		Globals.disconnect("new_max_speed", hud, "update_speed")
 		Globals.determine_current_level(get_tree().current_scene.filename)
-		transition.transition_to("res:///UI/Congrats/Congrats.tscn")
+		transition.transition_to("res://UI/Congrats/Congrats.tscn")
