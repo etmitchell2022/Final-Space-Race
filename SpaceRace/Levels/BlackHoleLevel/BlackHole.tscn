@@ -1,4 +1,4 @@
-[gd_scene load_steps=173 format=2]
+[gd_scene load_steps=174 format=2]
 
 [ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=1]
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://UI/Transition/Transition.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HUD/HUD.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/PauseMenu/PauseMenu.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Common/SpaceBackGround.jpeg" type="Texture" id=10]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
@@ -44,7 +45,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 4 )
-position = Vector2( 4722.94, 1813.68 )
+position = Vector2( 4739.91, 1830.65 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 5 )
@@ -104,17 +105,17 @@ _constraints = {
 }
 _next_key = 6
 
-[sub_resource type="Gradient" id=15]
-offsets = PoolRealArray( 0, 0.00409836, 0.00819672 )
-colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1 )
+[sub_resource type="Gradient" id=179]
+offsets = PoolRealArray( 0.983607, 1 )
+colors = PoolColorArray( 0.0627451, 0.054902, 0.054902, 1, 0.0627451, 0.0588235, 0.0588235, 1 )
 
-[sub_resource type="GradientTexture" id=16]
-gradient = SubResource( 15 )
+[sub_resource type="GradientTexture" id=180]
+gradient = SubResource( 179 )
 
 [sub_resource type="Resource" id=14]
 script = ExtResource( 3 )
 _edge_meta_materials = [  ]
-fill_textures = [ SubResource( 16 ) ]
+fill_textures = [ SubResource( 180 ) ]
 fill_texture_normals = [  ]
 fill_texture_z_index = -10
 fill_mesh_offset = 0.0
@@ -313,8 +314,8 @@ _constraints = {
 _next_key = 21
 
 [sub_resource type="Gradient" id=37]
-offsets = PoolRealArray( 0.991803, 1 )
-colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1 )
+offsets = PoolRealArray( 0.97541, 0.991803 )
+colors = PoolColorArray( 0.0666667, 0.0627451, 0.0627451, 1, 0.0705882, 0.0627451, 0.0627451, 1 )
 
 [sub_resource type="GradientTexture" id=38]
 gradient = SubResource( 37 )
@@ -476,11 +477,11 @@ _point_order = [ 0, 5, 7, 6, 8, 9, 1, 2, 4, 3 ]
 _constraints = {
 [ 0, 3 ]: 15
 }
-_next_key = 17
+_next_key = 18
 
 [sub_resource type="Gradient" id=50]
 offsets = PoolRealArray( 0.864754, 1 )
-colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1 )
+colors = PoolColorArray( 0.0823529, 0.0784314, 0.0784314, 1, 0.054902, 0.0470588, 0.0470588, 1 )
 
 [sub_resource type="GradientTexture" id=51]
 gradient = SubResource( 50 )
@@ -1120,17 +1121,17 @@ _constraints = {
 }
 _next_key = 53
 
-[sub_resource type="Gradient" id=88]
-offsets = PoolRealArray( 0.758197, 1 )
-colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1 )
+[sub_resource type="Gradient" id=181]
+offsets = PoolRealArray( 0.938525, 1 )
+colors = PoolColorArray( 0.101961, 0.0941176, 0.0941176, 1, 0.0666667, 0.0588235, 0.0588235, 1 )
 
-[sub_resource type="GradientTexture" id=89]
-gradient = SubResource( 88 )
+[sub_resource type="GradientTexture" id=182]
+gradient = SubResource( 181 )
 
 [sub_resource type="Resource" id=90]
 script = ExtResource( 3 )
 _edge_meta_materials = [  ]
-fill_textures = [ SubResource( 89 ) ]
+fill_textures = [ SubResource( 182 ) ]
 fill_texture_normals = [  ]
 fill_texture_z_index = -10
 fill_mesh_offset = 0.0
@@ -1164,7 +1165,7 @@ collision_polygon_node_path = NodePath("../CollisionPolygon2D")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground1"]
 visible = false
 modulate = Color( 1, 1, 1, 0.3 )
-polygon = PoolVector2Array( -5.72318, 639, 145.204, 669.9, 544.995, 709.444, 1134.38, 702.069, 1480.49, 662.044, 1850.4, 587.777, 2266.81, 454.379, 2735.49, 258.41, 3696.79, -222.17, 4788.96, -851.38, 4726.14, 1816.99, -6.61043, 1767.56 )
+polygon = PoolVector2Array( -5.72318, 639, 145.204, 669.9, 544.995, 709.444, 1134.38, 702.069, 1480.49, 662.044, 1850.4, 587.777, 2266.81, 454.379, 2735.49, 258.41, 3696.79, -222.17, 4788.92, -851.355, 4743.16, 1834, -6.6021, 1767.54 )
 
 [node name="Ground2" type="StaticBody2D" parent="."]
 
@@ -1251,3 +1252,17 @@ shape = SubResource( 119 )
 
 [node name="Pause" parent="Pause" instance=ExtResource( 9 )]
 visible = false
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+rotation = 0.785398
+transform = Transform2D( 0.707107, 0.707107, -0.707107, 0.707107, 0, 0 )
+follow_viewport_scale = 3.0
+scroll_base_scale = Vector2( 3, 3 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1280, 1280 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource( 10 )
+flip_h = true
+flip_v = true
