@@ -32,3 +32,9 @@ func _on_FinishZone_body_entered(body):
 		Globals.levelZeroComplete = 1
 		Globals.determine_current_level(get_tree().current_scene.filename)
 		transition.transition_to("res:///UI/Congrats/Congrats.tscn")
+
+
+func _on_KillZone_body_entered(body):
+	if body == vehicle:
+		Globals.determine_current_level(get_tree().current_scene.filename)
+		transition.transition_to("res:///UI/End/End.tscn")
