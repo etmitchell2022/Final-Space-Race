@@ -157,3 +157,4 @@ __meta__ = {
 [connection signal="pressed" from="LevelOneButton" to="." method="_on_LevelOneButton_pressed"]
 [connection signal="pressed" from="LevelTwoButton" to="." method="_on_LevelTwoButton_pressed"]
 [connection signal="pressed" from="LevelThreeButton" to="." method="_on_LevelThreeButton_pressed"]
+[connection signal="pressed" from="SecretLevelButton" to="." method="_on_SecretLevelButton_pressed"]

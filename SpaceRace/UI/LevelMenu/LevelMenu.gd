@@ -27,3 +27,7 @@ func _on_LevelThreeButton_pressed() -> void:
 func _on_LevelZeroButton_pressed():
 	Globals.continuous = 1
 	transition.transition_to("res:///Levels/SunLevel/Sun.tscn")
+
+
+func _on_SecretLevelButton_pressed():
+	transition.transition_to("res://Levels/BlackHoleLevel/BlackHole.tscn")
