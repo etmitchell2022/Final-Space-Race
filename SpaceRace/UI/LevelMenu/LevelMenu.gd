@@ -31,4 +31,3 @@ func _on_LevelZeroButton_pressed() -> void:
 
 func _on_SecretLevelButton_pressed() -> void:
 	transition.transition_to("res://Levels/BlackHoleLevel/BlackHole.tscn")
-	transition.transition_to("res://Levels/SunLevel/Sun.tscn")
