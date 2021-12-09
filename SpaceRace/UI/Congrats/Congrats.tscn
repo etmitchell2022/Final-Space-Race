@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Common/OdibeeSans-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Common/SpaceBackGround.jpeg" type="Texture" id=2]
 [ext_resource path="res://UI/Congrats/Congrats.gd" type="Script" id=3]
+[ext_resource path="res://Common/Roboto-Regular.ttf" type="DynamicFontData" id=4]
+
 
 [sub_resource type="Animation" id=1]
 resource_name = "Float"
@@ -21,6 +23,9 @@ font_data = ExtResource( 1 )
 [sub_resource type="DynamicFont" id=4]
 size = 32
 font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 4 )
 
 [node name="Congrats" type="Control"]
 anchor_right = 1.0
@@ -72,9 +77,9 @@ __meta__ = {
 }
 
 [node name="NextButton" type="Button" parent="VBoxContainer"]
-margin_top = 44.0
+margin_top = 40.0
 margin_right = 155.0
-margin_bottom = 86.0
+margin_bottom = 82.0
 custom_fonts/font = SubResource( 3 )
 text = "Next Level"
 __meta__ = {
@@ -82,9 +87,9 @@ __meta__ = {
 }
 
 [node name="RestartButton" type="Button" parent="VBoxContainer"]
-margin_top = 96.0
+margin_top = 92.0
 margin_right = 155.0
-margin_bottom = 138.0
+margin_bottom = 134.0
 custom_fonts/font = SubResource( 3 )
 text = "Restart Game"
 __meta__ = {
@@ -93,14 +98,22 @@ __meta__ = {
 
 [node name="ReturnButton" type="Button" parent="VBoxContainer"]
 pause_mode = 2
-margin_top = 148.0
+margin_top = 144.0
 margin_right = 155.0
-margin_bottom = 190.0
+margin_bottom = 186.0
 custom_fonts/font = SubResource( 4 )
 text = "Return Home"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="SecretMessage" type="Label" parent="VBoxContainer"]
+visible = false
+margin_top = 167.0
+margin_right = 191.0
+margin_bottom = 186.0
+custom_fonts/font = SubResource( 5 )
+text = "A new level has appeared..."
 
 [node name="Confetti" type="CPUParticles2D" parent="."]
 position = Vector2( 522.077, -26.6292 )

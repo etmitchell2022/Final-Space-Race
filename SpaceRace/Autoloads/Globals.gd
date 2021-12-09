@@ -3,6 +3,7 @@ const SUN = "res://Levels/SunLevel/Sun.tscn"
 const EARTH = "res://Levels/EarthLevel/Earth.tscn"
 const MOON = "res://Levels/MoonLevel/Moon.tscn"
 const MARS = "res://Levels/MarsLevel/Mars.tscn"
+const BLACKHOLE = "res://Levels/BlackHoleLevel/BlackHole.tscn"
 
 var hills := 30
 var vehicle: Node2D
@@ -12,9 +13,12 @@ var levelTwoComplete := 0
 var previous_scene
 var next_scene
 var car_id
-var coin_score:= 100
+var coin_score:= 0
+var continuous := 0
+var secretUnlock := 0
 var is_yellow_car_unlocked = false
 var is_truck_unlocked = false
+
 	
 func load_vehicle(id = 0) -> void:
 	car_id = id
@@ -47,6 +51,8 @@ func determine_current_level(scene) -> void:
 	elif scene == SUN:
 		previous_scene = SUN
 		next_scene = EARTH
+	elif scene == BLACKHOLE:
+		previous_scene = BLACKHOLE
 		
 func return_previous_scene() -> String:
 	return previous_scene
