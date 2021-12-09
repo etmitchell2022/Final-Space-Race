@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Vehicles/Truck/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Vehicles/Truck/car-wheel.png" type="Texture" id=2]
@@ -10,10 +10,16 @@ friction = 4.0
 rough = true
 absorbent = true
 
-[sub_resource type="CircleShape2D" id=2]
-radius = 21.5491
+[sub_resource type="PhysicsMaterial" id=2]
+rough = true
 
 [sub_resource type="CircleShape2D" id=3]
+radius = 21.5491
+
+[sub_resource type="PhysicsMaterial" id=4]
+rough = true
+
+[sub_resource type="CircleShape2D" id=5]
 radius = 21.2719
 
 [node name="Car" type="RigidBody2D"]
@@ -21,6 +27,9 @@ mass = 150.0
 physics_material_override = SubResource( 1 )
 gravity_scale = 5.0
 script = ExtResource( 1 )
+SPEED = 15000
+MASS = 250
+WEIGHT = 2000
 
 [node name="CrashZone" type="Area2D" parent="."]
 
@@ -41,7 +50,9 @@ limit_left = 0
 polygon = PoolVector2Array( -29.821, -26.6425, -24.019, -28.3406, 15.3218, -29.4727, 22.1144, -27.9161, 48.7189, -12.2081, 55.6531, -11.5005, 56.6437, -13.6232, 67.3987, -13.3402, 81.1255, -11.7836, 92.8711, -8.10422, 98.3901, -4.99092, 98.9561, 12.4152, 86.22, 13.5473, 79.2858, 6.47166, 72.4932, 3.64139, 62.1627, 3.64139, 51.4077, 3.64139, 49.1435, 6.61317, 44.8981, 14.821, 42.3508, 22.1796, 39.2375, 28.9723, -32.6513, 29.6799, -36.6136, 28.6893, -46.3781, 28.6893, -51.048, 16.0946, -57.4161, 10.7171, -71.0014, 8.8774, -79.7752, 10.2925, -84.0206, 13.8304, -86.1433, 18.5003, -87.983, 25.576, -101.285, 26.2835, -101.851, 5.7641, -99.1626, -4.42487, -86.2848, -5.41547, -64.3503, -5.27394, -62.086, -13.9063, -58.2652, -19.5668, -54.8689, -22.3971, -50.765, -25.2273, -45.246, -25.6519, -40.7175, -25.9349, -37.1797, -28.6236, -33.3588, -32.4445, -31.5192, -33.2936, -26.9907, -31.3124, -25.0096, -30.0388 )
 
 [node name="LeftWheel" type="RigidBody2D" parent="."]
-position = Vector2( -71.1812, 45.2843 )
+position = Vector2( -68.6387, 36.5268 )
+mass = 5.10204
+physics_material_override = SubResource( 2 )
 
 [node name="PinJoint2D" type="PinJoint2D" parent="LeftWheel"]
 node_a = NodePath("../..")
@@ -53,10 +64,12 @@ scale = Vector2( 0.35, 0.35 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWheel"]
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="RightWheel" type="RigidBody2D" parent="."]
-position = Vector2( 66.9358, 42.737 )
+position = Vector2( 66.6533, 34.6858 )
+mass = 5.10204
+physics_material_override = SubResource( 4 )
 
 [node name="PinJoint2D" type="PinJoint2D" parent="RightWheel"]
 node_a = NodePath("../..")
@@ -68,7 +81,7 @@ scale = Vector2( 0.35, 0.35 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWheel"]
-shape = SubResource( 3 )
+shape = SubResource( 5 )
 
 [node name="CrashSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
