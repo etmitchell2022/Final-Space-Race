@@ -24,11 +24,11 @@ func _on_LevelThreeButton_pressed() -> void:
 	transition.transition_to("res://Levels/MarsLevel/Mars.tscn")
 
 
-func _on_LevelZeroButton_pressed():
+func _on_LevelZeroButton_pressed() -> void:
 	Globals.continuous = 1
 	transition.transition_to("res:///Levels/SunLevel/Sun.tscn")
 
 
-func _on_SecretLevelButton_pressed():
+func _on_SecretLevelButton_pressed() -> void:
 	transition.transition_to("res://Levels/BlackHoleLevel/BlackHole.tscn")
 	transition.transition_to("res://Levels/SunLevel/Sun.tscn")

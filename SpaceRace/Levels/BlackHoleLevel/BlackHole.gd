@@ -27,14 +27,14 @@ func _spawnVehicle() -> void:
 func _process(_delta) -> void:
 	hud.update_progress_bar(vehicle.position.distance_to(finish.position))
 
-func _on_FinishZone_body_entered(body):
+func _on_FinishZone_body_entered(body) -> void:
 	if body == vehicle:
 		Globals.levelZeroComplete = 1
 		Globals.determine_current_level(get_tree().current_scene.filename)
 		transition.transition_to("res:///UI/Congrats/Congrats.tscn")
 
 
-func _on_KillZone_body_entered(body):
+func _on_KillZone_body_entered(body) -> void:
 	if body == vehicle:
 		Globals.determine_current_level(get_tree().current_scene.filename)
 		transition.transition_to("res:///UI/End/End.tscn")
