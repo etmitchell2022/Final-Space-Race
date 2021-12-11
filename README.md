@@ -76,9 +76,9 @@ Overall, we feel this iteration went well. We had a few large features we wanted
 
 - [Free 2D Vehicle Assets](https://overcrafted.itch.io/free-paid-vehicle-car-sprites-), licensed under "The vehicles are free to use. You do not need to add credit. You do not need to ask permission. You can alter and change as you wish."
 
-- [Background Music](https://freesound.org/people/Far_Box_creature/sounds/472712/), licensed under [CCO 3.0](https://creativecommons.org/licenses/by/3.0/)
+- [Background Music](https://freesound.org/people/Far_Box_creature/sounds/472712/), licensed under [CC By 3.0](https://creativecommons.org/licenses/by/3.0/)
 
-- [Car Crash](https://freesound.org/people/magnuswaker/sounds/592388/), licensed under [CCO 3.0](https://creativecommons.org/licenses/by/3.0/)
+- [Car Crash](https://freesound.org/people/magnuswaker/sounds/592388/), licensed under [CC By 3.0](https://creativecommons.org/licenses/by/3.0/)
 
 - [Add Hills Function](https://github.com/kidscancode/godot3_procgen_demos), licensed under [MIT License](https://opensource.org/licenses/MIT)
 
