@@ -74,7 +74,7 @@ Overall, we feel this iteration went well. We had a few large features we wanted
 
 - [Odibee Sans](https://fonts.google.com/specimen/Odibee+Sans?query=Odibee+Sans#license), licensed under [Open Font License, Version 2.0](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
-- [Free 2D Vehicle Assets](https://overcrafted.itch.io/free-paid-vehicle-car-sprites-), licensed under "The vehicles are free to use. You do not need to add credit. You do not need to ask permission. You can alter and change as you wish."
+- [Free 2D Vehicle Assets](https://overcrafted.itch.io/free-paid-vehicle-car-sprites-), licensed under [CC By 3.0](https://creativecommons.org/licenses/by/3.0/) "The vehicles are free to use. You do not need to add credit. You do not need to ask permission. You can alter and change as you wish."
 
 - [Background Music](https://freesound.org/people/Far_Box_creature/sounds/472712/), licensed under [CC By 3.0](https://creativecommons.org/licenses/by/3.0/) original credit goes too Far_Box_creature for producing the sound. No changes were made to the origninal work.
 
