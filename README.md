@@ -76,8 +76,8 @@ Overall, we feel this iteration went well. We had a few large features we wanted
 
 - [Free 2D Vehicle Assets](https://overcrafted.itch.io/free-paid-vehicle-car-sprites-), licensed under "The vehicles are free to use. You do not need to add credit. You do not need to ask permission. You can alter and change as you wish."
 
-- [Background Music](https://freesound.org/people/Far_Box_creature/sounds/472712/), No changes were made to the origninal work. This game uses these sounds from freesound: "Music 1.mp3" by Far_Box_creature licenced under [CCBYNC 3.0](https://creativecommons.org/licenses/by/3.0/)
+- [Background Music](https://freesound.org/people/Far_Box_creature/sounds/472712/), "Music 1.mp3" by [Far_Box_Creature](https://freesound.org/people/Far_Box_creature/) is licenced under [CCBYNC 3.0](https://creativecommons.org/licenses/by/3.0/)
 
-- [Car Crash](https://freesound.org/people/magnuswaker/sounds/592388/), licensed under [CCBYNC 3.0](https://creativecommons.org/licenses/by/3.0/) No changes were made to the original work. This game uses the sound "Car Crash" by magnuswaker.
+- [Car Crash](https://freesound.org/people/magnuswaker/sounds/592388/), "Car Crash" by [magnus walker](https://freesound.org/people/magnuswaker/) licensed under [CCBYNC 3.0](https://creativecommons.org/licenses/by/3.0/)
 
 - [SmartShape2D level creation tool](https://github.com/SirRamEsq/SmartShape2D), licensed under [MIT License](https://opensource.org/licenses/MIT)
