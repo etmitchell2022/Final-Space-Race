@@ -78,6 +78,6 @@ Overall, we feel this iteration went well. We had a few large features we wanted
 
 - [Background Music](https://freesound.org/people/Far_Box_creature/sounds/472712/), No changes were made to the origninal work. This game uses these sounds from freesound: "Music 1.mp3" by Far_Box_creature licenced under [CCBYNC 3.0](https://creativecommons.org/licenses/by/3.0/)
 
-- [Car Crash](https://freesound.org/people/magnuswaker/sounds/592388/), licensed under [CC By 3.0](https://creativecommons.org/licenses/by/3.0/) original credit goes too magnuswakerfor the creation of the sound. No changes were made to this work.
+- [Car Crash](https://freesound.org/people/magnuswaker/sounds/592388/), licensed under [CCBYNC 3.0](https://creativecommons.org/licenses/by/3.0/) No changes were made to the original work. This game uses the sound "Car Crash" by magnuswaker.
 
 - [SmartShape2D level creation tool](https://github.com/SirRamEsq/SmartShape2D), licensed under [MIT License](https://opensource.org/licenses/MIT)
