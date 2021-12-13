@@ -212,16 +212,16 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -165.0
-margin_top = -148.0
-margin_right = 282.0
-margin_bottom = -1.0
+margin_left = -175.0
+margin_top = -177.0
+margin_right = 175.0
 rect_pivot_offset = Vector2( 68.5, 22 )
 custom_fonts/font = SubResource( 7 )
-text = "
-Vehicles - Overcrafted (no modification
-Background music - Far_Box_Creature (no modification)
-Car Crash Sound - 	magnuswaker (no modification)
+text = "This game uses these sounds from freesound 
+\"Car Crash\" by magnuswaker
+and \"Music 1\" by Far_Box_Creature.
+Licenced under CCBYNC 3.0
+
 	"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -230,10 +230,10 @@ __meta__ = {
 [node name="Label2" type="Label" parent="."]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 480.0
-margin_top = 148.0
-margin_right = 544.0
-margin_bottom = 181.0
+margin_left = 471.0
+margin_top = 92.0
+margin_right = 535.0
+margin_bottom = 125.0
 rect_pivot_offset = Vector2( 68.5, 22 )
 custom_fonts/font = SubResource( 7 )
 text = "Credits"
